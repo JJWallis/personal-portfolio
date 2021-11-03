@@ -1,7 +1,6 @@
 body {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   display: grid;
+   place-items: center;
    min-height: 100vh;
    font: 1rem/1.5 'Rubik', sans-serif;
    background-color: hsl(226, 43%, 10%);
@@ -10,19 +9,33 @@ body {
 
 .wrapper {
    outline: 3px solid hsl(235, 46%, 20%);
+   min-height: 300px;
    width: 90%;
    max-width: 600px;
    margin-inline: auto;
    overflow: hidden;
+   display: grid;
+   place-items: center;
 }
 
-img {
-   transform-origin: bottom center;
-   transition: transform 300ms cubic-bezier(0, 1.12, 1, -0.04);
-   transition-delay: 0;
+.btn {
+   padding: 2rem;
+   outline: 1px solid red;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
 }
 
-.wrapper:hover img {
-   transform: scale(1.1);
-   transition-delay: 0.5s;
+.btn:hover .hamburger {
+   transform: translateY(-50%);
+}
+
+svg {
+   outline: 1px solid yellow;
+}
+
+.hamburger {
+   transition: transform 200ms ease-in-out;
+   transform-origin: center;
+   cursor: pointer;
 }
