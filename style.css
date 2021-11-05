@@ -52,3 +52,19 @@ body {
 .star {
    animation-delay: 0.05s;
 }
+
+/* treehouse */
+
+.logo {
+   stroke: hsl(246, 80%, 60%);
+   stroke-width: 2;
+   stroke-dasharray: 1000;
+   stroke-dashoffset: 1000;
+   animation: draw 5s linear infinite;
+}
+
+@keyframes draw {
+   to {
+      stroke-dashoffset: 0;
+   }
+}
