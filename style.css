@@ -18,24 +18,37 @@ body {
    place-items: center;
 }
 
-.btn {
-   padding: 2rem;
-   outline: 1px solid red;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
+@keyframes grow {
+   0% {
+      transform: scale(0);
+   }
+   30% {
+      transform: scale(1.1);
+   }
+   60% {
+      transform: scale(0.9);
+   }
 }
 
-.btn:hover .hamburger {
-   transform: translateY(-50%);
-}
-
-svg {
-   outline: 1px solid yellow;
-}
-
-.hamburger {
-   transition: transform 200ms ease-in-out;
+.badge * {
    transform-origin: center;
-   cursor: pointer;
+}
+
+.outer,
+.inner,
+.inline,
+.star {
+   animation: grow 1s ease-out backwards;
+}
+
+.inner {
+   animation-delay: 0.1s;
+}
+
+.inline {
+   animation-delay: 0.15s;
+}
+
+.star {
+   animation-delay: 0.05s;
 }
