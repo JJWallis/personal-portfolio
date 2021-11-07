@@ -69,6 +69,12 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 
 ###### TODO
 
+HTML:
+
+CSS:
+
+JS:
+
 SVG animation - outline drawing | bounce effect | descendant class for button:hover to animate SVG | <g> | hmarbuegr animation - rotating both top line + middle ones fades out (opacity) - classic animation used for it to change into close cross icon
 
 Design basics - design note
