@@ -78,3 +78,5 @@ JS:
 SVG animation - outline drawing | bounce effect | descendant class for button:hover to animate SVG | <g> | hmarbuegr animation - rotating both top line + middle ones fades out (opacity) - classic animation used for it to change into close cross icon
 
 Design basics - design note
+
+Testing, testing, testing

@@ -1,4 +1,4 @@
--  Blue: hsl(246, 80%, 60%)
+-  Blue: hsl(246, 80%, 60%) #5847EB
    #545AFE
    #0079FD
 
@@ -6,13 +6,13 @@
 -  Soft blue (play): hsl(195, 74%, 62%) / #4BB8E9
 -  Light red (study): hsl(348, 100%, 68%)
 -  Lime green (exercise): hsl(145, 58%, 55%)
--  Violet (social): hsl(264, 64%, 52%)
+-  Violet (social): hsl(264, 64%, 52%) #7536D3
 -  Soft orange (self care): hsl(43, 84%, 65%)
 
--  Very dark Blue: hsl(226, 43%, 10%)
--  Dark blue: hsl(235, 46%, 20%)
--  Desaturated blue: hsl(235, 45%, 61%)
--  Pale Blue: hsl(236, 100%, 87%)
+-  Very dark Blue: hsl(226, 43%, 10%) #0F1424
+-  Dark blue: hsl(235, 46%, 20%) #1C1F4A
+-  Desaturated blue: hsl(235, 45%, 61%) #6F76C8
+-  Pale Blue: hsl(236, 100%, 87%) #BDC1FF
    #333950
    #252A3A
    #E5EAFF
