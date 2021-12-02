@@ -1,0 +1,88 @@
+// @use 'maps' as *;
+// @use 'mixins' as *;
+
+// @each $color, $value in $colors {
+//    @if $color ==
+//       sacramento-green or
+//       $color ==
+//       pm-white or
+//       $color ==
+//       pm-coral or
+//       $color ==
+//       rapture-blue or
+//       $color ==
+//       dark-green
+//    {
+//       .text-#{$color} {
+//          color: var(--clr-#{$color}, $value);
+//       }
+//    }
+//    .bg-#{$color} {
+//       background-color: var(--clr-#{$color}, $value);
+//    }
+// }
+
+// @each $screen-size, $map in $type-scale {
+//    @if $screen-size == small {
+//       @each $property, $value in $map {
+//          .#{$property} {
+//             font-size: var(--#{$property});
+//          }
+//       }
+//    }
+
+//    @if $screen-size == lh-small {
+//       @each $property, $value in $map {
+//          .#{$property} {
+//             line-height: var(--#{$property});
+//          }
+//       }
+//    }
+
+//    @if $screen-size == weights {
+//       @each $property, $value in $map {
+//          .#{$property} {
+//             font-weight: var(--#{$property});
+//          }
+//       }
+//    }
+
+//    @if $screen-size == align-mobile {
+//       @each $property, $value in $map {
+//          .#{$property} {
+//             text-align: var(--#{$property});
+//          }
+//       }
+//    }
+// }
+
+// // =========================================
+// // layout
+// // =========================================
+
+// .flow > *:where(:not(:first-child)) {
+//    margin-top: var(--flow-space, 1rem);
+// }
+
+// .sr-only {
+//    position: absolute;
+//    width: 1px;
+//    height: 1px;
+//    padding: 0;
+//    margin: -1px;
+//    overflow: hidden;
+//    clip: rect(0, 0, 0, 0);
+//    white-space: nowrap;
+//    border: 0;
+// }
+
+// .grid-container {
+//    display: grid;
+// }
+
+// .position-center {
+//    @include position($pos: absolute, $z-index: 2) {
+//       top: 50%;
+//       transform: translateY(-50%);
+//    }
+// }
