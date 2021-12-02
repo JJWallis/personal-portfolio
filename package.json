@@ -20,6 +20,7 @@
    "homepage": "https://github.com/JJWallis/personal-portfolio#readme",
    "devDependencies": {
       "parcel-bundler": "^1.12.5",
-      "sass": "^1.44.0"
+      "sass": "^1.44.0",
+      "typescript": "^4.5.2"
    }
 }
