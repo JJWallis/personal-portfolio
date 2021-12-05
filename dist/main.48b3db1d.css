@@ -130,6 +130,46 @@
   background-color: var(--clr-light-orange, #ff8c66);
 }
 
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.lh-500 {
+  line-height: var(--lh-500);
+}
+
+.lh-400 {
+  line-height: var(--lh-400);
+}
+
+.lh-300 {
+  line-height: var(--lh-300);
+}
+
+.lh-200 {
+  line-height: var(--lh-200);
+}
+
+.lh-100 {
+  line-height: var(--lh-100);
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
 }
