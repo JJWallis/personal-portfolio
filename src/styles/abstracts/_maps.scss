@@ -6,7 +6,7 @@ $colors: (
    soft-orange: hsl(43, 84%, 65%),
    soft-white: hsl(228.5, 100%, 94.9%),
    purple-blue: hsl(246, 80%, 60%),
-   violet: hsl(264, 64%, 52%),
+   deep-purple: hsl(264, 64%, 52%),
    lime-green: hsl(145, 58%, 55%),
    light-red: hsl(348, 100%, 68%),
    soft-blue: hsl(195, 74%, 62%),
@@ -54,7 +54,7 @@ $layout: (
    mobile: (
       center-left: center,
       center: center,
-      gap: 8rem,
+      gap: 2rem,
       flow-space: 1.5rem,
       ct-padding: 5rem 0,
    ),
