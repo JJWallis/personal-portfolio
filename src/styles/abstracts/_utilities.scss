@@ -60,29 +60,22 @@
 // // layout
 // // =========================================
 
-// .flow > *:where(:not(:first-child)) {
-//    margin-top: var(--flow-space, 1rem);
-// }
+.flow > *:where(:not(:first-child)) {
+   margin-top: var(--flow-space, 1rem);
+}
 
-// .sr-only {
-//    position: absolute;
-//    width: 1px;
-//    height: 1px;
-//    padding: 0;
-//    margin: -1px;
-//    overflow: hidden;
-//    clip: rect(0, 0, 0, 0);
-//    white-space: nowrap;
-//    border: 0;
-// }
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border: 0;
+}
 
-// .grid-container {
-//    display: grid;
-// }
-
-// .position-center {
-//    @include position($pos: absolute, $z-index: 2) {
-//       top: 50%;
-//       transform: translateY(-50%);
-//    }
-// }
+.grid-container {
+   display: grid;
+}
