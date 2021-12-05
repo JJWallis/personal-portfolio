@@ -1,26 +1,14 @@
 @use 'maps' as *;
 @use 'mixins' as *;
 
-// @each $color, $value in $colors {
-//    @if $color ==
-//       sacramento-green or
-//       $color ==
-//       pm-white or
-//       $color ==
-//       pm-coral or
-//       $color ==
-//       rapture-blue or
-//       $color ==
-//       dark-green
-//    {
-//       .text-#{$color} {
-//          color: var(--clr-#{$color}, $value);
-//       }
-//    }
-//    .bg-#{$color} {
-//       background-color: var(--clr-#{$color}, $value);
-//    }
-// }
+@each $color, $value in $colors {
+   .text-#{$color} {
+      color: var(--clr-#{$color}, $value);
+   }
+   .bg-#{$color} {
+      background-color: var(--clr-#{$color}, $value);
+   }
+}
 
 // @each $screen-size, $map in $type-scale {
 //    @if $screen-size == small {
