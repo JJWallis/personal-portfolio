@@ -1,3 +1,18 @@
+:root {
+  --clr-pm-dark-blue: #0f1424;
+  --clr-sd-dark-blue: #1c1f4a;
+  --clr-desat-blue: #6f76c8;
+  --clr-pale-blue: #bdc1ff;
+  --clr-soft-orange: #f1c65b;
+  --clr-soft-white: #e5eaff;
+  --clr-purple-blue: #5847eb;
+  --clr-violet: #7536d3;
+  --clr-lime-green: #4acf81;
+  --clr-light-red: #ff5c7c;
+  --clr-soft-blue: #56c2e6;
+  --clr-light-orange: #ff8c66;
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
 }

@@ -13,15 +13,11 @@
 -  Dark blue: hsl(235, 46%, 20%) #1C1F4A
 -  Desaturated blue: hsl(235, 45%, 61%) #6F76C8
 -  Pale Blue: hsl(236, 100%, 87%) #BDC1FF
-   #333950
-   #252A3A
    #E5EAFF
--  Softer off white for lighter theme
--  Accents of pm theme bg colours for header + footer
 
 ### Fonts
 
--  Family: [Rubik](https://fonts.google.com/specimen/Rubik) | all the weights for experimenting
+-  Family: [Rubik](https://fonts.google.com/specimen/Rubik)
 
 ---
 
@@ -35,9 +31,3 @@ Link styles - btns + pseudo el underline effect
 Grid container for projects - hover effect to reveal info (box shadow + pseudo el like Bookmark error msg or one from animation Bear note) | accent on screenshots to fit into theme (change on theme change)
 Call to action full width banner (vs in footer) | error icon + validation for form
 Footer - contact info | social + work platform links (Font Awesome NPM) | email contact (form)
-
----
-
-Pages:
-
-    Homepage | About | Contact

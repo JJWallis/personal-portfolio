@@ -5,14 +5,18 @@ $breakpoints: (
 );
 
 $colors: (
-   //    pm-green: hsl(186 98% 17%),
-   //    pm-coral: hsl(0 87% 73%),
-   //    pm-white: hsl(0 0% 100%),
-   //    rapture-blue: hsl(179 42% 63%),
-   //    police-blue: hsl(187 41% 29%),
-   //    jungle-green: hsl(186 100% 14%),
-   //    sacramento-green: hsl(186 96% 10%),
-   //    dark-green: hsl(186 100% 8%),
+   pm-dark-blue: hsl(226, 43%, 10%),
+   sd-dark-blue: hsl(235, 46%, 20%),
+   desat-blue: hsl(235, 45%, 61%),
+   pale-blue: hsl(236, 100%, 87%),
+   soft-orange: hsl(43, 84%, 65%),
+   soft-white: hsl(228.5, 100%, 94.9%),
+   purple-blue: hsl(246, 80%, 60%),
+   violet: hsl(264, 64%, 52%),
+   lime-green: hsl(145, 58%, 55%),
+   light-red: hsl(348, 100%, 68%),
+   soft-blue: hsl(195, 74%, 62%),
+   light-orange: hsl(15, 100%, 70%),
 );
 
 $type-scale: (
@@ -38,8 +42,16 @@ $type-scale: (
          fw-regular: 400,
       ),
    ),
-   tablet: (),
-   desktop: (),
+   tablet: (
+      size: (),
+      line-height: (),
+      weight: (),
+   ),
+   desktop: (
+      size: (),
+      line-height: (),
+      weight: (),
+   ),
 );
 
 $layout: (
