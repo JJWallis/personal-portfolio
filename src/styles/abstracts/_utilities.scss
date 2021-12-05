@@ -1,6 +1,4 @@
-@use 'maps' as *;
-@use 'font-sizes' as *;
-@use 'mixins' as *;
+@use 'colors' as *;
 
 @each $color, $value in $colors {
    .text-#{$color} {
