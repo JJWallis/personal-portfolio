@@ -16,27 +16,6 @@ $colors: (
 );
 
 // $type-scale: (
-//    small: (
-//       fs-500-contact: 2.9rem,
-//       fs-500: 3.8rem,
-//       fs-500-about: 3.8rem,
-//       fs-400: 2.5rem,
-//       fs-300-h3: 1.5rem,
-//       fs-300-h3-ct: 2.2rem,
-//       fs-300: 1.2rem,
-//       fs-200: 1.2rem,
-//       fs-address: 1.1rem,
-//       fs-job-title: 1rem,
-//       fs-employee-name: 1.6rem,
-//    ),
-//    large: (
-//       fs-500-contact: 5rem,
-//       fs-400: 2.4rem,
-//       fs-300-h3: 1.2rem,
-//       fs-300: 1.2rem,
-//       fs-200: 0.9375rem,
-//       fs-address: 0.9rem,
-//       fs-employee-name: 1.4rem,
 //    ),
 //    lh-small: (
 //       lh-500: 1,
@@ -97,9 +76,29 @@ $colors: (
 //    ),
 // );
 
-// $layout: (
-//    margin-hero: 8rem,
-//    align-mw: 65rem,
-//    ct-padding-lg: 4rem 0 min(15vh, 8.5rem),
-//    ct-padding-hdr: 4rem 0 min(15vh, 8.5rem),
-// );
+$type-scale: (
+   mobile: (
+      size: (
+         fs-500: 3.8rem,
+         fs-400: 2.5rem,
+         fs-300: 1.2rem,
+         fs-200: 1.2rem,
+         fs-100: 1rem,
+         //   base
+      ),
+      line-height: (
+         lh-500: 1,
+         lh-400: 1,
+         lh-300: 1.5556,
+         lh-200: 1.666,
+      ),
+   ),
+   tablet: (),
+   desktop: (),
+);
+
+$layout: (
+   mobile: (),
+   tablet: (),
+   desktop: (),
+);
