@@ -1,4 +1,5 @@
 @use 'maps' as *;
+@use 'font-sizes' as *;
 @use 'mixins' as *;
 
 @each $color, $value in $colors {
