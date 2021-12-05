@@ -6,19 +6,15 @@
       --clr-#{$color}: #{$value};
    }
 
-   //    @each $screen-size, $map in $type-scale {
-   //       @if $screen-size == small {
-   //          @each $size, $value in $map {
-   //             --#{$size}: #{$value};
-   //          }
-   //       } @else if $screen-size == large {
-   //          @include mq(min-width, tablet) {
-   //             @each $size, $value in $map {
-   //                --#{$size}: #{$value};
-   //             }
-   //          }
-   //       }
-   //    }
+   @each $screen-size, $map in $type-scale {
+      @if $screen-size == mobile {
+         @each $feature, $nested-map in $map {
+            @each $prop, $value in $nested-map {
+               --#{$prop}: #{$value};
+            }
+         }
+      }
+   }
 
    @each $screen-size, $map in $layout {
       @if $screen-size == mobile {
