@@ -170,6 +170,30 @@
   line-height: var(--lh-100);
 }
 
+.fw-extra-bold {
+  font-weight: var(--fw-extra-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
 }

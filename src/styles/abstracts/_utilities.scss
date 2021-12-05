@@ -19,21 +19,22 @@
                   font-size: var(--#{$property});
                }
             }
-         }
-         @if $feature == line-height {
+         } @else if $feature == line-height {
             @each $property, $value in $nested-map {
                .#{$property} {
                   line-height: var(--#{$property});
+               }
+            }
+         } @else {
+            @each $property, $value in $nested-map {
+               .#{$property} {
+                  font-weight: var(--#{$property});
                }
             }
          }
       }
    }
 }
-
-// .#{$property} {
-//             font-weight: var(--#{$property});
-//          }
 
 // // =========================================
 // // layout
