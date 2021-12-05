@@ -98,13 +98,13 @@
       $key ==
       'tablet' or
       $key ==
-      'large'
+      'desktop'
    {
       @media ($width: map-get($breakpoints, $key)) {
          @content;
       }
    } @else {
-      @error 'Tablet, medium, large & valid width required for media query.';
+      @error 'Tablet, medium, desktop & valid width required for media query.';
    }
 }
 

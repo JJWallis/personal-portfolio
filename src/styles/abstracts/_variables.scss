@@ -20,7 +20,23 @@
    //       }
    //    }
 
-   //    @each $prop, $value in $layout {
-   //       --#{$prop}: #{$value};
-   //    }
+   @each $screen-size, $map in $layout {
+      @if $screen-size == mobile {
+         @each $prop, $value in $map {
+            --#{$prop}: #{$value};
+         }
+      } @else if $screen-size == tablet {
+         @include mq(min-width, tablet) {
+            @each $prop, $value in $map {
+               --#{$prop}: #{$value};
+            }
+         }
+      } @else if $screen-size == desktop {
+         @include mq(min-width, desktop) {
+            @each $prop, $value in $map {
+               --#{$prop}: #{$value};
+            }
+         }
+      }
+   }
 }
