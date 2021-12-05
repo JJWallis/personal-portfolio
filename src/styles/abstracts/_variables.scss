@@ -4,13 +4,14 @@
 @use 'colors' as *;
 
 :root {
-   @each $color, $shade in $color-shades {
-      @each $prop, $val in $shade {
+   @each $color, $map in $color-shades {
+      @each $shade, $val in $map {
+         --clr-#{$color}-#{$shade}: #{$val};
       }
    }
 
-   @each $shade, $value in $colors {
-      --clr-#{$shade}: #{$value};
+   @each $color, $value in $colors {
+      --clr-#{$color}: #{$value};
    }
 
    @each $screen-size, $map in $type-scale {
