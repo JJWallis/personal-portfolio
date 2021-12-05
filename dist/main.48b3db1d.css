@@ -337,7 +337,7 @@ body {
   display: grid;
   gap: var(--gap, 2rem);
 }
-@media (min-width: 49.999em) {
+@media only screen and (min-width: 49.999em) {
   .grid-container {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;

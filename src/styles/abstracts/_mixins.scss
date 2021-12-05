@@ -100,7 +100,7 @@
       $key ==
       'desktop'
    {
-      @media ($width: map-get($breakpoints, $key)) {
+      @media only screen and ($width: map-get($breakpoints, $key)) {
          @content;
       }
    } @else {
@@ -109,7 +109,7 @@
 }
 
 @mixin mqs($minWidth, $minKey, $maxWidth, $maxKey) {
-   @media ($minWidth: map-get($breakpoints, $minKey)) and ($maxWidth: map-get($breakpoints, $maxKey)) {
+   @media only screen and ($minWidth: map-get($breakpoints, $minKey)) and ($maxWidth: map-get($breakpoints, $maxKey)) {
       @content;
    }
 }
