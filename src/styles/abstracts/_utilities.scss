@@ -2,9 +2,10 @@
 
 @each $color, $value in $colors {
    .text-#{$color} {
-      color: var(--clr-#{$color}, $value);
+      color: hsl(var(--clr-#{$color}));
    }
+
    .bg-#{$color} {
-      background-color: var(--clr-#{$color}, $value);
+      background-color: hsl(var(--clr-#{$color}));
    }
 }

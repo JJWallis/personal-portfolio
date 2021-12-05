@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
 :root {
-  --clr-pm-dark-blue: #0f1424;
+  --clr-pm-dark-blue: 226 43% 10%;
   --clr-sd-dark-blue: #1c1f4a;
   --clr-desat-blue: #6f76c8;
   --clr-pale-blue: #bdc1ff;
@@ -36,99 +36,99 @@
   --ff-pm: "Rubik", sans-serif;
 }
 .text-pm-dark-blue {
-  color: var(--clr-pm-dark-blue, #0f1424);
+  color: hsl(var(--clr-pm-dark-blue));
 }
 
 .bg-pm-dark-blue {
-  background-color: var(--clr-pm-dark-blue, #0f1424);
+  background-color: hsl(var(--clr-pm-dark-blue));
 }
 
 .text-sd-dark-blue {
-  color: var(--clr-sd-dark-blue, #1c1f4a);
+  color: hsl(var(--clr-sd-dark-blue));
 }
 
 .bg-sd-dark-blue {
-  background-color: var(--clr-sd-dark-blue, #1c1f4a);
+  background-color: hsl(var(--clr-sd-dark-blue));
 }
 
 .text-desat-blue {
-  color: var(--clr-desat-blue, #6f76c8);
+  color: hsl(var(--clr-desat-blue));
 }
 
 .bg-desat-blue {
-  background-color: var(--clr-desat-blue, #6f76c8);
+  background-color: hsl(var(--clr-desat-blue));
 }
 
 .text-pale-blue {
-  color: var(--clr-pale-blue, #bdc1ff);
+  color: hsl(var(--clr-pale-blue));
 }
 
 .bg-pale-blue {
-  background-color: var(--clr-pale-blue, #bdc1ff);
+  background-color: hsl(var(--clr-pale-blue));
 }
 
 .text-soft-orange {
-  color: var(--clr-soft-orange, #f1c65b);
+  color: hsl(var(--clr-soft-orange));
 }
 
 .bg-soft-orange {
-  background-color: var(--clr-soft-orange, #f1c65b);
+  background-color: hsl(var(--clr-soft-orange));
 }
 
 .text-soft-white {
-  color: var(--clr-soft-white, #e5eaff);
+  color: hsl(var(--clr-soft-white));
 }
 
 .bg-soft-white {
-  background-color: var(--clr-soft-white, #e5eaff);
+  background-color: hsl(var(--clr-soft-white));
 }
 
 .text-purple-blue {
-  color: var(--clr-purple-blue, #5847eb);
+  color: hsl(var(--clr-purple-blue));
 }
 
 .bg-purple-blue {
-  background-color: var(--clr-purple-blue, #5847eb);
+  background-color: hsl(var(--clr-purple-blue));
 }
 
 .text-deep-purple {
-  color: var(--clr-deep-purple, #7536d3);
+  color: hsl(var(--clr-deep-purple));
 }
 
 .bg-deep-purple {
-  background-color: var(--clr-deep-purple, #7536d3);
+  background-color: hsl(var(--clr-deep-purple));
 }
 
 .text-lime-green {
-  color: var(--clr-lime-green, #4acf81);
+  color: hsl(var(--clr-lime-green));
 }
 
 .bg-lime-green {
-  background-color: var(--clr-lime-green, #4acf81);
+  background-color: hsl(var(--clr-lime-green));
 }
 
 .text-light-red {
-  color: var(--clr-light-red, #ff5c7c);
+  color: hsl(var(--clr-light-red));
 }
 
 .bg-light-red {
-  background-color: var(--clr-light-red, #ff5c7c);
+  background-color: hsl(var(--clr-light-red));
 }
 
 .text-soft-blue {
-  color: var(--clr-soft-blue, #56c2e6);
+  color: hsl(var(--clr-soft-blue));
 }
 
 .bg-soft-blue {
-  background-color: var(--clr-soft-blue, #56c2e6);
+  background-color: hsl(var(--clr-soft-blue));
 }
 
 .text-light-orange {
-  color: var(--clr-light-orange, #ff8c66);
+  color: hsl(var(--clr-light-orange));
 }
 
 .bg-light-orange {
-  background-color: var(--clr-light-orange, #ff8c66);
+  background-color: hsl(var(--clr-light-orange));
 }
 
 .fs-500 {
