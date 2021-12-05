@@ -15,67 +15,6 @@ $colors: (
    //    dark-green: hsl(186 100% 8%),
 );
 
-// $type-scale: (
-//    ),
-//    lh-small: (
-//       lh-500: 1,
-//       lh-400: 1,
-//       lh-300: 1.5556,
-//       lh-200: 1.666,
-//    ),
-//    lh-large: (
-//       lh-500: 0.875,
-//       lh-400: 1,
-//       lh-300: 1.5556,
-//       lh-200: 1.5556,
-//    ),
-//    weights: (
-//       fw-regular: 400,
-//       fw-medium: 500,
-//       fw-semi-bold: 600,
-//       fw-bold: 700,
-//    ),
-//    align-mobile: (
-//       alignment: center,
-//       alignment-center: center,
-//       gap: 8rem,
-//       gap-directors: 3rem,
-//       gap-ftr: 2rem,
-//       gap-contact: 4rem,
-//       flow-space: 1.5rem,
-//       ct-padding-cta: 6.5rem 0,
-//       ct-padding-ftr: 5rem 0 4rem,
-//       ct-padding-about: 5rem 0 7.5rem,
-//       ct-padding-contact: 0 0 6rem,
-//    ),
-//    align-tablet: (
-//       gap: 5.5rem,
-//       gap-directors: 5rem 1rem,
-//       gap-ftr: 0,
-//       gap-contact: 5rem,
-//       ct-padding-cta: 7rem 0,
-//       ct-padding-ftr: 4rem 0,
-//       ct-padding-about: 6rem 0 8.3rem,
-//       ct-padding-contact: 0 0 6.6rem,
-//       fs-500: 4.5rem,
-//    ),
-//    align-large: (
-//       alignment: left,
-//       gap: 10rem,
-//       gap-directors: 4.5rem 2rem,
-//       gap-ftr: 2.2rem 6.5rem,
-//       gap-contact: 9rem,
-//       flow-space: 2rem,
-//       ct-padding-cta: 5rem 0,
-//       ct-padding-ftr: 3rem,
-//       ct-padding-about: 8rem 0 10rem,
-//       ct-padding-contact: 0 0 10rem,
-//       fs-500: 5.8rem,
-//       fs-400: 2.5rem,
-//       fs-employee-name: 1.2rem,
-//    ),
-// );
-
 $type-scale: (
    mobile: (
       size: (
@@ -92,13 +31,25 @@ $type-scale: (
          lh-300: 1.5556,
          lh-200: 1.666,
       ),
+      weight: (
+         fw-bold: 700,
+         fw-semi-bold: 600,
+         fw-medium: 500,
+         fw-regular: 400,
+      ),
    ),
    tablet: (),
    desktop: (),
 );
 
 $layout: (
-   mobile: (),
+   mobile: (
+      center-left: center,
+      center: center,
+      gap: 8rem,
+      flow-space: 1.5rem,
+      ct-padding: 5rem 0,
+   ),
    tablet: (),
    desktop: (),
 );
