@@ -1,4 +1,4 @@
-@use 'maps' as *;
+@use 'layout' as *;
 @use 'font-sizes' as *;
 @use 'mixins' as *;
 @use 'colors' as *;
@@ -53,10 +53,6 @@
          }
       }
    }
-
-   // // =========================================
-   // // manual
-   // // =========================================
 
    --ff-pm: 'Rubik', sans-serif;
 }
