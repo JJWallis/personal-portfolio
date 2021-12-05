@@ -1,8 +1,7 @@
 @use 'abstracts' as *;
 
 body {
-   display: flex;
-   flex-direction: column;
+   @include flexy($dir: column);
 }
 
 main {
