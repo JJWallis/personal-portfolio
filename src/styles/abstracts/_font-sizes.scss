@@ -1,8 +1,9 @@
 $type-scale: (
    mobile: (
       size: (
-         fs-500: 3.8rem,
-         fs-400: 2.5rem,
+         fs-hero-title: 2.3rem,
+         fs-500: 3.2rem,
+         fs-400: 3rem,
          fs-300: 1.2rem,
          fs-200: 1.1rem,
          fs-100: 0.9rem,
@@ -24,7 +25,9 @@ $type-scale: (
       ),
    ),
    tablet: (
-      size: (),
+      size: (
+         fs-500: 3.6rem,
+      ),
       line-height: (),
       weight: (),
    ),

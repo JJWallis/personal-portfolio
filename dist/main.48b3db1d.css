@@ -21,8 +21,9 @@
   --clr-light-red: 348 100% 68%;
   --clr-soft-blue: 195 74% 62%;
   --clr-light-orange: 15 100% 70%;
-  --fs-500: 3.8rem;
-  --fs-400: 2.5rem;
+  --fs-hero-title: 2.3rem;
+  --fs-500: 3.2rem;
+  --fs-400: 3rem;
   --fs-300: 1.2rem;
   --fs-200: 1.1rem;
   --fs-100: 0.9rem;
@@ -44,6 +45,11 @@
   --flow-space: 1.5rem;
   --ct-padding: 5rem 0;
   --ff-pm: "Rubik", sans-serif;
+}
+@media only screen and (min-width: 49.999em) {
+  :root {
+    --fs-500: 3.6rem;
+  }
 }
 @media only screen and (min-width: 49.999em) {
   :root {
@@ -222,6 +228,10 @@
 
 .bg-dark-blue-900 {
   background-color: hsl(var(--clr-dark-blue-900));
+}
+
+.fs-hero-title {
+  font-size: var(--fs-hero-title);
 }
 
 .fs-500 {
