@@ -1,5 +1,14 @@
 @use 'abstracts' as *;
 
 .sidebar {
-   outline: 2px solid white;
+   @include mq(max-width, tablet) {
+      background-color: hsl(var(--clr-purple-blue));
+      @include position(fixed, $z-index: 9997) {
+         inset: 0 0 0 calc(100% - 300px);
+         width: 300px;
+         padding: 4rem 0 min(5rem, 15vh);
+      }
+      //   transform: translateX(100%);
+      transition: transform var(--sidebar-transition);
+   }
 }

@@ -2,6 +2,7 @@
 :root {
   --ff-pm: "Rubik", sans-serif;
   --hover-transition: 0.3s linear;
+  --sidebar-transition: 0.4s linear;
   --clr-dark-blue-100: 226 43% 100%;
   --clr-dark-blue-200: 226 43% 90%;
   --clr-dark-blue-300: 226 43% 70%;
@@ -485,8 +486,25 @@ body {
   }
 }
 
-.sidebar {
-  outline: 2px solid white;
+@media only screen and (max-width: 49.999em) {
+  .sidebar {
+    background-color: hsl(var(--clr-purple-blue));
+    position: fixed;
+    z-index: 9997;
+    inset: 0 0 0 calc(100% - 300px);
+    width: 300px;
+    padding: 4rem 0 min(5rem, 15vh);
+    transition: transform var(--sidebar-transition);
+  }
+}
+
+.nav a {
+  color: hsl(var(--clr-text-pale-blue));
+}
+@media only screen and (max-width: 49.999em) {
+  .nav a {
+    color: hsl(var(--clr-pm-dark-blue));
+  }
 }
 
 .container-wrapper {
