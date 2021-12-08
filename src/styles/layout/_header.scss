@@ -3,7 +3,11 @@
 .header {
    @include m(pm) {
       padding: var(--ct-padding-header);
-      outline: 2px solid white;
+      // outline: 2px solid white;
       position: relative;
+
+      @include mq(min-width, tablet) {
+         @include flexy($align: center, $just: space-between);
+      }
    }
 }

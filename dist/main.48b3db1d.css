@@ -475,8 +475,18 @@ body {
 
 .header--pm {
   padding: var(--ct-padding-header);
-  outline: 2px solid white;
   position: relative;
+}
+@media only screen and (min-width: 49.999em) {
+  .header--pm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.sidebar {
+  outline: 2px solid white;
 }
 
 .container-wrapper {
