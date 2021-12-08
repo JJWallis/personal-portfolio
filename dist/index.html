@@ -11,16 +11,17 @@
    <script src="/main.48b3db1d.js"></script></head>
 
    <body>
+      <a href="#main-content" class="skip-to-content">Skip to main content</a>
       <header class="header--pm">
          <div class="container-wrapper">
-            <div class="logo--pm">
-               <img src="/devjane.1967fdcd.png" alt="">
+            <div>
+               <img src="/devjane.1967fdcd.png" alt="" class="logo logo--pm">
             </div>
             <button class="btn--hamburger" aria-label="Theme toggle">
                <span class="hamburger"></span>
             </button>
             <nav class="nav">
-               <ul class="nav__list">
+               <ul class="nav__list" role="list">
                   <li class="nav__item">
                      <a href="#home" class="nav__link">Home</a>
                   </li>
@@ -38,7 +39,7 @@
          </div>
       </header>
 
-      <main class="main">
+      <main class="main" id="main-content">
          <!-- INTRODUCTION -->
          <section class="intro" id="home">
             <div class="container-wrapper">
@@ -58,8 +59,8 @@
                <h2 class="section__title section__title-services">What I do</h2>
                <div class="services">
                   <div class="service">
-                     <h3>Design + Development</h3>
-                     <p class="explainer">
+                     <h3 class="service__title">Design + Development</h3>
+                     <p class="desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quaerat tempora assumenda odit error, ut, illo nulla
                         earum, voluptas a non accusantium vitae odio amet culpa
@@ -68,8 +69,8 @@
                   </div>
                   <!-- <!— / service —> -->
                   <div class="service">
-                     <h3>E-Commerce</h3>
-                     <p class="explainer">
+                     <h3 class="service__title">E-Commerce</h3>
+                     <p class="desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quaerat tempora assumenda odit error, ut, illo nulla
                         earum, voluptas a non accusantium vitae odio amet culpa
@@ -78,8 +79,8 @@
                   </div>
                   <!-- <!— / service —> -->
                   <div class="service">
-                     <h3>WordPress</h3>
-                     <p class="explainer">
+                     <h3 class="service__title">WordPress</h3>
+                     <p class="desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quaerat tempora assumenda odit error, ut, illo nulla
                         earum, voluptas a non accusantium vitae odio amet culpa
@@ -89,7 +90,7 @@
                   <!-- <!— / service —> -->
                </div>
                <!-- <!— / services —> -->
-               <a href="#work" class="btn">see my work</a>
+               <a href="#work" class="btn btn--work">see my work</a>
             </div>
          </section>
 
@@ -98,10 +99,27 @@
             <div class="container-wrapper">
                <div class="section">
                   <h2 class="section__title section__title-about">Who I am</h2>
-                  <p class="section__subtitle section__subtitle-about"></p>
+                  <p class="section__subtitle section__subtitle-about">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Commodi natus nostrum quis earum dignissimos ea eius
+                     quaerat dolor quibusdam deserunt, exercitationem vel
+                     molestias culpa iusto maiores quam, totam dicta sapiente.
+                  </p>
                   <div class="about-me__body">
-                     <p></p>
-                     <p></p>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi natus nostrum quis earum dignissimos ea eius
+                        quaerat dolor quibusdam deserunt, exercitationem vel
+                        molestias culpa iusto maiores quam, totam dicta
+                        sapiente.
+                     </p>
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Commodi natus nostrum quis earum dignissimos ea eius
+                        quaerat dolor quibusdam deserunt, exercitationem vel
+                        molestias culpa iusto maiores quam, totam dicta
+                        sapiente.
+                     </p>
                   </div>
                   <img src="/dev-jane-02.0388eece.jpg" alt="">
                </div>
@@ -141,7 +159,7 @@
                <section class="cta__body">
                   <h2 class="title--cta">Feel free to contact me here</h2>
                   <!-- translating arrow - L + R -->
-                  <button class="btn--cta">Contact me</button>
+                  <button class="btn btn--cta">Contact me</button>
                </section>
             </div>
          </div>
@@ -151,7 +169,7 @@
       <footer class="footer--pm">
          <div class="container-wrapper">
             <a href="mailto:josh.jamesonwallis@gmail.com" class="email">Josh.jamesonwallis@gmail.com</a>
-            <ul class="social-list">
+            <ul class="social-list" role="list">
                <li class="social-list__item"><a href="/">linkdln icon</a></li>
                <li class="social-list__item"><a href="/">Hired icon</a></li>
                <li class="social-list__item"><a href="/">Hackajob icon</a></li>
