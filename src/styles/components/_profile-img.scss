@@ -1,0 +1,9 @@
+@use 'abstracts' as *;
+
+.profile-img {
+   @include m(pm) {
+      border-radius: 5px;
+      margin-inline: auto;
+      //   kevin vid - overlays over img
+   }
+}

@@ -45,7 +45,7 @@
   --center: center;
   --gap: 2rem;
   --flow-space: 1.5rem;
-  --ct-padding-header: 5rem 0;
+  --ct-padding-header: 1.8rem 0;
   --ct-padding-intro: 5rem 0;
   --ct-padding-services: 5rem 0;
   --ct-padding-about: 5rem 0;
@@ -447,6 +447,16 @@ body {
 }
 .skip-to-content:hover, .skip-to-content:focus {
   transform: translate(-50%, 0);
+}
+
+.profile-img--pm {
+  border-radius: 5px;
+  margin-inline: auto;
+}
+
+.header--pm {
+  padding: var(--ct-padding-header);
+  outline: 2px solid white;
 }
 
 .container-wrapper {
