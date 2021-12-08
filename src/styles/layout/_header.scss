@@ -4,5 +4,6 @@
    @include m(pm) {
       padding: var(--ct-padding-header);
       outline: 2px solid white;
+      position: relative;
    }
 }

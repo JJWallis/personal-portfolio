@@ -1,0 +1,10 @@
+@use 'abstracts' as *;
+
+.hamburger {
+   @include m(btn) {
+      @include position(absolute, $z-index: 9998) {
+         top: 1.8rem;
+         right: 20px;
+      }
+   }
+}

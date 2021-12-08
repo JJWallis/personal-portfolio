@@ -1,0 +1,8 @@
+@use 'abstracts' as *;
+
+.logo {
+   @include m(pm) {
+      width: 150px;
+      margin-left: 20px;
+   }
+}

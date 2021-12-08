@@ -454,9 +454,22 @@ body {
   margin-inline: auto;
 }
 
+.logo--pm {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.hamburger--btn {
+  position: absolute;
+  z-index: 9998;
+  top: 1.8rem;
+  right: 20px;
+}
+
 .header--pm {
   padding: var(--ct-padding-header);
   outline: 2px solid white;
+  position: relative;
 }
 
 .container-wrapper {
