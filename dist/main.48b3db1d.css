@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
 :root {
+  --ff-pm: "Rubik", sans-serif;
+  --hover-transition: 0.3s linear;
   --clr-dark-blue-100: 226 43% 100%;
   --clr-dark-blue-200: 226 43% 90%;
   --clr-dark-blue-300: 226 43% 70%;
@@ -50,7 +52,6 @@
   --ct-padding-work: 5rem 0;
   --ct-padding-cta: 5rem 0;
   --ct-padding-footer: 5rem 0;
-  --ff-pm: "Rubik", sans-serif;
 }
 @media only screen and (min-width: 49.999em) {
   :root {
@@ -434,6 +435,18 @@ select {
 }
 body {
   font: var(--fs-100)/var(--lh-100) var(--ff-pm);
+}
+
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: transform var(--hover-transition);
+}
+.skip-to-content:hover, .skip-to-content:focus {
+  transform: translate(-50%, 0);
 }
 
 .container-wrapper {
