@@ -4,7 +4,17 @@
    & a {
       color: hsl(var(--clr-text-pale-blue));
       @include mq(max-width, tablet) {
+         display: block;
          color: hsl(var(--clr-pm-dark-blue));
+         &:hover {
+            color: hsl(var(--clr-text-blue));
+         }
       }
+      transition: color var(--hover-transition);
+   }
+
+   @include e(list) {
+      @include flexy($dir: column);
+      gap: 1rem;
    }
 }

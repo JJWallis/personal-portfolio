@@ -500,11 +500,21 @@ body {
 
 .nav a {
   color: hsl(var(--clr-text-pale-blue));
+  transition: color var(--hover-transition);
 }
 @media only screen and (max-width: 49.999em) {
   .nav a {
+    display: block;
     color: hsl(var(--clr-pm-dark-blue));
   }
+  .nav a:hover {
+    color: hsl(var(--clr-text-blue));
+  }
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .container-wrapper {
