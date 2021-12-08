@@ -1,11 +1,16 @@
 $layout: (
    mobile: (
-      center-left: center,
+      center-left-tablet: center,
+      center-left-desktop: center,
       center: center,
       gap: 2rem,
       flow-space: 1.5rem,
       ct-padding: 5rem 0,
    ),
-   tablet: (),
-   desktop: (),
+   tablet: (
+      center-left-tablet: left,
+   ),
+   desktop: (
+      center-left-desktop: left,
+   ),
 );

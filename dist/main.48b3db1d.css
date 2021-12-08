@@ -37,13 +37,25 @@
   --fw-medium: 500;
   --fw-regular: 400;
   --fw-light: 300;
-  --center-left: center;
+  --center-left-tablet: center;
+  --center-left-desktop: center;
   --center: center;
   --gap: 2rem;
   --flow-space: 1.5rem;
   --ct-padding: 5rem 0;
   --ff-pm: "Rubik", sans-serif;
 }
+@media only screen and (min-width: 49.999em) {
+  :root {
+    --center-left-tablet: left;
+  }
+}
+@media only screen and (min-width: 69.999em) {
+  :root {
+    --center-left-desktop: left;
+  }
+}
+
 .text-pm-dark-blue {
   color: hsl(var(--clr-pm-dark-blue));
 }
@@ -438,6 +450,18 @@ body {
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.text-center {
+  text-align: var(--center);
+}
+
+.text-center-tablet {
+  text-align: var(--center-left-tablet);
+}
+
+.text-center-desktop {
+  text-align: var(--center-left-desktop);
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

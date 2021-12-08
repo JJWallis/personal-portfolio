@@ -1,0 +1,13 @@
+@use 'abstracts' as *;
+
+.text-center {
+   text-align: var(--center);
+}
+
+.text-center-tablet {
+   text-align: var(--center-left-tablet);
+}
+
+.text-center-desktop {
+   text-align: var(--center-left-desktop);
+}
