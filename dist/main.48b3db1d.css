@@ -502,6 +502,9 @@ body {
   background-color: hsl(var(--clr-soft-orange));
 }
 
+.title--sd {
+  margin-bottom: 1.5rem;
+}
 .title--services {
   position: relative;
 }
@@ -513,7 +516,7 @@ body {
   height: 3px;
   position: absolute;
   background-color: white;
-  bottom: -25px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -575,6 +578,18 @@ body {
 
 .services {
   padding: var(--ct-padding-services);
+}
+.services__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 69.999em) {
+  .services__body {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .container-wrapper {

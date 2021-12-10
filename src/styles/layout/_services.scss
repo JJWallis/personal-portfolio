@@ -2,4 +2,13 @@
 
 .services {
    padding: var(--ct-padding-services);
+
+   @include e(body) {
+      @include flexy($dir: column);
+      gap: 2.5rem;
+      margin-top: 3rem;
+      @include mq(min-width, desktop) {
+         @include flexy($dir: row);
+      }
+   }
 }

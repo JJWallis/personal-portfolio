@@ -1,12 +1,16 @@
 @use 'abstracts' as *;
 
 .title {
+   @include m(sd) {
+      margin-bottom: 1.5rem;
+   }
+
    @include m(services) {
       position: relative;
       @include p-el(before, $width: 30%, $height: 3px) {
          @include position(absolute) {
             background-color: white;
-            bottom: -25px;
+            bottom: -20px;
             left: 50%;
             transform: translateX(-50%);
          }
