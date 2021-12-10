@@ -1,6 +1,15 @@
 @use 'abstracts' as *;
 
-.section {
-   @include e(title) {
+.title {
+   @include m(services) {
+      position: relative;
+      @include p-el(before, $width: 30%, $height: 3px) {
+         @include position(absolute) {
+            background-color: white;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+      }
    }
 }
