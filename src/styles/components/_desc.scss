@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.desc {
+   @include m(hero) {
+      max-width: 550px;
+   }
+}

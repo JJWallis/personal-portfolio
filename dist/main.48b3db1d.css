@@ -561,6 +561,10 @@ body {
   opacity: 0.7;
 }
 
+.desc--hero {
+  max-width: 550px;
+}
+
 .header--pm {
   padding: var(--ct-padding-header);
   position: relative;
