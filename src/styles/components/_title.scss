@@ -1,6 +1,10 @@
 @use 'abstracts' as *;
 
 .title {
+   @include m(pm) {
+      margin-bottom: 1rem;
+   }
+
    @include m(sd) {
       margin-bottom: 1.5rem;
    }

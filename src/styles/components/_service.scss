@@ -1,0 +1,10 @@
+@use 'abstracts' as *;
+
+.service {
+   @include flexy($dir: column, $align: center);
+   gap: 0.7rem;
+   & .desc {
+      width: 90%;
+      max-width: 600px;
+   }
+}
