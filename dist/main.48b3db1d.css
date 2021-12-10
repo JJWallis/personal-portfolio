@@ -472,7 +472,7 @@ body {
   position: relative;
 }
 .profile-img--pm {
-  margin: 1.5rem auto 1.3rem;
+  margin: 2.3rem auto 0;
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -602,6 +602,22 @@ body {
 
 .intro {
   padding: var(--ct-padding-intro);
+}
+.intro__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7rem;
+}
+@media only screen and (min-width: 49.999em) {
+  .intro__body {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+.intro__body > * {
+  flex: 1 100%;
 }
 
 .services {
