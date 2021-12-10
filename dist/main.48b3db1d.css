@@ -24,6 +24,8 @@
   --clr-light-red: 348 100% 68%;
   --clr-soft-blue: 195 74% 62%;
   --clr-light-orange: 15 100% 70%;
+  --clr-pure-black: 0 0% 0%;
+  --clr-pure-white: 0 0% 100%;
   --fs-hero-title: 2.3rem;
   --fs-500: 3.2rem;
   --fs-400: 3rem;
@@ -47,8 +49,8 @@
   --gap: 2rem;
   --flow-space: 1.5rem;
   --ct-padding-header: 1.8rem 0;
-  --ct-padding-intro: 5rem 0;
-  --ct-padding-services: 5rem 0;
+  --ct-padding-intro: 3rem 0;
+  --ct-padding-services: 3.5rem 0;
   --ct-padding-about: 5rem 0;
   --ct-padding-work: 5rem 0;
   --ct-padding-cta: 5rem 0;
@@ -165,6 +167,22 @@
 
 .bg-light-orange {
   background-color: hsl(var(--clr-light-orange));
+}
+
+.text-pure-black {
+  color: hsl(var(--clr-pure-black));
+}
+
+.bg-pure-black {
+  background-color: hsl(var(--clr-pure-black));
+}
+
+.text-pure-white {
+  color: hsl(var(--clr-pure-white));
+}
+
+.bg-pure-white {
+  background-color: hsl(var(--clr-pure-white));
 }
 
 .text-dark-blue-100 {
@@ -454,9 +472,9 @@ body {
   position: relative;
 }
 .profile-img--pm {
-  margin-inline: auto;
-  width: 400px;
-  height: 400px;
+  margin: 1.5rem auto 0;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   border: 3px solid black;
 }
@@ -480,6 +498,10 @@ body {
   }
 }
 
+.banner {
+  background-color: hsl(var(--clr-soft-orange));
+}
+
 .header--pm {
   padding: var(--ct-padding-header);
   position: relative;
@@ -495,7 +517,7 @@ body {
 
 @media only screen and (max-width: 49.999em) {
   .sidebar {
-    background-color: hsl(var(--clr-purple-blue));
+    background-color: hsl(var(--clr-soft-white));
     position: fixed;
     z-index: 9997;
     inset: 0 0 0 calc(100% - 300px);
@@ -529,6 +551,14 @@ body {
     display: flex;
     flex-direction: row;
   }
+}
+
+.intro {
+  padding: var(--ct-padding-intro);
+}
+
+.services {
+  padding: var(--ct-padding-services);
 }
 
 .container-wrapper {
