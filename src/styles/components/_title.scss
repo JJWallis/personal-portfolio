@@ -1,0 +1,6 @@
+@use 'abstracts' as *;
+
+.section {
+   @include e(title) {
+   }
+}

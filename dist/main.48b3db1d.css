@@ -502,6 +502,17 @@ body {
   background-color: hsl(var(--clr-soft-orange));
 }
 
+.line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10%;
+  height: 2px;
+  position: absolute;
+  z-index: 99;
+  background-color: var(--clr-pure-black);
+}
+
 .header--pm {
   padding: var(--ct-padding-header);
   position: relative;
