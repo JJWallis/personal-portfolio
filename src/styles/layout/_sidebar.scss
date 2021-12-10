@@ -8,7 +8,7 @@
          width: 300px;
          padding: 4rem 0 min(5rem, 15vh);
       }
-      //   transform: translateX(100%);
+      transform: translateX(100%);
       transition: transform var(--sidebar-transition);
    }
 }

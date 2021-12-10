@@ -1,9 +1,24 @@
 @use 'abstracts' as *;
 
 .profile-img {
+   @include m(ct) {
+      position: relative;
+      // @include p-el(before) {
+      //    @include position(absolute, $z-index: 100) {
+      //       width: 400px;
+      //       height: 400px;
+      //       inset: 0;
+      //       background-color: rgba(black, 0.2);
+      //       border-radius: 50%;
+      //    }
+      // }
+   }
+
    @include m(pm) {
-      border-radius: 5px;
       margin-inline: auto;
-      //   kevin vid - overlays over img
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      border: 3px solid black;
    }
 }
