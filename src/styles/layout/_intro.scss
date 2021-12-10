@@ -5,13 +5,20 @@
 
    @include e(body) {
       @include flexy($dir: column, $align: center);
+
       gap: 1.7rem;
       @include mq(min-width, tablet) {
          @include flexy($dir: row);
          gap: 1.5rem;
       }
+
+      @include mq(min-width, desktop) {
+         gap: 0;
+      }
+
       & > * {
          flex: 1 100%;
+         // outline: 1px solid black;
       }
    }
 }
