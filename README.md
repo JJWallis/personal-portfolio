@@ -17,7 +17,7 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -54,8 +54,6 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
 ## Author
@@ -65,20 +63,16 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
 ###### TODO
 
 HTML:
 
 CSS:
 
+Diff colour shades Sass map |
+
 JS:
 
 SVG animation - outline drawing | bounce effect | descendant class for button:hover to animate SVG | <g> | hmarbuegr animation - rotating both top line + middle ones fades out (opacity) - classic animation used for it to change into close cross icon
 
 Design basics - design note
-
-Testing, testing, testing
-
-Testing, testing, testing
