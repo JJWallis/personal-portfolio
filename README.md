@@ -79,7 +79,7 @@ Design basics - design note
 
 ---
 
-Linked list - multiple types (singular, doubly linked, circular linked + can be both double + circular at same time) | similar to arr as list of items - but instead of index values each item points to the next (doubly - points to next + previous item) | thats how you traverse it + know where you are | great for certian actions - inserting data is good (between two points + change their positions) but grabbing individual data is longer (vs specific index)
+Linked list - multiple types (singular, doubly linked, circular linked + can be both double + circular at same time) | each node within has a value (ex: number) + a pointer which instead of index values each item points to the next (doubly - points to next + previous item) | how you traverse it + know where you are | head - 1st node in a list + tail as last with no pointer | pros + cons - inserting + deleting data (change where nodes are pointing) but grabbing/searching individual data is longer (vs specific index or with index - each node only knows what's next to it)
 
 Binary tree - root node at top + every single node in tree can only have two children max | L + R directions/properties of each node pointing to child nodes (forms tree + contains childrens value) - how you traverse it | reversing/inverting + sorting -
 
