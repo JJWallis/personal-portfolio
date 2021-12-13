@@ -94,3 +94,9 @@ Graph - undirected + directed types of graph most common | diff - directed point
 Binary search - efficient + commonly used (regarding web dev) | started with an array (must be sorted) | go to middle of arr - to determine which direction to go to (to find desired value) | img ex - 13 greater than 11 so goes right + cuts the array in half with all remaining items in that direction (hence binary name) | repeats the logic until finds desired value | chosen center starting point - if odd amount of numbers chooses one of the two center values
 
 Depth first search (Top-Bottom in binary tree ex) - go as deep as possible first on one side (0-3) then up one level (3-1) + back to bottom again (1-4) + up to 0 again + back down to 6 (other side) etc | Breadth (opposite - deepest values last to be searched - L-R in binary tree ex) - go down one level (0-1) + searching all accross that horiztonal level (1 - 2) + then down to next one (2-3) + repeat for that horiztonal level (3-6) | performance differences not too noticable - but one more efficient that other based on problem
+
+Recursion - func which calls itself over + over until eventually exits out of itself + goes all way down the stack
+
+Big O Notation - calculating time + space complexity of algo | figuring out amount of times performing an operation - n times (squared or in constant time being once)
+
+Memoization -
