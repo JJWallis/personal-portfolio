@@ -78,3 +78,5 @@ SVG animation - outline drawing | bounce effect | descendant class for button:ho
 Design basics - design note
 
 ---
+
+Linked list - multiple types (singular, doubly linked, circular linked + can be both double + circular at same time) | similar to arr as list of items - but instead of index values each item points to the next (doubly - points to next + previous item) | thats how you traverse it + know where you are | great for certian actions - inserting data is good (between two points) but grabbing individual data is longer (vs specific index) |
