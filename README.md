@@ -83,4 +83,8 @@ Linked list - multiple types (singular, doubly linked, circular linked + can be 
 
 Binary tree - root node at top + every single node in tree can only have two children max | L + R directions/properties of each node pointing to child nodes (forms tree + contains childrens value) - how you traverse it | reversing/inverting + sorting -
 
-Stack + Queue - very similar to one another | Stacks - like a stack of books (most recently read/taken book goes on top/taken from the top of pile - at end of stack) | LIFO - last in first out | Queues - like a queue in real life,
+Stack + Queue - very similar to one another | Stacks - like a stack of books (most recently read/taken book goes on top/taken from the top of pile - at end of stack) | LIFO - last in first out (push() + pop()) | Queues - like a queue in real life (opposite) - first out is front of line + when join go to back of queue- FIFO (first in first out) | methods - dequeue() for first out + take off front of queue (pop()) + enqueue() for first in + adding to back
+
+Merge Sort algo - type of divide + conquer algo | large issue of sorting an array + divide into ever increasingly smaller subsets until bunch of small subsets of original values remain (middle line in img) | you then start conquering those subsets by combining them together over + over again until resulting in sorted arr | Quick Sort algo - few differences with performance (merge is quicker but requires more space - weigh both space + time complexity for importance)
+
+Dictionary/Map/Hash Table = taking a key + converting to a value in some storage method | JS - could use an obj or map to show this | key mapping to a value - what we've doing this whole time
