@@ -97,6 +97,8 @@ Depth first search (Top-Bottom in binary tree ex) - go as deep as possible first
 
 Memoization - fetching usecase (preventing bunch of server calls as cached result) | recursive func - cache the results so doesn't need to do much when calling itself with same inputs | outside of React - storing results in arr/var (conditionals to check each execution is value present there)
 
-Recursion - func which calls itself over + over until eventually exits out of itself + goes all way down the stack | fibinachi sequence - takes prev two nums + adds together to get new num in sequence | n param - desired number, returns 1 if 1-2 inputted to provide starting point for sequence | if not - returns closest prev number (desired number - 1) plus second closest prev number (desired number - 2) + adds togther (call parent func to do this) |
+Recursion - func which calls itself over + over until eventually exits out of itself by some exit condition after (1st thing to setup) | need to keep track of all prev recursive calls to prevent infinite loops | performing logic within func + calling it again at end if exit condition not found with dynamic value from logic just done (so you don't need to manually call it multiple times with hard-coded values) | when finishes executing the latest func call - recursively exits out of each one called (back up the call tree) until original func call reached |
+
+fibinachi sequence - takes prev two nums + adds together to get new num in sequence | n param - desired number, returns 1 if 1-2 inputted to provide starting point for sequence | if not - returns closest prev number (desired number - 1) plus second closest prev number (desired number - 2) + adds togther (call parent func to do this) |
 
 Big O Notation - calculating time + space complexity of algo | figuring out amount of times performing an operation - n times (squared or in constant time being once)
