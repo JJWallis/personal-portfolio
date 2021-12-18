@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.email {
+   &:hover {
+      text-decoration: underline;
+   }
+}

@@ -1,0 +1,9 @@
+@use 'abstracts' as *;
+
+.footer {
+   @include m(pm) {
+      @include e(body) {
+         @include flexy($dir: column, $align: center, $just: center);
+      }
+   }
+}
