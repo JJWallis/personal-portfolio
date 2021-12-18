@@ -45,7 +45,7 @@
   --ct-padding-about: 4rem 0;
   --ct-padding-work: 5rem 0;
   --ct-padding-cta: 5rem 0;
-  --ct-padding-footer: 5rem 0;
+  --ct-padding-footer: 3rem 0;
 }
 @media only screen and (min-width: 49.999em) {
   :root {
@@ -501,6 +501,11 @@ body {
   text-decoration: underline;
 }
 
+.social-list {
+  display: flex;
+  gap: 2rem;
+}
+
 .header--pm {
   padding: var(--ct-padding-header);
   position: relative;
@@ -627,6 +632,9 @@ body {
   }
 }
 
+.footer--pm {
+  padding: var(--ct-padding-footer);
+}
 .footer--pm__body {
   display: flex;
   flex-direction: column;

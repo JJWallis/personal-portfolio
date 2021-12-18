@@ -2,6 +2,7 @@
 
 .footer {
    @include m(pm) {
+      padding: var(--ct-padding-footer);
       @include e(body) {
          @include flexy($dir: column, $align: center, $just: center);
       }

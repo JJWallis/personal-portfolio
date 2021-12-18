@@ -1,1 +1,6 @@
 @use 'abstracts' as *;
+
+.social-list {
+   @include flexy();
+   gap: 2rem;
+}
