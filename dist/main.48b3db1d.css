@@ -691,12 +691,17 @@ body {
   .cta__body {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
   }
 }
 .cta__arrow {
   width: 30px;
+}
+@media only screen and (min-width: 49.999em) {
+  .cta__arrow {
+    transform: rotate(90deg);
+    margin-right: 2.2rem;
+  }
 }
 
 .container-wrapper {

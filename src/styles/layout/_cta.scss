@@ -7,12 +7,15 @@
       @include flexy($dir: column, $align: center);
       gap: 2rem;
       @include mq(min-width, tablet) {
-         @include flexy($dir: row, $just: center);
-         gap: 5rem;
+         @include flexy($dir: row, $just: space-between);
       }
    }
 
    @include e(arrow) {
       width: 30px;
+      @include mq(min-width, tablet) {
+         transform: rotate(90deg);
+         margin-right: 2.2rem;
+      }
    }
 }
