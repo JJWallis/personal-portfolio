@@ -70,6 +70,7 @@
 @media only screen and (min-width: 69.999em) {
   :root {
     --center-left-desktop: left;
+    --ct-padding-cta: 2rem 0;
   }
 }
 
@@ -547,22 +548,34 @@ body {
   max-width: 600px;
 }
 
-.btn--work {
+.btn {
   display: block;
   width: 50%;
   max-width: 300px;
   padding: 0.6em 2em 0.7em;
-  margin: 3.5rem auto 0;
+  margin-inline: auto;
   transition: opacity var(--hover-transition);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.btn--work:hover {
+.btn:hover {
   opacity: 0.7;
+}
+.btn--work {
+  margin-top: 3.5rem;
+}
+@media only screen and (min-width: 49.999em) {
+  .btn--cta {
+    margin-inline: unset;
+  }
 }
 
 .desc--hero {
   max-width: 550px;
+}
+
+.portfolio {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .header--pm {
@@ -659,6 +672,31 @@ body {
 
 .about {
   padding: var(--ct-padding-about);
+}
+
+.my-work {
+  padding: var(--ct-padding-work);
+}
+
+.cta {
+  padding: var(--ct-padding-cta);
+}
+.cta__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media only screen and (min-width: 49.999em) {
+  .cta__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+.cta__arrow {
+  width: 30px;
 }
 
 .container-wrapper {

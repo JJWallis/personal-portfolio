@@ -1,0 +1,18 @@
+@use 'abstracts' as *;
+
+.cta {
+   padding: var(--ct-padding-cta);
+
+   @include e(body) {
+      @include flexy($dir: column, $align: center);
+      gap: 2rem;
+      @include mq(min-width, tablet) {
+         @include flexy($dir: row, $just: center);
+         gap: 5rem;
+      }
+   }
+
+   @include e(arrow) {
+      width: 30px;
+   }
+}
