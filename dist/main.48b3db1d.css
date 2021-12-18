@@ -497,6 +497,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.email {
+  margin-bottom: 2rem;
+}
 .email:hover {
   text-decoration: underline;
 }
