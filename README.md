@@ -36,25 +36,27 @@
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+```scss
+$color-shades: (
+   pure-black: (
+      100: 0 0% 100%,
+      200: 0 0% 90%,
+      300: 0 0% 70%,
+      400: 0 0% 60%,
+      500: 0 0% 50%,
+      600: 0 0% 40%,
+      700: 0 0% 30%,
+      800: 0 0% 10%,
+      900: 0 0% 0%,
+   ),
+);
 ```
 
-```css
-.proud-of-this-css {
-   color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-   console.log('🎉')
-}
-```
+Diff colour shades Sass map
 
 ### Continued development
 
-Design
+Design fundamentals + planning out a base design before starting
 
 ### Useful resources
 
@@ -68,8 +70,6 @@ Design
 HTML:
 
 CSS:
-
-Diff colour shades Sass map |
 
 JS:
 
