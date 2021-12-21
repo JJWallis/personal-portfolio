@@ -54,14 +54,14 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
+Design
+
 ### Useful resources
 
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-## Acknowledgments
 
 ###### TODO
 
