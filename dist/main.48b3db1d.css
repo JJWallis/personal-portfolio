@@ -379,27 +379,6 @@ body {
   position: absolute;
   display: block;
 }
-.btn--pm--contact {
-  padding: 0.7rem 3.5rem 1rem;
-}
-.btn--pm--contact::before {
-  content: "";
-  position: absolute;
-  display: block;
-  display: none;
-}
-.btn--pm--contact::after {
-  content: "";
-  position: absolute;
-  display: block;
-  display: none;
-}
-.btn--pm--contact:hover::after {
-  content: "";
-  position: absolute;
-  display: block;
-  display: none;
-}
 .btn--sd {
   border: 1px solid hsl(var(--clr-pm-dark-grey));
 }
@@ -409,6 +388,13 @@ body {
 }
 .btn--sd--disabled {
   opacity: 0.3;
+}
+.btn--contact {
+  background-color: hsl(var(--clr-pm-dark-blue));
+  color: hsl(var(--clr-pure-white));
+}
+.btn--contact:hover {
+  background-color: hsl(var(--clr-pm-cyan));
 }
 
 .container-wrapper {

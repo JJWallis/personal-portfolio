@@ -30,20 +30,6 @@
             $content: url('../assets/icons/down-arrows-white.svg')
          );
       }
-      @include m(contact) {
-         padding: 0.7rem 3.5rem 1rem;
-         @include p-el(before) {
-            display: none;
-         }
-         @include p-el(after) {
-            display: none;
-         }
-         &:hover {
-            @include p-el(after) {
-               display: none;
-            }
-         }
-      }
       @include m(disabled) {
       }
    }
@@ -56,6 +42,14 @@
       }
       @include m(disabled) {
          opacity: 0.3;
+      }
+   }
+
+   @include m(contact) {
+      background-color: hsl(var(--clr-pm-dark-blue));
+      color: hsl(var(--clr-pure-white));
+      &:hover {
+         background-color: hsl(var(--clr-pm-cyan));
       }
    }
 }
