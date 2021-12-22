@@ -13,7 +13,7 @@ $type-scale: (
       line-height: (
          lh-500: 1,
          lh-400: 1.2,
-         lh-300: 1.6,
+         lh-300: 1.125,
          lh-200: 1.875,
          lh-100: 2,
       ),
@@ -23,6 +23,10 @@ $type-scale: (
          fw-medium: 500,
          fw-regular: 400,
          fw-light: 300,
+      ),
+      character-spacing: (
+         cs-500: 4.17px,
+         cs-300: -0.29px,
       ),
    ),
    tablet: (
