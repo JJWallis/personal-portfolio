@@ -1,22 +1,23 @@
 $type-scale: (
    mobile: (
       size: (
-         fs-hero-title: 2.3rem,
          fs-500: 3.2rem,
          fs-400: 3rem,
-         fs-300: 1.2rem,
-         fs-200: 1.1rem,
-         fs-100: 0.9rem,
+         fs-300-pm: 2rem,
+         fs-300-sd: 2.1333rem,
+         fs-200: 1rem,
+         // body - pm
+         fs-100: 0.9375rem,
+         // body - sd
       ),
       line-height: (
          lh-500: 1,
          lh-400: 1.2,
          lh-300: 1.6,
-         lh-200: 1.6,
-         lh-100: 1.6,
+         lh-200: 1.875,
+         lh-100: 2,
       ),
       weight: (
-         fw-extra-bold: 800,
          fw-bold: 700,
          fw-semi-bold: 600,
          fw-medium: 500,
@@ -25,10 +26,7 @@ $type-scale: (
       ),
    ),
    tablet: (
-      size: (
-         fs-500: 3.6rem,
-         fs-400: 3.3rem,
-      ),
+      size: (),
       line-height: (),
       weight: (),
    ),
