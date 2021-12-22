@@ -1,5 +1,7 @@
 @use 'abstracts' as *;
 
+// experiment with svg inside button/link vs after pseudo el (fill change)
+
 .btn {
    display: inline-block;
    padding: 0.3rem 2.4rem 0.5rem;
@@ -18,17 +20,17 @@
          inset: 0;
          background-color: rgba(black, 0.15);
       }
-      @include p-el(after, $content: url('../assets/icons/down-arrows.svg')) {
-         position: absolute;
-         inset: 50% 0 0 11.5px;
-         transform: translateY(-70%);
-      }
+      //   @include p-el(after, $content: url('../assets/icons/down-arrows.svg')) {
+      //      position: absolute;
+      //      inset: 50% 0 0 11.5px;
+      //      transform: translateY(-70%);
+      //   }
       &:hover {
          background-color: hsl(var(--clr-pm-cyan));
-         @include p-el(
-            after,
-            $content: url('../assets/icons/down-arrows-white.svg')
-         );
+         //  @include p-el(
+         //     after,
+         //     $content: url('../assets/icons/down-arrows-white.svg')
+         //  );
       }
       @include m(disabled) {
          background-color: hsl(var(--clr-sd-light-grey));

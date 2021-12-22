@@ -363,21 +363,8 @@ body {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.15);
 }
-.btn--pm::after {
-  content: url("/down-arrows.b142f03c.svg");
-  position: absolute;
-  display: block;
-  position: absolute;
-  inset: 50% 0 0 11.5px;
-  transform: translateY(-70%);
-}
 .btn--pm:hover {
   background-color: hsl(var(--clr-pm-cyan));
-}
-.btn--pm:hover::after {
-  content: url("/down-arrows-white.0c82977f.svg");
-  position: absolute;
-  display: block;
 }
 .btn--pm--disabled {
   background-color: hsl(var(--clr-sd-light-grey));
