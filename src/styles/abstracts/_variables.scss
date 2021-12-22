@@ -4,8 +4,9 @@
 @use 'colors' as *;
 
 :root {
-   // --ff-pm: 'Rubik', sans-serif;
-   // --hover-transition: 0.3s linear;
+   --ff-pm: 'Public Sans', sans-serif;
+   --ff-sd: 'Ibarra Real Nova', serif;
+   --hover-transition: 0.3s linear;
 
    @each $color, $map in $color-shades {
       @each $shade, $val in $map {
