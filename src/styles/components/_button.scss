@@ -7,6 +7,15 @@
       color var(--hover-transition);
 
    @include m(pm) {
+      position: relative;
+      background-color: hsl(var(--clr-pm-dark-blue));
+      color: hsl(var(--clr-pure-white));
+      @include p-el(before, $height: 100%, $width: 30px) {
+         position: absolute;
+         display: block;
+         inset: 0 100px 0 0;
+         background-color: rgba(black, 0.25);
+      }
       &:hover {
          background-color: hsl(var(--clr-pm-cyan));
       }
