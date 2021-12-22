@@ -1,24 +1,4 @@
 @use 'abstracts' as *;
 
 .btn {
-   display: block;
-   width: 50%;
-   max-width: 300px;
-   padding: 0.6em 2em 0.7em;
-   margin-inline: auto;
-   transition: opacity var(--hover-transition);
-   @include uc();
-   &:hover {
-      opacity: 0.7;
-   }
-
-   @include m(work) {
-      margin-top: 3.5rem;
-   }
-
-   @include m(cta) {
-      @include mq(min-width, tablet) {
-         margin-inline: unset;
-      }
-   }
 }

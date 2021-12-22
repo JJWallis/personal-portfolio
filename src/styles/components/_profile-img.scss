@@ -1,33 +1,6 @@
 @use 'abstracts' as *;
 
 .profile-img {
-   @include m(ct) {
-      position: relative;
-      @include mq(min-width, tablet) {
-         min-height: 400px;
-         margin-top: 1rem;
-      }
-      // @include p-el(before) {
-      //    @include position(absolute, $z-index: 100) {
-      //       width: 400px;
-      //       height: 400px;
-      //       inset: 0;
-      //       background-color: rgba(black, 0.2);
-      //       border-radius: 50%;
-      //    }
-      // }
-   }
-
    @include m(pm) {
-      margin: 2.3rem auto 0;
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      border: 3px solid black;
-      @include mq(min-width, tablet) {
-         @include position(absolute) {
-            left: 0;
-         }
-      }
    }
 }

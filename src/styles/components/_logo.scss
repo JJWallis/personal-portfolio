@@ -2,8 +2,5 @@
 
 .logo {
    @include m(pm) {
-      display: block;
-      width: 150px;
-      margin-left: 20px;
    }
 }
