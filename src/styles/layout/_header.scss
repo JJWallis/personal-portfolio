@@ -2,12 +2,5 @@
 
 .header {
    @include m(pm) {
-      padding: var(--ct-padding-header);
-      position: relative;
-
-      @include mq(min-width, tablet) {
-         @include flexy($align: center, $just: space-between);
-         padding-right: 20px;
-      }
    }
 }
