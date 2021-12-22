@@ -1,4 +1,10 @@
 :root {
+  --clr-pm-cyan: 167 36% 54%;
+  --clr-pm-dark-blue: 205 41% 21%;
+  --clr-pm-dark-grey: 245 10% 22%;
+  --clr-sd-ultra-light-grey: 0 0% 98%;
+  --clr-sd-light-grey: 240 2% 92%;
+  --clr-sd-bright-red: 0 90% 57%;
   --fs-hero-title: 2.3rem;
   --fs-500: 3.2rem;
   --fs-400: 3rem;
@@ -45,6 +51,54 @@
     --center-left-desktop: left;
     --ct-padding-cta: 2rem 0;
   }
+}
+
+.text-pm-cyan {
+  color: hsl(var(--clr-pm-cyan));
+}
+
+.bg-pm-cyan {
+  background-color: hsl(var(--clr-pm-cyan));
+}
+
+.text-pm-dark-blue {
+  color: hsl(var(--clr-pm-dark-blue));
+}
+
+.bg-pm-dark-blue {
+  background-color: hsl(var(--clr-pm-dark-blue));
+}
+
+.text-pm-dark-grey {
+  color: hsl(var(--clr-pm-dark-grey));
+}
+
+.bg-pm-dark-grey {
+  background-color: hsl(var(--clr-pm-dark-grey));
+}
+
+.text-sd-ultra-light-grey {
+  color: hsl(var(--clr-sd-ultra-light-grey));
+}
+
+.bg-sd-ultra-light-grey {
+  background-color: hsl(var(--clr-sd-ultra-light-grey));
+}
+
+.text-sd-light-grey {
+  color: hsl(var(--clr-sd-light-grey));
+}
+
+.bg-sd-light-grey {
+  background-color: hsl(var(--clr-sd-light-grey));
+}
+
+.text-sd-bright-red {
+  color: hsl(var(--clr-sd-bright-red));
+}
+
+.bg-sd-bright-red {
+  background-color: hsl(var(--clr-sd-bright-red));
 }
 
 .fs-hero-title {
