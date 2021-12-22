@@ -2,7 +2,7 @@
 :root {
   --ff-pm: "Public Sans", sans-serif;
   --ff-sd: "Ibarra Real Nova", serif;
-  --hover-transition: 0.3s ease-in-out;
+  --btn-hover-transition: 0.2s ease-in-out;
   --clr-pm-cyan: 167 36% 54%;
   --clr-pm-dark-blue: 205 41% 21%;
   --clr-pm-dark-grey: 245 10% 22%;
@@ -344,7 +344,7 @@ body {
   padding: 0.3rem 2.4rem 0.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: background-color var(--hover-transition), color var(--hover-transition);
+  transition: background-color var(--btn-hover-transition), color var(--btn-hover-transition);
 }
 .btn--pm {
   position: relative;
