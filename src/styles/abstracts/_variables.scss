@@ -4,9 +4,8 @@
 @use 'colors' as *;
 
 :root {
-   --ff-pm: 'Rubik', sans-serif;
-   --hover-transition: 0.3s linear;
-   --sidebar-transition: 0.4s linear;
+   // --ff-pm: 'Rubik', sans-serif;
+   // --hover-transition: 0.3s linear;
 
    @each $color, $map in $color-shades {
       @each $shade, $val in $map {
