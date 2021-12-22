@@ -20,20 +20,19 @@
          inset: 0;
          background-color: rgba(black, 0.15);
       }
-      //   @include p-el(after, $content: url('../assets/icons/down-arrows.svg')) {
-      //      position: absolute;
-      //      inset: 50% 0 0 11.5px;
-      //      transform: translateY(-70%);
-      //   }
       &:hover {
          background-color: hsl(var(--clr-pm-cyan));
          & .btn--pm__arrows--arrow {
-            stroke: white;
+            stroke: hsl(var(--clr-pure-white));
          }
-         //  @include p-el(
-         //     after,
-         //     $content: url('../assets/icons/down-arrows-white.svg')
-         //  );
+      }
+      @include e(arrows) {
+         position: absolute;
+         inset: 50% 0 0 11.5px;
+         transform: translateY(-50%);
+         @include m(arrow) {
+            transition: stroke var(--btn-hover-transition);
+         }
       }
       @include m(disabled) {
          background-color: hsl(var(--clr-sd-light-grey));
@@ -41,15 +40,9 @@
          @include p-el(before) {
             opacity: 0.1;
          }
-         //  @include p-el(
-         //     after,
-         //     $content: url('../assets/icons/down-arrows-white.svg')
-         //  );
-      }
-      @include e(arrows) {
-         position: absolute;
-         inset: 50% 0 0 11.5px;
-         transform: translateY(-50%);
+         & .btn--pm__arrows--arrow {
+            stroke: hsl(var(--clr-pure-white));
+         }
       }
    }
 

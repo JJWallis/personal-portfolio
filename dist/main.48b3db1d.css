@@ -367,7 +367,15 @@ body {
   background-color: hsl(var(--clr-pm-cyan));
 }
 .btn--pm:hover .btn--pm__arrows--arrow {
-  stroke: white;
+  stroke: hsl(var(--clr-pure-white));
+}
+.btn--pm__arrows {
+  position: absolute;
+  inset: 50% 0 0 11.5px;
+  transform: translateY(-50%);
+}
+.btn--pm__arrows--arrow {
+  transition: stroke var(--btn-hover-transition);
 }
 .btn--pm--disabled {
   background-color: hsl(var(--clr-sd-light-grey));
@@ -379,10 +387,8 @@ body {
   display: block;
   opacity: 0.1;
 }
-.btn--pm__arrows {
-  position: absolute;
-  inset: 50% 0 0 11.5px;
-  transform: translateY(-50%);
+.btn--pm--disabled .btn--pm__arrows--arrow {
+  stroke: hsl(var(--clr-pure-white));
 }
 .btn--sd {
   border: 1px solid hsl(var(--clr-pm-dark-grey));
