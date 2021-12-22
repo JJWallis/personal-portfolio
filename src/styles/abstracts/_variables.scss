@@ -6,7 +6,7 @@
 :root {
    --ff-pm: 'Public Sans', sans-serif;
    --ff-sd: 'Ibarra Real Nova', serif;
-   --hover-transition: 0.3s linear;
+   --hover-transition: 0.3s ease-in-out;
 
    @each $color, $map in $color-shades {
       @each $shade, $val in $map {

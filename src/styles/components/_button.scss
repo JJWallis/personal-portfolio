@@ -7,13 +7,16 @@
       color var(--hover-transition);
 
    @include m(pm) {
+      &:hover {
+         background-color: hsl(var(--clr-pm-cyan));
+      }
    }
 
    @include m(sd) {
       border: 1px solid hsl(var(--clr-pm-dark-grey));
       &:hover {
          background-color: hsl(var(--clr-pm-dark-grey));
-         color: hsl(var(--clr-sd-ultra-light-grey));
+         color: hsl(var(--clr-pure-white));
       }
    }
 }

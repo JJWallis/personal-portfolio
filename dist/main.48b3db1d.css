@@ -2,13 +2,14 @@
 :root {
   --ff-pm: "Public Sans", sans-serif;
   --ff-sd: "Ibarra Real Nova", serif;
-  --hover-transition: 0.3s linear;
+  --hover-transition: 0.3s ease-in-out;
   --clr-pm-cyan: 167 36% 54%;
   --clr-pm-dark-blue: 205 41% 21%;
   --clr-pm-dark-grey: 245 10% 22%;
   --clr-sd-ultra-light-grey: 0 0% 98%;
   --clr-sd-light-grey: 240 2% 92%;
   --clr-sd-bright-red: 0 90% 57%;
+  --clr-pure-white: 0 0% 100%;
   --fs-500-pm: 3.125rem;
   --fs-500-sd: 3.333rem;
   --fs-400-pm: 2.5rem;
@@ -101,6 +102,14 @@
 
 .bg-sd-bright-red {
   background-color: hsl(var(--clr-sd-bright-red));
+}
+
+.text-pure-white {
+  color: hsl(var(--clr-pure-white));
+}
+
+.bg-pure-white {
+  background-color: hsl(var(--clr-pure-white));
 }
 
 .fs-500-pm {
@@ -336,12 +345,15 @@ body {
   letter-spacing: 1px;
   transition: background-color var(--hover-transition), color var(--hover-transition);
 }
+.btn--pm:hover {
+  background-color: hsl(var(--clr-pm-cyan));
+}
 .btn--sd {
   border: 1px solid hsl(var(--clr-pm-dark-grey));
 }
 .btn--sd:hover {
   background-color: hsl(var(--clr-pm-dark-grey));
-  color: hsl(var(--clr-sd-ultra-light-grey));
+  color: hsl(var(--clr-pure-white));
 }
 
 .container-wrapper {
