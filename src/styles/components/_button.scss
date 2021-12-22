@@ -20,7 +20,7 @@
       }
       @include p-el(after, $content: url('../assets/icons/down-arrows.svg')) {
          position: absolute;
-         inset: 50% 0 0 12px;
+         inset: 50% 0 0 11.5px;
          transform: translateY(-70%);
       }
       &:hover {
@@ -30,6 +30,22 @@
             $content: url('../assets/icons/down-arrows-white.svg')
          );
       }
+      @include m(contact) {
+         padding: 0.7rem 3.5rem 1rem;
+         @include p-el(before) {
+            display: none;
+         }
+         @include p-el(after) {
+            display: none;
+         }
+         &:hover {
+            @include p-el(after) {
+               display: none;
+            }
+         }
+      }
+      @include m(disabled) {
+      }
    }
 
    @include m(sd) {
@@ -37,6 +53,9 @@
       &:hover {
          background-color: hsl(var(--clr-pm-dark-grey));
          color: hsl(var(--clr-pure-white));
+      }
+      @include m(disabled) {
+         opacity: 0.3;
       }
    }
 }
