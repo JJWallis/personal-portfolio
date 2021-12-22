@@ -413,14 +413,23 @@ body {
   background-color: hsl(var(--clr-sd-light-grey));
   padding: 1rem 1.2rem;
   width: 20%;
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   transition: border var(--btn-hover-transition);
 }
 .input::placeholder {
-  color: hsl(var(--clr-pm-dark-grey));
+  color: hsl(var(--clr-pm-dark-grey)/0.9);
 }
-.input:focus {
+.input:focus, .input:hover {
   border: 1.5px solid hsl(var(--clr-pm-cyan));
+}
+.input--error {
+  border: 1.5px solid hsl(var(--clr-sd-bright-red));
+}
+.input--error:focus, .input--error:hover {
+  border: 1.5px solid hsl(var(--clr-sd-bright-red));
+}
+.input--text-area {
+  padding-bottom: 2.5rem;
 }
 
 .container-wrapper {
