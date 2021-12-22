@@ -409,6 +409,20 @@ body {
   background-color: hsl(var(--clr-pm-cyan));
 }
 
+.input {
+  background-color: hsl(var(--clr-sd-light-grey));
+  padding: 1rem 1.2rem;
+  width: 20%;
+  border: 1px solid transparent;
+  transition: border var(--btn-hover-transition);
+}
+.input::placeholder {
+  color: hsl(var(--clr-pm-dark-grey));
+}
+.input:focus {
+  border: 1.5px solid hsl(var(--clr-pm-cyan));
+}
+
 .container-wrapper {
   width: 90%;
   max-width: 1000px;
