@@ -68,7 +68,7 @@ Diff colour shades Sass map
 
 ### Continued development
 
-Design fundamentals + planning out a base design before starting
+Design fundamentals - experiment more freely with designs provided
 
 ### Useful resources
 
