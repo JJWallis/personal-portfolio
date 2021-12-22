@@ -330,6 +330,20 @@ body {
   transform: translate(-50%, 0);
 }
 
+.btn {
+  padding: 1.1rem 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color var(--hover-transition), color var(--hover-transition);
+}
+.btn--sd {
+  border: 1px solid hsl(var(--clr-pm-dark-grey));
+}
+.btn--sd:hover {
+  background-color: hsl(var(--clr-pm-dark-grey));
+  color: hsl(var(--clr-sd-ultra-light-grey));
+}
+
 .container-wrapper {
   width: 90%;
   max-width: 1000px;
