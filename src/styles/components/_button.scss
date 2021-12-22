@@ -18,8 +18,17 @@
          inset: 0;
          background-color: rgba(black, 0.15);
       }
+      @include p-el(after, $content: url('../assets/icons/down-arrows.svg')) {
+         position: absolute;
+         inset: 50% 0 0 12px;
+         transform: translateY(-70%);
+      }
       &:hover {
          background-color: hsl(var(--clr-pm-cyan));
+         @include p-el(
+            after,
+            $content: url('../assets/icons/down-arrows-white.svg')
+         );
       }
    }
 
