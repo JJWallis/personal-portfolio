@@ -27,6 +27,9 @@
       //   }
       &:hover {
          background-color: hsl(var(--clr-pm-cyan));
+         & .btn--pm__arrows--arrow {
+            stroke: white;
+         }
          //  @include p-el(
          //     after,
          //     $content: url('../assets/icons/down-arrows-white.svg')
@@ -38,10 +41,15 @@
          @include p-el(before) {
             opacity: 0.1;
          }
-         @include p-el(
-            after,
-            $content: url('../assets/icons/down-arrows-white.svg')
-         );
+         //  @include p-el(
+         //     after,
+         //     $content: url('../assets/icons/down-arrows-white.svg')
+         //  );
+      }
+      @include e(arrows) {
+         position: absolute;
+         inset: 50% 0 0 11.5px;
+         transform: translateY(-50%);
       }
    }
 

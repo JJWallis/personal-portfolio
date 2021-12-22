@@ -366,6 +366,9 @@ body {
 .btn--pm:hover {
   background-color: hsl(var(--clr-pm-cyan));
 }
+.btn--pm:hover .btn--pm__arrows--arrow {
+  stroke: white;
+}
 .btn--pm--disabled {
   background-color: hsl(var(--clr-sd-light-grey));
   pointer-events: none;
@@ -376,10 +379,10 @@ body {
   display: block;
   opacity: 0.1;
 }
-.btn--pm--disabled::after {
-  content: url("/down-arrows-white.0c82977f.svg");
+.btn--pm__arrows {
   position: absolute;
-  display: block;
+  inset: 50% 0 0 11.5px;
+  transform: translateY(-50%);
 }
 .btn--sd {
   border: 1px solid hsl(var(--clr-pm-dark-grey));
