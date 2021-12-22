@@ -31,6 +31,15 @@
          );
       }
       @include m(disabled) {
+         background-color: hsl(var(--clr-sd-light-grey));
+         pointer-events: none;
+         @include p-el(before) {
+            opacity: 0.1;
+         }
+         @include p-el(
+            after,
+            $content: url('../assets/icons/down-arrows-white.svg')
+         );
       }
    }
 
@@ -42,6 +51,7 @@
       }
       @include m(disabled) {
          opacity: 0.3;
+         pointer-events: none;
       }
    }
 

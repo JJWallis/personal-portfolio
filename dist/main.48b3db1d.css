@@ -379,6 +379,21 @@ body {
   position: absolute;
   display: block;
 }
+.btn--pm--disabled {
+  background-color: hsl(var(--clr-sd-light-grey));
+  pointer-events: none;
+}
+.btn--pm--disabled::before {
+  content: "";
+  position: absolute;
+  display: block;
+  opacity: 0.1;
+}
+.btn--pm--disabled::after {
+  content: url("/down-arrows-white.0c82977f.svg");
+  position: absolute;
+  display: block;
+}
 .btn--sd {
   border: 1px solid hsl(var(--clr-pm-dark-grey));
 }
@@ -388,6 +403,7 @@ body {
 }
 .btn--sd--disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 .btn--contact {
   background-color: hsl(var(--clr-pm-dark-blue));
