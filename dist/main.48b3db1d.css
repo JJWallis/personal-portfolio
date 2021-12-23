@@ -471,12 +471,24 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.nav--pm a {
+  transition: color var(--btn-hover-transition);
+}
+.nav--pm a:hover {
+  color: hsl(var(--clr-pm-cyan));
+}
 @media only screen and (max-width: 49.999em) {
   .nav--pm a {
     display: block;
     width: 100%;
     padding: 1rem 6rem;
     color: hsl(var(--clr-sd-ultra-light-grey));
+  }
+  .nav--pm a:first-child {
+    padding-top: 2rem;
+  }
+  .nav--pm a:last-child {
+    padding-bottom: 2rem;
   }
 }
 
