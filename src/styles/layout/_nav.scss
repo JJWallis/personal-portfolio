@@ -27,7 +27,7 @@
    @include e(list) {
       @include mq(min-width, tablet) {
          @include flexy();
-         gap: var(--gap);
+         gap: 3rem;
       }
 
       @include m(sd) {

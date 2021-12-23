@@ -6,10 +6,12 @@
       @include e(body) {
          @include mq(max-width, tablet) {
             display: grid;
-            justify-items: center;
+            place-items: center;
             gap: 1rem;
          }
-         @include flexy($just: space-between, $align: center);
+         @include mq(min-width, tablet) {
+            @include flexy($just: space-between, $align: center);
+         }
       }
    }
 }

@@ -22,6 +22,9 @@
          padding: 2rem 0 3.5rem;
          & .desc {
             margin-bottom: 2rem;
+            @include mq(min-width, desktop) {
+               max-width: 320px;
+            }
          }
          @include mq(min-width, tablet) {
             display: grid;
