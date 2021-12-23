@@ -9,7 +9,7 @@
    @include m(ct) {
       &:hover .logo {
          fill: hsl(var(--clr-pm-cyan));
-         transform: rotate3d(0, 0, 1, 180deg);
+         transform: rotateX(180deg);
       }
    }
 

@@ -344,7 +344,7 @@ body {
 }
 .logo--ct:hover .logo {
   fill: hsl(var(--clr-pm-cyan));
-  transform: rotate3d(0, 0, 1, 180deg);
+  transform: rotateX(180deg);
 }
 .hamburger__button {
   width: 35px;
@@ -496,6 +496,12 @@ body {
 }
 .nav a:hover {
   color: hsl(var(--clr-pm-cyan));
+}
+@media only screen and (min-width: 49.999em) {
+  .nav__list {
+    display: flex;
+    gap: var(--gap);
+  }
 }
 @media only screen and (max-width: 49.999em) {
   .nav--pm a {

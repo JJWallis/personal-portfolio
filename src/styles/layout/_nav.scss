@@ -24,6 +24,13 @@
       }
    }
 
+   @include e(list) {
+      @include mq(min-width, tablet) {
+         @include flexy();
+         gap: var(--gap);
+      }
+   }
+
    @include m(pm) {
       & a {
          @include mq(max-width, tablet) {
