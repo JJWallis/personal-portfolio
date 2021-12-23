@@ -433,6 +433,7 @@ body {
 }
 
 .container-wrapper {
+  outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 90%;
   max-width: 1000px;
   margin-inline: auto;
