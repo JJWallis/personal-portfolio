@@ -29,6 +29,13 @@
          @include flexy();
          gap: var(--gap);
       }
+
+      @include m(sd) {
+         @include mq(max-width, tablet) {
+            @include flexy($dir: column, $align: center);
+            gap: 1.8rem;
+         }
+      }
    }
 
    @include m(pm) {

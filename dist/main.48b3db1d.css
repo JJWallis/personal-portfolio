@@ -356,12 +356,6 @@ body {
   fill: hsl(var(--clr-pm-cyan));
   transform: rotateX(180deg);
 }
-@media only screen and (max-width: 49.999em) {
-  .logo--sd {
-    margin-bottom: 2rem;
-  }
-}
-
 .hamburger__button {
   width: 35px;
   height: 35px;
@@ -531,6 +525,14 @@ body {
   .nav__list {
     display: flex;
     gap: var(--gap);
+  }
+}
+@media only screen and (max-width: 49.999em) {
+  .nav__list--sd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
   }
 }
 @media only screen and (max-width: 49.999em) {
