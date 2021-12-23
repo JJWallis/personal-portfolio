@@ -339,7 +339,7 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 0.3rem 2.4rem 0.5rem;
+  padding: 0.3rem 2.4rem 0.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background-color var(--btn-hover-transition), color var(--btn-hover-transition);
