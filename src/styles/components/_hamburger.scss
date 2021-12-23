@@ -1,6 +1,19 @@
 @use 'abstracts' as *;
 
 .hamburger {
+   @include e(button) {
+      width: 40px;
+      height: 40px;
+      @include bg-img(
+         '../assets/icons/hamburger.svg',
+         $position: center,
+         $size: 100%
+      );
+      &[aria-selected='true'] {
+         @include bg-img('../assets/icons/close.svg');
+      }
+   }
+
    @include mq(min-width, tablet) {
       display: none;
    }

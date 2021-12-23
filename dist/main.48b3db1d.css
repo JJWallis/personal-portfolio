@@ -344,6 +344,18 @@ body {
 .logo:hover {
   fill: hsl(var(--clr-pm-cyan));
 }
+.hamburger__button {
+  width: 40px;
+  height: 40px;
+  background-image: url("/hamburger.e6d5616a.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.hamburger__button[aria-selected=true] {
+  background-image: url("/close.c9a8b322.svg");
+  background-repeat: no-repeat;
+}
 @media only screen and (min-width: 49.999em) {
   .hamburger {
     display: none;
