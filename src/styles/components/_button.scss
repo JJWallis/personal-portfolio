@@ -18,12 +18,7 @@
          inset: 0;
          background-color: rgba(black, 0.15);
       }
-      &:hover {
-         background-color: hsl(var(--clr-pm-cyan));
-         & .btn--pm__arrows--arrow {
-            stroke: hsl(var(--clr-pure-white));
-         }
-      }
+
       @include e(arrows) {
          position: absolute;
          inset: 50% 0 0 11.5px;
@@ -32,12 +27,20 @@
             transition: stroke var(--btn-hover-transition);
          }
       }
+
       @include m(disabled) {
          background-color: hsl(var(--clr-sd-light-grey));
          pointer-events: none;
          @include p-el(before) {
             opacity: 0.1;
          }
+         & .btn--pm__arrows--arrow {
+            stroke: hsl(var(--clr-pure-white));
+         }
+      }
+
+      &:hover {
+         background-color: hsl(var(--clr-pm-cyan));
          & .btn--pm__arrows--arrow {
             stroke: hsl(var(--clr-pure-white));
          }
@@ -50,6 +53,7 @@
          background-color: hsl(var(--clr-pm-dark-grey));
          color: hsl(var(--clr-pure-white));
       }
+
       @include m(disabled) {
          opacity: 0.3;
          pointer-events: none;
