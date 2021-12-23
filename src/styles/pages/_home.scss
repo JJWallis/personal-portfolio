@@ -18,12 +18,23 @@
             }
          }
       }
+      @include mq(min-width, desktop) {
+         grid-template-columns: 450px auto;
+         gap: 8rem;
+         @include e(img) {
+            @include bg-img(
+               '../assets/images/homepage/desktop/image-homepage-profile.jpg',
+               $position: center,
+               $size: cover
+            );
+         }
+      }
       @include e(txt) {
          padding: 2rem 0 3.5rem;
          & .desc {
             margin-bottom: 2rem;
             @include mq(min-width, desktop) {
-               max-width: 320px;
+               max-width: 370px;
             }
          }
          @include mq(min-width, tablet) {

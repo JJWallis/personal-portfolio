@@ -717,6 +717,18 @@ body {
     display: none;
   }
 }
+@media only screen and (min-width: 63.999em) {
+  .about__body {
+    grid-template-columns: 450px auto;
+    gap: 8rem;
+  }
+  .about__body__img {
+    background-image: url("/image-homepage-profile.018cbc02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 .about__body__txt {
   padding: 2rem 0 3.5rem;
 }
@@ -725,7 +737,7 @@ body {
 }
 @media only screen and (min-width: 63.999em) {
   .about__body__txt .desc {
-    max-width: 320px;
+    max-width: 370px;
   }
 }
 @media only screen and (min-width: 45.999em) {
