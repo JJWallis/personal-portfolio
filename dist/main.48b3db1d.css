@@ -3,6 +3,7 @@
   --ff-pm: "Public Sans", sans-serif;
   --ff-sd: "Ibarra Real Nova", serif;
   --btn-hover-transition: 0.2s ease-in-out;
+  --thin-line: 0.5px solid hsl(var(--clr-pm-dark-grey) / 0.7);
   --clr-pm-cyan: 164.8 37.1% 48%;
   --clr-pm-dark-blue: 205 41% 21%;
   --clr-pm-dark-grey: 245 10% 22%;
@@ -530,7 +531,6 @@ body {
   grid-template-columns: 1fr;
 }
 .ct-wrapper {
-  outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;
   max-width: 1000px;
   margin-inline: auto;
@@ -580,6 +580,11 @@ body {
 
 .about__body {
   grid-template-columns: 1fr;
+}
+.about__body__txt {
+  padding: 2rem 0 3.5rem;
+  border-top: var(--thin-line);
+  border-bottom: var(--thin-line);
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

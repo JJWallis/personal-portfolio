@@ -7,6 +7,7 @@
    --ff-pm: 'Public Sans', sans-serif;
    --ff-sd: 'Ibarra Real Nova', serif;
    --btn-hover-transition: 0.2s ease-in-out;
+   --thin-line: 0.5px solid hsl(var(--clr-pm-dark-grey) / 0.7);
 
    @each $color, $map in $color-shades {
       @each $shade, $val in $map {
