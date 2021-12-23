@@ -649,6 +649,9 @@ body {
     width: 90%;
   }
 }
+.ct-wrapper--offset {
+  max-width: 1015px;
+}
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
@@ -718,7 +721,6 @@ body {
 }
 @media only screen and (min-width: 63.999em) {
   .about__body {
-    max-width: 1015px;
     grid-template-columns: 1fr auto;
     gap: 8rem;
   }

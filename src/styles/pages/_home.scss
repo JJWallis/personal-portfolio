@@ -21,7 +21,6 @@
       }
 
       @include mq(min-width, desktop) {
-         max-width: 1015px;
          grid-template-columns: 1fr auto;
          gap: 8rem;
          @include e(img) {

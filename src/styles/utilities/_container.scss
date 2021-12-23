@@ -5,7 +5,12 @@
    width: 85%;
    max-width: 1110px;
    margin-inline: auto;
+
    @include mq(min-width, tablet) {
       width: 90%;
+   }
+
+   @include m(offset) {
+      max-width: 1015px;
    }
 }
