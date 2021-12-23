@@ -2,4 +2,16 @@
 
 .social-list {
    @include flexy();
+   gap: 1rem;
+   @include e(item) {
+      & > a {
+         &:hover .social-icon {
+            fill: hsl(var(--clr-pm-cyan));
+         }
+      }
+   }
+}
+
+.social-icon {
+   transition: fill var(--btn-hover-transition);
 }

@@ -456,6 +456,14 @@ body {
 
 .social-list {
   display: flex;
+  gap: 1rem;
+}
+.social-list__item > a:hover .social-icon {
+  fill: hsl(var(--clr-pm-cyan));
+}
+
+.social-icon {
+  transition: fill var(--btn-hover-transition);
 }
 
 .input {
