@@ -15,5 +15,14 @@
       @include uc();
    }
    @include m(pm) {
+      & a {
+         @include mq(max-width, tablet) {
+            outline: 1px solid white;
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+         }
+      }
    }
 }

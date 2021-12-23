@@ -361,7 +361,7 @@ body {
   position: relative;
   padding-left: 4rem;
   background-color: hsl(var(--clr-pm-dark-blue));
-  color: hsl(var(--clr-pure-white));
+  color: hsl(var(--clr-sd-ultra-light-grey));
 }
 .btn--pm::before {
   content: "";
@@ -470,6 +470,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+@media only screen and (max-width: 49.999em) {
+  .nav--pm a {
+    outline: 1px solid white;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
 .ct-wrapper {
   outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;
