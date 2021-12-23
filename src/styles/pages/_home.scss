@@ -23,6 +23,11 @@
          & .desc {
             margin-bottom: 2rem;
          }
+         @include mq(min-width, tablet) {
+            display: grid;
+            align-content: center;
+            justify-items: left;
+         }
       }
    }
 }
