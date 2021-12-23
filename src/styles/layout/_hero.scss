@@ -1,0 +1,12 @@
+@use 'abstracts' as *;
+
+.hero {
+   @include m(home) {
+      margin: 1rem 0 7rem;
+      @include e(body) {
+         grid-template-columns: 1fr;
+         @include e(img) {
+         }
+      }
+   }
+}

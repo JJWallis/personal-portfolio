@@ -518,6 +518,12 @@ body {
   }
 }
 
+.hero--home {
+  margin: 1rem 0 7rem;
+}
+.hero--home__body {
+  grid-template-columns: 1fr;
+}
 .ct-wrapper {
   outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;
