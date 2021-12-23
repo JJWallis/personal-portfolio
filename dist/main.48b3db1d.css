@@ -474,12 +474,17 @@ body {
 
 @media only screen and (max-width: 49.999em) {
   .nav-pm-ct {
-    background-color: hsl(var(--clr-pm-dark-grey));
     position: absolute;
     z-index: 999;
     top: 50px;
     right: 0;
+    background-color: hsl(var(--clr-pm-dark-grey));
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in-out;
   }
+}
+.nav-pm-ct[data-visible=true] {
+  transform: translateX(0);
 }
 
 .nav a {

@@ -2,11 +2,16 @@
 
 .nav-pm-ct {
    @include mq(max-width, tablet) {
-      background-color: hsl(var(--clr-pm-dark-grey));
       @include position(absolute, $z-index: 999) {
          top: 50px;
          right: 0;
       }
+      background-color: hsl(var(--clr-pm-dark-grey));
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in-out;
+   }
+   &[data-visible='true'] {
+      transform: translateX(0);
    }
 }
 
