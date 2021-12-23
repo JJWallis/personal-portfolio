@@ -8,7 +8,7 @@
       }
       background-color: hsl(var(--clr-pm-dark-grey));
       transform: translateX(120%);
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s cubic-bezier(0.04, -0.03, 0.52, 1.49);
    }
    &[data-visible='true'] {
       transform: translateX(0);

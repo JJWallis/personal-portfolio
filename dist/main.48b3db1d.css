@@ -339,10 +339,12 @@ body {
 
 .logo {
   cursor: pointer;
-  transition: fill var(--btn-hover-transition);
+  transform-origin: center;
+  transition: fill var(--btn-hover-transition), transform var(--btn-hover-transition);
 }
-.logo:hover {
+.logo--ct:hover .logo {
   fill: hsl(var(--clr-pm-cyan));
+  transform: rotate3d(0, 0, 1, 180deg);
 }
 .hamburger__button {
   width: 40px;
@@ -480,7 +482,7 @@ body {
     right: 0;
     background-color: hsl(var(--clr-pm-dark-grey));
     transform: translateX(120%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.04, -0.03, 0.52, 1.49);
   }
 }
 .nav-pm-ct[data-visible=true] {

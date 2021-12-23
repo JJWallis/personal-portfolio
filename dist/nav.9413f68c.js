@@ -118,7 +118,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/nav.ts":[function(require,module,exports) {
+var hamburger = document.querySelector('#btn-hamburger');
+var nav = document.querySelector('.nav-pm-ct');
+hamburger.addEventListener('click', function () {
+  var isSelected = hamburger.getAttribute('aria-selected');
 
+  if (isSelected === 'false') {
+    hamburger.setAttribute('aria-selected', 'true');
+    nav.setAttribute('data-visible', 'true');
+  } else {
+    hamburger.setAttribute('aria-selected', 'false');
+    nav.setAttribute('data-visible', 'false');
+  }
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

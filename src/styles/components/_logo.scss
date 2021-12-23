@@ -2,9 +2,15 @@
 
 .logo {
    cursor: pointer;
-   transition: fill var(--btn-hover-transition);
-   &:hover {
-      fill: hsl(var(--clr-pm-cyan));
+   transform-origin: center;
+   transition: fill var(--btn-hover-transition),
+      transform var(--btn-hover-transition);
+
+   @include m(ct) {
+      &:hover .logo {
+         fill: hsl(var(--clr-pm-cyan));
+         transform: rotate3d(0, 0, 1, 180deg);
+      }
    }
 
    @include m(sd) {
