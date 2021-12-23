@@ -641,7 +641,7 @@ body {
 
 .ct-wrapper {
   width: 85%;
-  max-width: 1000px;
+  max-width: 1110px;
   margin-inline: auto;
 }
 @media only screen and (min-width: 45.999em) {
@@ -718,6 +718,7 @@ body {
 }
 @media only screen and (min-width: 63.999em) {
   .about__body {
+    max-width: 1015px;
     grid-template-columns: 1fr auto;
     gap: 8rem;
   }

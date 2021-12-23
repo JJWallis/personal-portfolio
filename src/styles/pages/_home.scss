@@ -3,6 +3,7 @@
 .about {
    @include e(body) {
       grid-template-columns: 1fr;
+
       @include mq(min-width, tablet) {
          grid-template-columns: 300px auto;
          grid-template-rows: minmax(630px, auto);
@@ -18,8 +19,9 @@
             }
          }
       }
+
       @include mq(min-width, desktop) {
-         // align-self: flex-start;
+         max-width: 1015px;
          grid-template-columns: 1fr auto;
          gap: 8rem;
          @include e(img) {
@@ -30,6 +32,7 @@
             );
          }
       }
+
       @include e(txt) {
          padding: 2rem 0 3.5rem;
          & .desc {
@@ -38,6 +41,7 @@
                max-width: 370px;
             }
          }
+
          @include mq(min-width, tablet) {
             display: grid;
             align-content: center;
