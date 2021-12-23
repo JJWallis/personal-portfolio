@@ -344,6 +344,12 @@ body {
 .logo:hover {
   fill: hsl(var(--clr-pm-cyan));
 }
+@media only screen and (min-width: 49.999em) {
+  .hamburger {
+    display: none;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 0.3rem 2.4rem 0.3rem;
@@ -460,6 +466,10 @@ body {
   }
 }
 
+.nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 .ct-wrapper {
   outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;

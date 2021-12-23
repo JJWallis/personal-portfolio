@@ -11,6 +11,9 @@
 }
 
 .nav {
+   & a {
+      @include uc();
+   }
    @include m(pm) {
    }
 }
