@@ -347,12 +347,12 @@ body {
   transform: rotate3d(0, 0, 1, 180deg);
 }
 .hamburger__button {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-image: url("/hamburger.e6d5616a.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 90%;
 }
 .hamburger__button[aria-selected=true] {
   background-image: url("/close.c9a8b322.svg");
