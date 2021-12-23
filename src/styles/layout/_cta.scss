@@ -14,11 +14,19 @@
             width: 70%;
          }
       }
-      grid-template-columns: auto 1fr auto;
-      & .title--sd {
-         max-width: 350px;
+      @include mq(min-width, tablet) {
+         grid-template-columns: auto 1fr auto;
+         align-items: center;
+         & .title--sd {
+            max-width: 350px;
+         }
       }
       @include e(line) {
+         @include mq(min-width, tablet) {
+            height: 1px;
+            width: 100%;
+            border-top: var(--thin-line);
+         }
       }
    }
 }

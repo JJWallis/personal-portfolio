@@ -561,9 +561,6 @@ body {
 .cta {
   margin-block: 7rem;
 }
-.cta__body {
-  grid-template-columns: auto 1fr auto;
-}
 @media only screen and (max-width: 45.999em) {
   .cta__body {
     grid-template-columns: 1fr;
@@ -576,9 +573,23 @@ body {
     width: 70%;
   }
 }
-.cta__body .title--sd {
-  max-width: 350px;
+@media only screen and (min-width: 45.999em) {
+  .cta__body {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
+  .cta__body .title--sd {
+    max-width: 350px;
+  }
 }
+@media only screen and (min-width: 45.999em) {
+  .cta__body__line {
+    height: 1px;
+    width: 100%;
+    border-top: var(--thin-line);
+  }
+}
+
 .footer--pm {
   padding-block: 3rem;
 }
