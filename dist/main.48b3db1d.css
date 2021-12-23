@@ -553,6 +553,15 @@ body {
     width: 70%;
   }
 }
+.footer--pm {
+  padding-block: 3rem;
+}
+@media only screen and (max-width: 49.999em) {
+  .footer--pm__body {
+    display: grid;
+    justify-items: center;
+  }
+}
 
 .hero--home {
   margin: 1rem 0 7rem;

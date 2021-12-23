@@ -2,5 +2,12 @@
 
 .footer {
    @include m(pm) {
+      padding-block: 3rem;
+      @include e(body) {
+         @include mq(max-width, tablet) {
+            display: grid;
+            justify-items: center;
+         }
+      }
    }
 }
