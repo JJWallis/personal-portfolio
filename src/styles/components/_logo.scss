@@ -13,6 +13,8 @@
    }
 
    @include m(sd) {
-      // margin-right: 1rem;
+      @include mq(max-width, tablet) {
+         margin-bottom: 2rem;
+      }
    }
 }

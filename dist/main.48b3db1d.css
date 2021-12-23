@@ -356,6 +356,12 @@ body {
   fill: hsl(var(--clr-pm-cyan));
   transform: rotateX(180deg);
 }
+@media only screen and (max-width: 49.999em) {
+  .logo--sd {
+    margin-bottom: 2rem;
+  }
+}
+
 .hamburger__button {
   width: 35px;
   height: 35px;
@@ -452,6 +458,10 @@ body {
 }
 .btn--contact:hover {
   background-color: hsl(var(--clr-pm-cyan));
+}
+
+.social-list {
+  display: flex;
 }
 
 .input {
@@ -560,6 +570,7 @@ body {
   .footer--pm__body {
     display: grid;
     justify-items: center;
+    gap: 1rem;
   }
 }
 
