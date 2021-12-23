@@ -3,6 +3,9 @@
 .header {
    @include m(pm) {
       padding-block: 3rem;
+      @include position(sticky, $z-index: 999) {
+         top: 0;
+      }
 
       @include e(body) {
          @include flexy($just: space-between, $align: center);

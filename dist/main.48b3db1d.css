@@ -445,6 +445,9 @@ body {
 
 .header--pm {
   padding-block: 3rem;
+  position: sticky;
+  z-index: 999;
+  top: 0;
 }
 .header--pm__body {
   display: flex;
@@ -470,18 +473,16 @@ body {
 .nav a {
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.nav--pm a {
   transition: color var(--btn-hover-transition);
 }
-.nav--pm a:hover {
+.nav a:hover {
   color: hsl(var(--clr-pm-cyan));
 }
 @media only screen and (max-width: 49.999em) {
   .nav--pm a {
     display: block;
     width: 100%;
-    padding: 1rem 6rem;
+    padding: 0.2rem 6rem;
     color: hsl(var(--clr-sd-ultra-light-grey));
   }
   .nav--pm a:first-child {

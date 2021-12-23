@@ -13,17 +13,18 @@
 .nav {
    & a {
       @include uc();
+      transition: color var(--btn-hover-transition);
+      &:hover {
+         color: hsl(var(--clr-pm-cyan));
+      }
    }
+
    @include m(pm) {
       & a {
-         transition: color var(--btn-hover-transition);
-         &:hover {
-            color: hsl(var(--clr-pm-cyan));
-         }
          @include mq(max-width, tablet) {
             display: block;
             width: 100%;
-            padding: 1rem 6rem;
+            padding: 0.2rem 6rem;
             color: hsl(var(--clr-sd-ultra-light-grey));
             &:first-child {
                padding-top: 2rem;
