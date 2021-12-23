@@ -541,6 +541,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.8rem;
+    margin-bottom: 1rem;
   }
 }
 @media only screen and (max-width: 49.999em) {
