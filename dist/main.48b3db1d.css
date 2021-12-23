@@ -578,4 +578,8 @@ body {
   font-family: var(--ff-sd);
 }
 
+.about__body {
+  grid-template-columns: 1fr;
+}
+
 /*# sourceMappingURL=/main.48b3db1d.css.map */

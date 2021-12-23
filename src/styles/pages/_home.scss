@@ -1,0 +1,12 @@
+@use 'abstracts' as *;
+
+.about {
+   @include e(body) {
+      grid-template-columns: 1fr;
+      @include e(img) {
+         //  & > img {
+         //     display: none;
+         //  }
+      }
+   }
+}
