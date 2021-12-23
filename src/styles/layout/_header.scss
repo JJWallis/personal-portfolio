@@ -6,6 +6,9 @@
 
       @include e(body) {
          @include flexy($just: space-between, $align: center);
+         @include mq(max-width, tablet) {
+            position: relative;
+         }
       }
    }
 }

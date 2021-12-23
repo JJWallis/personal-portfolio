@@ -3,6 +3,10 @@
 .nav-pm-ct {
    @include mq(max-width, tablet) {
       background-color: hsl(var(--clr-pm-dark-grey));
+      @include position(absolute) {
+         top: 50px;
+         right: 0;
+      }
    }
 }
 
