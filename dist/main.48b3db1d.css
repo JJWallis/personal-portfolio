@@ -614,6 +614,25 @@ body {
 .hero--home__body {
   grid-template-columns: 1fr;
 }
+@media only screen and (min-width: 45.999em) {
+  .hero--home__body {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero--home__body__img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+  .hero--home__body__txt {
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    align-self: flex-end;
+    padding: 3.5rem 2rem 0 0;
+  }
+  .hero--home__body__txt .title {
+    max-width: 500px;
+  }
+}
+
 .ct-wrapper {
   outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;
