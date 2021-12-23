@@ -7,6 +7,7 @@
   --clr-pm-cyan: 164.8 37.1% 48%;
   --clr-pm-dark-blue: 205 41% 21%;
   --clr-pm-dark-grey: 245 10% 22%;
+  --clr-pm-light-grey: 253.3 6% 29.6%;
   --clr-sd-ultra-light-grey: 0 0% 98%;
   --clr-sd-light-grey: 240 2% 92%;
   --clr-sd-bright-red: 0 90% 57%;
@@ -79,6 +80,14 @@
 
 .bg-pm-dark-grey {
   background-color: hsl(var(--clr-pm-dark-grey));
+}
+
+.text-pm-light-grey {
+  color: hsl(var(--clr-pm-light-grey));
+}
+
+.bg-pm-light-grey {
+  background-color: hsl(var(--clr-pm-light-grey));
 }
 
 .text-sd-ultra-light-grey {
@@ -531,6 +540,7 @@ body {
   grid-template-columns: 1fr;
 }
 .ct-wrapper {
+  outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;
   max-width: 1000px;
   margin-inline: auto;
@@ -578,13 +588,16 @@ body {
   font-family: var(--ff-sd);
 }
 
+.thin-lines {
+  border-top: var(--thin-line);
+  border-bottom: var(--thin-line);
+}
+
 .about__body {
   grid-template-columns: 1fr;
 }
 .about__body__txt {
   padding: 2rem 0 3.5rem;
-  border-top: var(--thin-line);
-  border-bottom: var(--thin-line);
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

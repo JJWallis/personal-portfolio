@@ -1,0 +1,6 @@
+@use 'abstracts' as *;
+
+.thin-lines {
+   border-top: var(--thin-line);
+   border-bottom: var(--thin-line);
+}
