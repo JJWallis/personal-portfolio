@@ -364,6 +364,11 @@ body {
   }
 }
 
+@media only screen and (max-width: 49.999em) {
+  .title {
+    margin-bottom: 2rem;
+  }
+}
 .btn {
   display: inline-block;
   padding: 0.3rem 2.4rem 0.3rem;
