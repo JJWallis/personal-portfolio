@@ -97,13 +97,21 @@
          <article class="hero--home">
             <div class="hero--home__body grid-ct ct-wrapper" role="grid">
                <div class="hero--home__body__img" role="gridcell">
-                  <img
-                     src="./assets/images/homepage/mobile/image-homepage-hero.jpg"
-                     alt="Picture of an iMac display showcasing a website I built for
+                  <picture>
+                     <source
+                        srcset="
+                           ./assets/images/homepage/desktop/image-homepage-hero.jpg
+                        "
+                        media="(min-width: 69.999em)"
+                     />
+                     <img
+                        src="./assets/images/homepage/mobile/image-homepage-hero.jpg"
+                        alt="Picture of an iMac display showcasing a website I built for
                   the virual technology company Manage, consisting of a
                   primary white colour scheme alongside orange and dark-blue
                   for the accent colours"
-                  />
+                     />
+                  </picture>
                </div>
                <div class="hero--home__body__txt" role="gridcell">
                   <h1

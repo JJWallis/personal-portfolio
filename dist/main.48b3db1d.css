@@ -614,17 +614,6 @@ body {
 .hero--home__body {
   grid-template-columns: 1fr;
 }
-@media only screen and (min-width: 45.999em) {
-  .hero--home__body__img {
-    background-image: url("/image-homepage-hero.7e08c37b.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .hero--home__body__img > img {
-    display: none;
-  }
-}
 .ct-wrapper {
   outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;

@@ -5,17 +5,17 @@
       margin: 1rem 0 7rem;
       @include e(body) {
          grid-template-columns: 1fr;
+         @include mq(min-width, tablet) {
+            // @include bg-img(
+            //    '../assets/images/homepage/desktop/image-homepage-hero.jpg',
+            //    $position: center,
+            //    $size: cover
+            // );
+            // & img {
+            //    display: none;
+            // }
+         }
          @include e(img) {
-            @include mq(min-width, tablet) {
-               @include bg-img(
-                  '../assets/images/homepage/desktop/image-homepage-hero.jpg',
-                  $position: center,
-                  $size: cover
-               );
-               & > img {
-                  display: none;
-               }
-            }
          }
          @include e(txt) {
          }
