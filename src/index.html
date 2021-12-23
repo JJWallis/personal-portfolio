@@ -9,7 +9,7 @@
       <script defer src="./scripts/nav.ts"></script>
    </head>
 
-   <body class="home">
+   <body class="home" data-visible="false">
       <a href="#main-content" class="skip-to-content btn btn--pm"
          >Skip to content</a
       >
@@ -30,10 +30,34 @@
                   />
                </svg>
             </div>
-            <!-- hamburger -->
-            <div class="nav">
-               <!-- nav -->
+            <!-- / logo -->
+            <div class="hamburger">
+               <button
+                  id="btn-hamburger"
+                  aria-controls="primary-navigation"
+                  aria-label="Mobile navigation toggle"
+                  data-visible="false"
+               >
+                  <img src="./assets/icons/hamburger.svg" alt="" />
+               </button>
             </div>
+            <!-- / hamburger -->
+            <div class="nav-pm-ct" data-visible="false">
+               <nav class="nav nav--pm">
+                  <ul id="primary-navigation" class="nav__list">
+                     <li class="nav__list__item">
+                        <a href="index.html">Home</a>
+                     </li>
+                     <li class="nav__list__item">
+                        <a href="portfolio.html">Portfolio</a>
+                     </li>
+                     <li class="nav__list__item">
+                        <a href="contact.html">Contact me</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- / nav -->
          </div>
       </header>
       <!-- / header -->

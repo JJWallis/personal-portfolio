@@ -9,7 +9,7 @@
       <script defer="" src="/nav.9413f68c.js"></script>
    <script src="/main.48b3db1d.js"></script></head>
 
-   <body class="home">
+   <body class="home" data-visible="false">
       <a href="#main-content" class="skip-to-content btn btn--pm">Skip to content</a>
       <header class="header--pm">
          <div class="header--pm__body container-wrapper">
@@ -18,10 +18,29 @@
                   <path class="logo--pm" fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"></path>
                </svg>
             </div>
-            <!-- hamburger -->
-            <div class="nav">
-               <!-- nav -->
+            <!-- / logo -->
+            <div class="hamburger">
+               <button id="btn-hamburger" aria-controls="primary-navigation" aria-label="Mobile navigation toggle" data-visible="false">
+                  <img src="/hamburger.e6d5616a.svg" alt="">
+               </button>
             </div>
+            <!-- / hamburger -->
+            <div class="nav-pm-ct" data-visible="false">
+               <nav class="nav nav--pm">
+                  <ul id="primary-navigation" class="nav__list">
+                     <li class="nav__list__item">
+                        <a href="/index.html">Home</a>
+                     </li>
+                     <li class="nav__list__item">
+                        <a href="/portfolio.html">Portfolio</a>
+                     </li>
+                     <li class="nav__list__item">
+                        <a href="/contact.html">Contact me</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <!-- / nav -->
          </div>
       </header>
       <!-- / header -->
