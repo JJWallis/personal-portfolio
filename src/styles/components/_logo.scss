@@ -3,8 +3,7 @@
 .logo {
    cursor: pointer;
    transform-origin: center;
-   transition: fill var(--btn-hover-transition),
-      transform var(--btn-hover-transition);
+   transition: fill var(--btn-hover-transition), transform 0.5s;
 
    @include m(ct) {
       &:hover .logo {
