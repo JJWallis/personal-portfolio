@@ -337,6 +337,13 @@ body {
   transform: translate(-50%, 0);
 }
 
+.logo {
+  cursor: pointer;
+  transition: fill var(--btn-hover-transition);
+}
+.logo:hover {
+  fill: hsl(var(--clr-pm-cyan));
+}
 .btn {
   display: inline-block;
   padding: 0.3rem 2.4rem 0.3rem;

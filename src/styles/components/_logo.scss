@@ -1,6 +1,11 @@
 @use 'abstracts' as *;
 
 .logo {
-   @include m(pm) {
+   cursor: pointer;
+   &:hover {
+      fill: hsl(var(--clr-pm-cyan));
+   }
+   transition: fill var(--btn-hover-transition);
+   @include m(sd) {
    }
 }
