@@ -18,7 +18,13 @@
                padding: 3.5rem 2rem 0 0;
                & .title {
                   max-width: 500px;
+                  margin-bottom: 3rem;
                }
+            }
+         }
+         @include e(txt) {
+            @include mq(min-width, desktop) {
+               grid-column: 1 / 3;
             }
          }
       }

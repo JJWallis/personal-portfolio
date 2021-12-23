@@ -51,7 +51,7 @@
     --center-left-tablet: left;
   }
 }
-@media only screen and (min-width: 69.999em) {
+@media only screen and (min-width: 63.999em) {
   :root {
     --center-left-desktop: left;
     --ct-padding-cta: 2rem 0;
@@ -630,6 +630,12 @@ body {
   }
   .hero--home__body__txt .title {
     max-width: 500px;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (min-width: 63.999em) {
+  .hero--home__body__txt {
+    grid-column: 1/3;
   }
 }
 
@@ -717,7 +723,7 @@ body {
 .about__body__txt .desc {
   margin-bottom: 2rem;
 }
-@media only screen and (min-width: 69.999em) {
+@media only screen and (min-width: 63.999em) {
   .about__body__txt .desc {
     max-width: 320px;
   }
