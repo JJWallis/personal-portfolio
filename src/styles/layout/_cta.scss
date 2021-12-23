@@ -1,4 +1,18 @@
 @use 'abstracts' as *;
 
 .cta {
+   margin-block: 7rem;
+   @include e(body) {
+      @include mq(max-width, tablet) {
+         grid-template-columns: 1fr;
+         &,
+         & > :first-child {
+            display: grid;
+            justify-items: center;
+         }
+         & .title--sd {
+            width: 70%;
+         }
+      }
+   }
 }

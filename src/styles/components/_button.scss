@@ -51,7 +51,7 @@
    }
 
    @include m(sd) {
-      border: 1px solid hsl(var(--clr-pm-dark-grey));
+      border: 1.5px solid hsl(var(--clr-pm-dark-grey));
       color: hsl(var(--clr-pm-dark-grey));
       font-weight: var(--fw-semi-bold);
       &:hover {
