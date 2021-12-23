@@ -13,13 +13,14 @@
                $position: center,
                $size: cover
             );
-            & > picture {
+            & > img {
                display: none;
             }
          }
       }
       @include mq(min-width, desktop) {
-         grid-template-columns: 450px auto;
+         // align-self: flex-start;
+         grid-template-columns: 1fr auto;
          gap: 8rem;
          @include e(img) {
             @include bg-img(

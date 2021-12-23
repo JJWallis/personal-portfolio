@@ -640,7 +640,6 @@ body {
 }
 
 .ct-wrapper {
-  outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 85%;
   max-width: 1000px;
   margin-inline: auto;
@@ -713,13 +712,13 @@ body {
     background-position: center;
     background-size: cover;
   }
-  .about__body__img > picture {
+  .about__body__img > img {
     display: none;
   }
 }
 @media only screen and (min-width: 63.999em) {
   .about__body {
-    grid-template-columns: 450px auto;
+    grid-template-columns: 1fr auto;
     gap: 8rem;
   }
   .about__body__img {
