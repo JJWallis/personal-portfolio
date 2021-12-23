@@ -3,6 +3,10 @@
 .about {
    @include e(body) {
       grid-template-columns: 1fr;
+      @include mq(min-width, tablet) {
+         grid-template-columns: repeat(2, auto);
+         gap: 4rem;
+      }
       @include e(img) {
          //  & > img {
          //     display: none;

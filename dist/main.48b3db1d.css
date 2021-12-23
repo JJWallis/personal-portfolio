@@ -46,7 +46,7 @@
   --ct-padding-cta: 5rem 0;
   --ct-padding-footer: 3rem 0;
 }
-@media only screen and (min-width: 49.999em) {
+@media only screen and (min-width: 43.999em) {
   :root {
     --center-left-tablet: left;
   }
@@ -368,16 +368,14 @@ body {
   background-image: url("/close.c9a8b322.svg");
   background-repeat: no-repeat;
 }
-@media only screen and (min-width: 49.999em) {
+@media only screen and (min-width: 43.999em) {
   .hamburger {
     display: none;
   }
 }
 
-@media only screen and (max-width: 49.999em) {
-  .title {
-    margin-bottom: 2rem;
-  }
+.title {
+  margin-bottom: 2rem;
 }
 .btn {
   display: inline-block;
@@ -501,13 +499,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 49.999em) {
+@media only screen and (max-width: 43.999em) {
   .header--pm__body {
     position: relative;
   }
 }
 
-@media only screen and (max-width: 49.999em) {
+@media only screen and (max-width: 43.999em) {
   .nav-pm-ct {
     position: absolute;
     z-index: 999;
@@ -530,13 +528,13 @@ body {
 .nav a:hover {
   color: hsl(var(--clr-pm-cyan));
 }
-@media only screen and (min-width: 49.999em) {
+@media only screen and (min-width: 43.999em) {
   .nav__list {
     display: flex;
     gap: var(--gap);
   }
 }
-@media only screen and (max-width: 49.999em) {
+@media only screen and (max-width: 43.999em) {
   .nav__list--sd {
     display: flex;
     flex-direction: column;
@@ -545,7 +543,7 @@ body {
     margin-bottom: 1rem;
   }
 }
-@media only screen and (max-width: 49.999em) {
+@media only screen and (max-width: 43.999em) {
   .nav--pm a {
     display: block;
     width: 100%;
@@ -563,7 +561,7 @@ body {
 .cta {
   margin-block: 7rem;
 }
-@media only screen and (max-width: 49.999em) {
+@media only screen and (max-width: 43.999em) {
   .cta__body {
     grid-template-columns: 1fr;
   }
@@ -578,7 +576,7 @@ body {
 .footer--pm {
   padding-block: 3rem;
 }
-@media only screen and (max-width: 49.999em) {
+@media only screen and (max-width: 43.999em) {
   .footer--pm__body {
     display: grid;
     justify-items: center;
@@ -598,7 +596,7 @@ body {
   max-width: 1000px;
   margin-inline: auto;
 }
-@media only screen and (min-width: 49.999em) {
+@media only screen and (min-width: 43.999em) {
   .ct-wrapper {
     width: 90%;
   }
@@ -653,6 +651,12 @@ body {
 
 .about__body {
   grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 43.999em) {
+  .about__body {
+    grid-template-columns: repeat(2, auto);
+    gap: 4rem;
+  }
 }
 .about__body__txt {
   padding: 2rem 0 3.5rem;
