@@ -1,6 +1,6 @@
 @use 'abstracts' as *;
 
-.grid-container {
+.grid-ct {
    display: grid;
    gap: var(--gap, 2rem);
 }

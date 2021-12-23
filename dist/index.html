@@ -12,7 +12,7 @@
    <body class="home" data-visible="false">
       <a href="#main-content" class="skip-to-content btn btn--pm">Skip to content</a>
       <header class="header--pm">
-         <div class="header--pm__body container-wrapper">
+         <div class="header--pm__body ct-wrapper">
             <div>
                <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="61" height="32">
                   <path class="logo--pm" fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"></path>
@@ -47,7 +47,12 @@
 
       <main id="main-content" class="main">
          <article class="hero hero--pm">
-            <div class="grid-container hero__grid-container container-wrapper"></div>
+            <div class="grid-ct hero__grid-ct ct-wrapper" role="grid">
+               <div class="hero__grid-ct--img" role="gridcell">
+                  <p class="sr-only">DESCRIBE BG_IMG</p>
+               </div>
+               <div class="hero__grid-ct--txt" role="gridcell"></div>
+            </div>
          </article>
          <!-- / hero -->
       </main>

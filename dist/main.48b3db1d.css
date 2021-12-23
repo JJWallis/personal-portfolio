@@ -430,7 +430,7 @@ body {
   padding-bottom: 2.5rem;
 }
 
-.container-wrapper {
+.ct-wrapper {
   outline: 1px solid hsl(var(--clr-pm-dark-grey));
   width: 90%;
   max-width: 1000px;
@@ -453,7 +453,7 @@ body {
   border: 0;
 }
 
-.grid-container {
+.grid-ct {
   display: grid;
   gap: var(--gap, 2rem);
 }
