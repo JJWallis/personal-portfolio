@@ -3,7 +3,7 @@
 .nav-pm-ct {
    @include mq(max-width, tablet) {
       background-color: hsl(var(--clr-pm-dark-grey));
-      @include position(absolute) {
+      @include position(absolute, $z-index: 999) {
          top: 50px;
          right: 0;
       }
@@ -17,10 +17,10 @@
    @include m(pm) {
       & a {
          @include mq(max-width, tablet) {
-            outline: 1px solid white;
             display: block;
             width: 100%;
-            padding: 1rem;
+            padding: 1rem 6rem;
+            color: hsl(var(--clr-sd-ultra-light-grey));
             text-align: center;
          }
       }
