@@ -4,13 +4,19 @@
    @include e(body) {
       grid-template-columns: 1fr;
       @include mq(min-width, tablet) {
-         grid-template-columns: repeat(2, auto);
+         grid-template-columns: 300px auto;
+         grid-template-rows: minmax(630px, auto);
          gap: 4rem;
-      }
-      @include e(img) {
-         //  & > img {
-         //     display: none;
-         //  }
+         @include e(img) {
+            @include bg-img(
+               '../assets/images/homepage/tablet/image-homepage-profile.jpg',
+               $position: center,
+               $size: cover
+            );
+            & > img {
+               display: none;
+            }
+         }
       }
       @include e(txt) {
          padding: 2rem 0 3.5rem;
