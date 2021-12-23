@@ -456,6 +456,7 @@ body {
 
 .social-list {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 .social-list__item > a:hover .social-icon {
@@ -596,6 +597,11 @@ body {
   width: 85%;
   max-width: 1000px;
   margin-inline: auto;
+}
+@media only screen and (min-width: 49.999em) {
+  .ct-wrapper {
+    width: 90%;
+  }
 }
 
 .flow > *:where(:not(:first-child)) {

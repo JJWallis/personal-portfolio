@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .social-list {
-   @include flexy();
+   @include flexy($align: center);
    gap: 1rem;
    @include e(item) {
       & > a {
