@@ -713,7 +713,7 @@ body {
     background-position: center;
     background-size: cover;
   }
-  .about__body__img > img {
+  .about__body__img > picture {
     display: none;
   }
 }
