@@ -21,7 +21,7 @@
       }
 
       @include mq(min-width, desktop) {
-         grid-template-columns: 1fr auto;
+         grid-template-columns: minmax(500px, 1fr) auto;
          gap: 8rem;
          @include e(img) {
             @include bg-img(
@@ -34,18 +34,26 @@
 
       @include e(txt) {
          padding: 2rem 0 3.5rem;
+         @include mq(min-width, tablet) {
+            display: grid;
+            align-content: center;
+            justify-items: left;
+         }
+
          & .desc {
             margin-bottom: 2rem;
             @include mq(min-width, desktop) {
                max-width: 370px;
             }
          }
-
-         @include mq(min-width, tablet) {
-            display: grid;
-            align-content: center;
-            justify-items: left;
-         }
       }
    }
 }
+
+// .ct-wrapper--offset-parent {
+//    @include mq(min-width, desktop) {
+//       display: grid;
+//       justify-items: right;
+//    }
+// }
+// only needs to happen for ones pinned to the right?
