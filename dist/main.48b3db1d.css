@@ -779,11 +779,15 @@ body {
 @media only screen and (min-width: 45.999em) {
   .project {
     gap: var(--gap-offset);
-    grid-template-columns: repeat(2, 1fr);
   }
   .project__img {
     display: grid;
     place-items: center;
+  }
+}
+@media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
+  .project {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-width: 45.999em) {
@@ -796,7 +800,6 @@ body {
 }
 @media only screen and (min-width: 63.999em) {
   .project__txt .desc {
-    width: 85%;
     margin-bottom: 2rem;
   }
 }

@@ -9,11 +9,14 @@
 .project {
    @include mq(min-width, tablet) {
       gap: var(--gap-offset);
-      grid-template-columns: repeat(2, 1fr);
       @include e(img) {
          display: grid;
          place-items: center;
       }
+   }
+
+   @include mqs(min-width, tablet, max-width, desktop) {
+      grid-template-columns: repeat(2, 1fr);
    }
 
    @include e(txt) {
@@ -25,7 +28,6 @@
       }
       @include mq(min-width, desktop) {
          & .desc {
-            width: 85%;
             margin-bottom: 2rem;
          }
       }

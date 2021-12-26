@@ -20,7 +20,6 @@
    }
 
    @include mq(min-width, desktop) {
-      // if bg img for portfolio + col lengths:
       grid-template-columns: minmax(500px, 1fr) auto;
    }
 
