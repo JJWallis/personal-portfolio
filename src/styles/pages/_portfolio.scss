@@ -1,11 +1,5 @@
 @use 'abstracts' as *;
 
-.projects {
-   @include mq(min-width, tablet) {
-      margin-top: 2rem;
-   }
-}
-
 .project {
    @include mq(min-width, tablet) {
       gap: var(--gap-offset);

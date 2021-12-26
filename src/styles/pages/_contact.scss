@@ -14,11 +14,15 @@
    @include e(body) {
       & .desc {
          margin-bottom: 1.5rem;
+         @include mq(min-width, tablet) {
+            margin-bottom: 3.5rem;
+         }
       }
    }
 }
 
 .contact-me {
+   margin-bottom: 4rem;
    @include e(title) {
    }
 

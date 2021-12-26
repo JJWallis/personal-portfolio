@@ -525,6 +525,11 @@ body {
   z-index: 999;
   top: 0;
 }
+@media only screen and (min-width: 45.999em) {
+  .header--pm {
+    padding-block: 5rem;
+  }
+}
 .header--pm__body {
   display: flex;
   justify-content: space-between;
@@ -786,12 +791,6 @@ body {
 }
 
 @media only screen and (min-width: 45.999em) {
-  .projects {
-    margin-top: 2rem;
-  }
-}
-
-@media only screen and (min-width: 45.999em) {
   .project {
     gap: var(--gap-offset);
   }
@@ -841,6 +840,15 @@ body {
 
 .get-in-touch__body .desc {
   margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 45.999em) {
+  .get-in-touch__body .desc {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.contact-me {
+  margin-bottom: 4rem;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

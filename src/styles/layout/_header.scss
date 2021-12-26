@@ -6,6 +6,9 @@
       @include position(sticky, $z-index: 999) {
          top: 0;
       }
+      @include mq(min-width, tablet) {
+         padding-block: 5rem;
+      }
 
       @include e(body) {
          @include flexy($just: space-between, $align: center);
