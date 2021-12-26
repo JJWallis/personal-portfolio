@@ -7,7 +7,9 @@
    }
 
    //   @include mq(min-width, tablet) {
+   //    @include e(img) {
    //  if bg img for portfolio - include position + size
+   //    }
    //   }
 
    @include mq(min-width, desktop) {

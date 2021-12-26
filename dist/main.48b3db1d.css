@@ -785,6 +785,7 @@ body {
 @media only screen and (min-width: 63.999em) {
   .about__body__txt .desc {
     max-width: 370px;
+    margin-bottom: 3rem;
   }
 }
 
