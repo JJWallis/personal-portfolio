@@ -488,6 +488,7 @@ body {
 }
 .input--text-area {
   padding-bottom: 2.5rem;
+  resize: none;
 }
 
 @media only screen and (max-width: 45.999em) {
@@ -669,6 +670,10 @@ body {
   }
 }
 
+.fieldset {
+  --flow-space: 3rem;
+}
+
 .ct-wrapper {
   width: 85%;
   max-width: 1110px;
@@ -825,8 +830,13 @@ body {
   }
 }
 
-.fieldset {
-  --flow-space: 3rem;
+.grid-ct--contact {
+  padding: 1.5rem 0 1.7rem;
+  --gap: 0rem;
+}
+
+.get-in-touch__body .desc {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

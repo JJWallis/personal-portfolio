@@ -60,7 +60,7 @@
       <!-- / header -->
 
       <main id="main-content" class="main">
-         <section class="get-in-touch grid-ct ct-wrapper thin-lines" role="grid">
+         <section class="get-in-touch grid-ct--contact grid-ct ct-wrapper thin-lines" role="grid">
             <div class="get-in-touch__title" role="gridcell">
                <h1 class="
                      title title--pm
@@ -75,7 +75,7 @@
                </h1>
             </div>
             <div class="get-in-touch__body" role="gridcell">
-               <p>
+               <p class="desc">
                   I'd love to hear about what you're working on and how I could
                   help. I'm currently looking for a new role and am open to a
                   wide range of opportunities. My preference would be to find a
@@ -110,10 +110,10 @@
          </section>
          <!-- / get-in-touch -->
 
-         <section class="contact-me grid-ct ct-wrapper" role="grid">
+         <section class="contact-me grid-ct--contact grid-ct ct-wrapper" role="grid">
             <div class="contact-me__title" role="gridcell">
                <h2 class="
-                     title title--pm
+                     title
                      ff-ibarra
                      fs-500-pm
                      lh-500
@@ -141,6 +141,9 @@
                         <textarea id="input-message" class="input input--text-area" placeholder="How can I help?"></textarea>
                      </div>
                   </fieldset>
+                  <button id="btn-submit" class="btn btn--contact" type="submit">
+                     Send message
+                  </button>
                </form>
             </div>
          </section>

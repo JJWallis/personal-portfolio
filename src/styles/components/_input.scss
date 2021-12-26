@@ -22,5 +22,6 @@
    }
    @include m(text-area) {
       padding-bottom: 2.5rem;
+      resize: none;
    }
 }

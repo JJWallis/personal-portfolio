@@ -1,5 +1,19 @@
 @use 'abstracts' as *;
 
-.fieldset {
-   --flow-space: 3rem;
+.grid-ct {
+   @include m(contact) {
+      padding: 1.5rem 0 1.7rem;
+      --gap: 0rem;
+   }
+}
+
+.get-in-touch {
+   @include e(title) {
+   }
+
+   @include e(body) {
+      & .desc {
+         margin-bottom: 1.5rem;
+      }
+   }
 }
