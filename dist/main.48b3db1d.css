@@ -504,18 +504,16 @@ body {
     background-position: center;
     background-size: cover;
   }
-}
-@media only screen and (min-width: 63.999em) {
-  .grid-ct-offset {
-    grid-template-columns: minmax(500px, 1fr) auto;
-  }
-}
-@media only screen and (min-width: 45.999em) {
   .grid-ct-offset__txt {
     padding: 2rem 0 3.5rem;
     display: grid;
     align-content: center;
     justify-items: left;
+  }
+}
+@media only screen and (min-width: 63.999em) {
+  .grid-ct-offset {
+    grid-template-columns: minmax(500px, 1fr) auto;
   }
 }
 @media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
@@ -771,15 +769,10 @@ body {
 .about__body__txt {
   padding: 2rem 0 3.5rem;
 }
-@media only screen and (min-width: 45.999em) {
-  .about__body__txt {
-    display: grid;
-    align-content: center;
-    justify-items: left;
+@media only screen and (max-width: 45.999em) {
+  .about__body__txt .desc {
+    margin-bottom: 2rem;
   }
-}
-.about__body__txt .desc {
-  margin-bottom: 2rem;
 }
 @media only screen and (min-width: 63.999em) {
   .about__body__txt .desc {

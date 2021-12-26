@@ -8,7 +8,6 @@
             @include bg-img(
                '../assets/images/homepage/tablet/image-homepage-profile.jpg'
             );
-
             & > img {
                display: none;
             }
@@ -29,17 +28,11 @@
       }
 
       @include e(txt) {
-         // padding top + bottom (mobile only)
          padding: 2rem 0 3.5rem;
-         @include mq(min-width, tablet) {
-            display: grid;
-            align-content: center;
-            justify-items: left;
-         }
-
          & .desc {
-            // margin-bottom - .desc (mobile + desktop - tablet same)
-            margin-bottom: 2rem;
+            @include mq(max-width, tablet) {
+               margin-bottom: 2rem;
+            }
             @include mq(min-width, desktop) {
                max-width: 370px;
                margin-bottom: 3rem;
