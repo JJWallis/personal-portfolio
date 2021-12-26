@@ -1,5 +1,12 @@
 @use 'abstracts' as *;
 
-.fieldset {
-   --flow-space: 3rem;
+.form {
+   @include e(fieldset) {
+      --flow-space: 2rem;
+      margin-bottom: 1.3rem;
+   }
+
+   @include e(label) {
+      display: block;
+   }
 }

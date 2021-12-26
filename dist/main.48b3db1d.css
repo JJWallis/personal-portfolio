@@ -470,7 +470,7 @@ body {
 .input {
   background-color: hsl(var(--clr-sd-light-grey));
   padding: 0.8rem 1.2rem;
-  width: 20%;
+  width: 100%;
   border: 1.5px solid transparent;
   transition: border var(--btn-hover-transition);
 }
@@ -670,8 +670,12 @@ body {
   }
 }
 
-.fieldset {
-  --flow-space: 3rem;
+.form__fieldset {
+  --flow-space: 2rem;
+  margin-bottom: 1.3rem;
+}
+.form__label {
+  display: block;
 }
 
 .ct-wrapper {
