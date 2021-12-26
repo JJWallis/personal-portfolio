@@ -593,6 +593,23 @@ body {
     padding-bottom: 2rem;
   }
 }
+.nav--tr {
+  --gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+.nav--tr__link {
+  padding-block: 3rem;
+  transition: background-color var(--btn-hover-transition), color var(--btn-hover-transition);
+}
+.nav--tr__link:hover {
+  background-color: hsl(var(--clr-pm-dark-grey));
+  color: hsl(var(--clr-sd-ultra-light-grey));
+}
+.nav--tr__link:last-child {
+  display: grid;
+  justify-items: right;
+  border-left: var(--thin-line);
+}
 
 .cta {
   margin-block: 7rem;

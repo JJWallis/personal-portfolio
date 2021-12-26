@@ -55,4 +55,23 @@
          }
       }
    }
+
+   @include m(tr) {
+      --gap: 0;
+      grid-template-columns: repeat(2, 1fr);
+      @include e(link) {
+         padding-block: 3rem;
+         transition: background-color var(--btn-hover-transition),
+            color var(--btn-hover-transition);
+         &:hover {
+            background-color: hsl(var(--clr-pm-dark-grey));
+            color: hsl(var(--clr-sd-ultra-light-grey));
+         }
+         &:last-child {
+            display: grid;
+            justify-items: right;
+            border-left: var(--thin-line);
+         }
+      }
+   }
 }
