@@ -126,11 +126,19 @@
             </div>
             <div class="contact-me__form" role="gridcell">
                <form id="submit-form" class="form" action="/" method="post">
-                  <fieldset class="fieldset">
+                  <fieldset class="fieldset flow">
                      <legend class="sr-only">Contact form</legend>
                      <div>
-                        <label for="name">Name</label>
-                        <input id="name" class="" type="text" placeholder="Jane Appleseed">
+                        <label for="input-name">Name</label>
+                        <input id="input-name" class="input" type="text" placeholder="Jane Appleseed">
+                     </div>
+                     <div>
+                        <label for="input-email">Email Address</label>
+                        <input id="input-email" class="input" type="email" placeholder="email@example.com">
+                     </div>
+                     <div>
+                        <label for="input-message">Message</label>
+                        <textarea id="input-message" class="input input--text-area" placeholder="How can I help?"></textarea>
                      </div>
                   </fieldset>
                </form>

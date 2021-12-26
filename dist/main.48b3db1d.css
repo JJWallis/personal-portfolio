@@ -469,7 +469,7 @@ body {
 
 .input {
   background-color: hsl(var(--clr-sd-light-grey));
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   width: 20%;
   border: 1.5px solid transparent;
   transition: border var(--btn-hover-transition);
@@ -823,6 +823,10 @@ body {
   .project--right {
     grid-template-columns: auto minmax(500px, 1fr);
   }
+}
+
+.fieldset {
+  --flow-space: 3rem;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
