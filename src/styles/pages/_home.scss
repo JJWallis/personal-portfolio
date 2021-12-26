@@ -50,10 +50,14 @@
    }
 }
 
+// Differences:
+// row heights - minmax(418px vs 630px) tablet | minmax(400px vs 500px) desktop
+// padding top + bottom (mobile only)
+// margin-bottom - .desc (mobile only)
+// pinned to the right:
 // .ct-wrapper--offset-parent {
 //    @include mq(min-width, desktop) {
 //       display: grid;
 //       justify-items: right;
 //    }
 // }
-// only needs to happen for ones pinned to the right?
