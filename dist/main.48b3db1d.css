@@ -488,6 +488,22 @@ body {
   padding-bottom: 2.5rem;
 }
 
+@media only screen and (max-width: 45.999em) {
+  .grid-ct--offset {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 45.999em) {
+  .grid-ct--offset {
+    gap: 4rem;
+  }
+}
+@media only screen and (min-width: 63.999em) {
+  .grid-ct--offset {
+    gap: 8rem;
+  }
+}
+
 .header--pm {
   padding-block: 3rem;
   position: sticky;
@@ -673,6 +689,13 @@ body {
 .grid-ct {
   display: grid;
   gap: var(--gap, 2rem);
+}
+
+@media only screen and (min-width: 63.999em) {
+  .justify-right {
+    display: grid;
+    justify-items: right;
+  }
 }
 
 .uppercase {

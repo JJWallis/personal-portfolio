@@ -1,0 +1,19 @@
+@use 'abstracts' as *;
+
+.grid-ct {
+   @include m(offset) {
+      @include mq(max-width, tablet) {
+         grid-template-columns: 1fr;
+      }
+
+      @include mq(min-width, tablet) {
+         gap: 4rem;
+         //  make var gap-offset
+         //  if bg img for portfolio - include position + size
+      }
+
+      @include mq(min-width, desktop) {
+         gap: 8rem;
+      }
+   }
+}

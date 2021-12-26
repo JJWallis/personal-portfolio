@@ -4,3 +4,10 @@
    display: grid;
    gap: var(--gap, 2rem);
 }
+
+.justify-right {
+   @include mq(min-width, desktop) {
+      display: grid;
+      justify-items: right;
+   }
+}
