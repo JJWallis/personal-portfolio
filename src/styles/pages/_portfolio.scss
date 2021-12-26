@@ -13,5 +13,16 @@
    }
 
    @include e(txt) {
+      @include mq(max-width, tablet) {
+         padding-block: 1.7rem;
+         & .desc {
+            margin-bottom: 4rem;
+         }
+      }
+      @include mq(min-width, desktop) {
+         & .desc {
+            margin-bottom: 2rem;
+         }
+      }
    }
 }
