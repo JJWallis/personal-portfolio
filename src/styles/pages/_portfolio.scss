@@ -1,8 +1,5 @@
 @use 'abstracts' as *;
 
-.projects {
-}
-
 // nth-child(even) - create right alignment + swapped order (img on right)
 // @include m(right) {
 // desktop - if bg img:
@@ -10,7 +7,13 @@
 // }
 
 .project {
-   @include e(img) {
+   @include mq(min-width, tablet) {
+      gap: var(--gap-offset);
+      grid-template-columns: repeat(2, 1fr);
+      @include e(img) {
+         display: grid;
+         place-items: center;
+      }
    }
 
    @include e(txt) {
@@ -22,6 +25,7 @@
       }
       @include mq(min-width, desktop) {
          & .desc {
+            width: 85%;
             margin-bottom: 2rem;
          }
       }
