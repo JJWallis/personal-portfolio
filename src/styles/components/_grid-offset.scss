@@ -6,11 +6,12 @@
       grid-template-columns: 1fr;
    }
 
-   //   @include mq(min-width, tablet) {
-   //    @include e(img) {
-   //  if bg img for portfolio - include position + size
-   //    }
-   //   }
+   @include mq(min-width, tablet) {
+      @include e(img) {
+         background-position: center;
+         background-size: cover;
+      }
+   }
 
    @include mq(min-width, desktop) {
       // if bg img for portfolio:

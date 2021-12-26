@@ -2,32 +2,28 @@
 
 .about {
    @include e(body) {
-      grid-template-columns: 1fr;
-
       @include mq(min-width, tablet) {
-         grid-template-columns: 300px auto;
-         grid-template-rows: minmax(630px, auto);
-         gap: 4rem;
+         gap: var(--gap-offset);
          @include e(img) {
             @include bg-img(
-               '../assets/images/homepage/tablet/image-homepage-profile.jpg',
-               $position: center,
-               $size: cover
+               '../assets/images/homepage/tablet/image-homepage-profile.jpg'
             );
+
             & > img {
                display: none;
             }
          }
       }
 
+      @include mqs(min-width, tablet, max-width, desktop) {
+         grid-template-columns: 300px auto;
+         grid-template-rows: minmax(630px, auto);
+      }
+
       @include mq(min-width, desktop) {
-         grid-template-columns: minmax(500px, 1fr) auto;
-         gap: 8rem;
          @include e(img) {
             @include bg-img(
-               '../assets/images/homepage/desktop/image-homepage-profile.jpg',
-               $position: center,
-               $size: cover
+               '../assets/images/homepage/desktop/image-homepage-profile.jpg'
             );
          }
       }
