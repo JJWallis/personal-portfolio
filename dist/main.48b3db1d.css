@@ -680,7 +680,7 @@ body {
     width: 90%;
   }
 }
-.ct-wrapper--offset {
+.ct-wrapper__offset {
   max-width: 1015px;
 }
 

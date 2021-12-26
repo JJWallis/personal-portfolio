@@ -1,11 +1,17 @@
 @use 'abstracts' as *;
 
+.projects {
+   // nth-child(even) - create right alignment + swapped order (img on right)
+   // @include m(right) {
+   // desktop - if bg img:
+   // grid-template-columns: auto minmax(500px, 1fr);
+   // }
+}
+
 .project {
-   @include e(body) {
-      // nth-child(even) - create right alignment + swapped order (img on right)
-      // @include m(right) {
-      // desktop - if bg img:
-      // grid-template-columns: auto minmax(500px, 1fr);
-      // }
+   @include e(img) {
+   }
+
+   @include e(txt) {
    }
 }
