@@ -503,6 +503,19 @@ body {
     gap: 8rem;
   }
 }
+@media only screen and (min-width: 45.999em) {
+  .grid-ct--offset__txt {
+    padding: 2rem 0 3.5rem;
+    display: grid;
+    align-content: center;
+    justify-items: left;
+  }
+}
+@media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
+  .grid-ct--offset__txt .desc {
+    margin-bottom: 2rem;
+  }
+}
 
 .header--pm {
   padding-block: 3rem;

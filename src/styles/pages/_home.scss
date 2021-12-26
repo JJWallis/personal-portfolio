@@ -33,6 +33,7 @@
       }
 
       @include e(txt) {
+         // padding top + bottom (mobile only)
          padding: 2rem 0 3.5rem;
          @include mq(min-width, tablet) {
             display: grid;
@@ -41,6 +42,7 @@
          }
 
          & .desc {
+            // margin-bottom - .desc (mobile + desktop - tablet same)
             margin-bottom: 2rem;
             @include mq(min-width, desktop) {
                max-width: 370px;
@@ -49,9 +51,3 @@
       }
    }
 }
-
-// Differences:
-// columns - tablet +
-// row heights - minmax(418px vs 630px) tablet | minmax(400px vs 500px) desktop
-// padding top + bottom (mobile only)
-// margin-bottom - .desc (mobile only)

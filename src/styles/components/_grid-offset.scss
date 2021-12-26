@@ -15,5 +15,20 @@
       @include mq(min-width, desktop) {
          gap: 8rem;
       }
+
+      @include e(txt) {
+         @include mq(min-width, tablet) {
+            padding: 2rem 0 3.5rem;
+            display: grid;
+            align-content: center;
+            justify-items: left;
+         }
+
+         & .desc {
+            @include mqs(min-width, tablet, max-width, desktop) {
+               margin-bottom: 2rem;
+            }
+         }
+      }
    }
 }
