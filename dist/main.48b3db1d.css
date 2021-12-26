@@ -491,24 +491,21 @@ body {
   padding-bottom: 2.5rem;
 }
 
-.grid-ct--offset {
+.grid-ct-offset {
   gap: var(--gap-offset);
 }
 @media only screen and (max-width: 45.999em) {
-  .grid-ct--offset {
+  .grid-ct-offset {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 63.999em) {
-  .grid-ct--offset {
+  .grid-ct-offset {
     grid-template-columns: minmax(500px, 1fr) auto;
-  }
-  .grid-ct--offset--right {
-    grid-template-columns: auto minmax(500px, 1fr);
   }
 }
 @media only screen and (min-width: 45.999em) {
-  .grid-ct--offset__txt {
+  .grid-ct-offset__txt {
     padding: 2rem 0 3.5rem;
     display: grid;
     align-content: center;
@@ -516,7 +513,7 @@ body {
   }
 }
 @media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
-  .grid-ct--offset__txt .desc {
+  .grid-ct-offset__txt .desc {
     margin-bottom: 2rem;
   }
 }

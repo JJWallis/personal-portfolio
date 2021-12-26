@@ -1,36 +1,31 @@
 @use 'abstracts' as *;
 
-.grid-ct {
-   @include m(offset) {
-      gap: var(--gap-offset);
-      @include mq(max-width, tablet) {
-         grid-template-columns: 1fr;
+.grid-ct-offset {
+   gap: var(--gap-offset);
+   @include mq(max-width, tablet) {
+      grid-template-columns: 1fr;
+   }
+
+   //   @include mq(min-width, tablet) {
+   //  if bg img for portfolio - include position + size
+   //   }
+
+   @include mq(min-width, desktop) {
+      // if bg img for portfolio:
+      grid-template-columns: minmax(500px, 1fr) auto;
+   }
+
+   @include e(txt) {
+      @include mq(min-width, tablet) {
+         padding: 2rem 0 3.5rem;
+         display: grid;
+         align-content: center;
+         justify-items: left;
       }
 
-      //   @include mq(min-width, tablet) {
-      //  if bg img for portfolio - include position + size
-      //   }
-
-      @include mq(min-width, desktop) {
-         // if bg img for portfolio:
-         grid-template-columns: minmax(500px, 1fr) auto;
-         @include m(right) {
-            grid-template-columns: auto minmax(500px, 1fr);
-         }
-      }
-
-      @include e(txt) {
-         @include mq(min-width, tablet) {
-            padding: 2rem 0 3.5rem;
-            display: grid;
-            align-content: center;
-            justify-items: left;
-         }
-
-         & .desc {
-            @include mqs(min-width, tablet, max-width, desktop) {
-               margin-bottom: 2rem;
-            }
+      & .desc {
+         @include mqs(min-width, tablet, max-width, desktop) {
+            margin-bottom: 2rem;
          }
       }
    }
