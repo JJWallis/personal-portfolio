@@ -803,5 +803,20 @@ body {
     margin-bottom: 2rem;
   }
 }
+@media only screen and (min-width: 45.999em) {
+  .project--right .project__img {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
+  .project--right .project__txt {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+}
+@media only screen and (min-width: 63.999em) {
+  .project--right {
+    grid-template-columns: auto minmax(500px, 1fr);
+  }
+}
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */

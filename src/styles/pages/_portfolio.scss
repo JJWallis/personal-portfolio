@@ -1,11 +1,5 @@
 @use 'abstracts' as *;
 
-// nth-child(even) - create right alignment + swapped order (img on right)
-// @include m(right) {
-// desktop - if bg img:
-// grid-template-columns: auto minmax(500px, 1fr);
-// }
-
 .project {
    @include mq(min-width, tablet) {
       gap: var(--gap-offset);
@@ -30,6 +24,22 @@
          & .desc {
             margin-bottom: 2rem;
          }
+      }
+   }
+
+   @include m(right) {
+      @include mq(min-width, tablet) {
+         & .project__img {
+            grid-column: 2 / 3;
+            grid-row: 1 / -1;
+         }
+         & .project__txt {
+            grid-column: 1 / 2;
+            grid-row: 1 / -1;
+         }
+      }
+      @include mq(min-width, desktop) {
+         grid-template-columns: auto minmax(500px, 1fr);
       }
    }
 }
