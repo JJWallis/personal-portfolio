@@ -602,6 +602,17 @@ body {
   padding-block: 3rem;
   transition: background-color var(--btn-hover-transition), color var(--btn-hover-transition);
 }
+.nav--tr__link::after {
+  content: "Previous Project";
+  position: absolute;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  bottom: 15px;
+  font-size: 1.2rem;
+  color: hsl(var(--clr-pm-dark-grey));
+  transition: color var(--btn-hover-transition);
+}
 .nav--tr__link__arrow {
   position: absolute;
   top: 20px;
@@ -616,10 +627,18 @@ body {
 .nav--tr__link:hover .arrow {
   stroke: hsl(var(--clr-sd-ultra-light-grey));
 }
+.nav--tr__link:hover::after {
+  color: hsl(var(--clr-sd-ultra-light-grey));
+}
 .nav--tr__link:last-child {
   display: grid;
   justify-items: right;
   border-left: var(--thin-line);
+}
+.nav--tr__link:last-child::after {
+  content: "Next Project";
+  position: absolute;
+  display: block;
 }
 
 .cta {

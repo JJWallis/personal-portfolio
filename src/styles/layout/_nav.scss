@@ -64,6 +64,14 @@
          padding-block: 3rem;
          transition: background-color var(--btn-hover-transition),
             color var(--btn-hover-transition);
+         @include p-el(after, $content: 'Previous Project') {
+            @include position(absolute, $z-index: 99) {
+               bottom: 15px;
+            }
+            font-size: 1.2rem;
+            color: hsl(var(--clr-pm-dark-grey));
+            transition: color var(--btn-hover-transition);
+         }
          @include e(arrow) {
             @include position(absolute) {
                top: 20px;
@@ -79,10 +87,14 @@
                stroke: hsl(var(--clr-sd-ultra-light-grey));
             }
          }
+         &:hover::after {
+            color: hsl(var(--clr-sd-ultra-light-grey));
+         }
          &:last-child {
             display: grid;
             justify-items: right;
             border-left: var(--thin-line);
+            @include p-el(after, $content: 'Next Project');
          }
       }
    }
