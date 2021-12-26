@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .grid-ct-offset {
-   gap: var(--gap-offset);
    @include mq(max-width, tablet) {
       grid-template-columns: 1fr;
    }
@@ -21,7 +20,7 @@
    }
 
    @include mq(min-width, desktop) {
-      // if bg img for portfolio:
+      // if bg img for portfolio + col lengths:
       grid-template-columns: minmax(500px, 1fr) auto;
    }
 

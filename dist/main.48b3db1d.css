@@ -37,7 +37,6 @@
   --center-left-desktop: center;
   --center: center;
   --gap: 2rem;
-  --gap-offset: 2rem;
   --flow-space: 1.5rem;
   --ct-padding-header: 1.8rem 0;
   --ct-padding-intro: 3rem 0;
@@ -491,9 +490,6 @@ body {
   padding-bottom: 2.5rem;
 }
 
-.grid-ct-offset {
-  gap: var(--gap-offset);
-}
 @media only screen and (max-width: 45.999em) {
   .grid-ct-offset {
     grid-template-columns: 1fr;
