@@ -681,6 +681,7 @@ body {
 }
 .form__label {
   display: block;
+  margin-bottom: 1rem;
 }
 
 .ct-wrapper {
