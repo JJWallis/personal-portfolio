@@ -594,6 +594,7 @@ body {
   }
 }
 .nav--tr {
+  position: relative;
   --gap: 0;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -601,9 +602,19 @@ body {
   padding-block: 3rem;
   transition: background-color var(--btn-hover-transition), color var(--btn-hover-transition);
 }
+.nav--tr__link__arrow {
+  position: absolute;
+  top: 20px;
+}
+.nav--tr__link .arrow {
+  transition: stroke var(--btn-hover-transition);
+}
 .nav--tr__link:hover {
   background-color: hsl(var(--clr-pm-dark-grey));
   color: hsl(var(--clr-sd-ultra-light-grey));
+}
+.nav--tr__link:hover .arrow {
+  stroke: hsl(var(--clr-sd-ultra-light-grey));
 }
 .nav--tr__link:last-child {
   display: grid;
