@@ -503,6 +503,9 @@ body {
   .grid-ct--offset {
     grid-template-columns: minmax(500px, 1fr) auto;
   }
+  .grid-ct--offset--right {
+    grid-template-columns: auto minmax(500px, 1fr);
+  }
 }
 @media only screen and (min-width: 45.999em) {
   .grid-ct--offset__txt {

@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.project {
+   @include e(body) {
+      // nth-child(even) - create right alignment + swapped order (img on right)
+   }
+}
