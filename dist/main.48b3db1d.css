@@ -37,6 +37,7 @@
   --center-left-desktop: center;
   --center: center;
   --gap: 2rem;
+  --gap-offset: 2rem;
   --flow-space: 1.5rem;
   --ct-padding-header: 1.8rem 0;
   --ct-padding-intro: 3rem 0;
@@ -49,12 +50,14 @@
 @media only screen and (min-width: 45.999em) {
   :root {
     --center-left-tablet: left;
+    --gap-offset: 4rem;
   }
 }
 @media only screen and (min-width: 63.999em) {
   :root {
     --center-left-desktop: left;
     --ct-padding-cta: 2rem 0;
+    --gap-offset: 8rem;
   }
 }
 
@@ -488,19 +491,17 @@ body {
   padding-bottom: 2.5rem;
 }
 
+.grid-ct--offset {
+  gap: var(--gap-offset);
+}
 @media only screen and (max-width: 45.999em) {
   .grid-ct--offset {
     grid-template-columns: 1fr;
   }
 }
-@media only screen and (min-width: 45.999em) {
-  .grid-ct--offset {
-    gap: 4rem;
-  }
-}
 @media only screen and (min-width: 63.999em) {
   .grid-ct--offset {
-    gap: 8rem;
+    grid-template-columns: minmax(500px, 1fr) auto;
   }
 }
 @media only screen and (min-width: 45.999em) {

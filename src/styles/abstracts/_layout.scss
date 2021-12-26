@@ -4,6 +4,7 @@ $layout: (
       center-left-desktop: center,
       center: center,
       gap: 2rem,
+      gap-offset: 2rem,
       flow-space: 1.5rem,
       ct-padding-header: 1.8rem 0,
       ct-padding-intro: 3rem 0,
@@ -15,9 +16,11 @@ $layout: (
    ),
    tablet: (
       center-left-tablet: left,
+      gap-offset: 4rem,
    ),
    desktop: (
       center-left-desktop: left,
       ct-padding-cta: 2rem 0,
+      gap-offset: 8rem,
    ),
 );

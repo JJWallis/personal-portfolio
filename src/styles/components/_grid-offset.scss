@@ -2,18 +2,17 @@
 
 .grid-ct {
    @include m(offset) {
+      gap: var(--gap-offset);
       @include mq(max-width, tablet) {
          grid-template-columns: 1fr;
       }
 
-      @include mq(min-width, tablet) {
-         gap: 4rem;
-         //  make var gap-offset
-         //  if bg img for portfolio - include position + size
-      }
+      //   @include mq(min-width, tablet) {
+      //      //  if bg img for portfolio - include position + size
+      //   }
 
       @include mq(min-width, desktop) {
-         gap: 8rem;
+         grid-template-columns: minmax(500px, 1fr) auto;
       }
 
       @include e(txt) {
