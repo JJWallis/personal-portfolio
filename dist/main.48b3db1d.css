@@ -961,4 +961,20 @@ body {
   }
 }
 
+.details__body__hero {
+  padding: 2rem 0 3.5rem;
+  align-content: center;
+  justify-items: left;
+}
+@media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
+  .details__body__hero {
+    grid-template-columns: repeat(2, 1fr);
+    --gap: 1.2rem 2rem;
+  }
+  .details__body__hero .desc {
+    grid-column: 2/-1;
+    grid-row: 1/4;
+  }
+}
+
 /*# sourceMappingURL=/main.48b3db1d.css.map */
