@@ -6,8 +6,8 @@
          top: 85px;
          right: 0;
       }
-      background-color: hsl(var(--clr-pm-dark-grey));
       transform: translateX(120%);
+      background-color: hsl(var(--clr-pm-dark-grey));
       transition: transform 0.5s cubic-bezier(0.04, -0.03, 0.52, 1.49);
    }
    &[data-visible='true'] {
@@ -26,7 +26,7 @@
 
    @include e(list) {
       @include mq(min-width, tablet) {
-         @include flexy();
+         @include flexy($align: center);
          gap: 3rem;
       }
 

@@ -556,8 +556,8 @@ body {
     z-index: 999;
     top: 85px;
     right: 0;
-    background-color: hsl(var(--clr-pm-dark-grey));
     transform: translateX(120%);
+    background-color: hsl(var(--clr-pm-dark-grey));
     transition: transform 0.5s cubic-bezier(0.04, -0.03, 0.52, 1.49);
   }
 }
@@ -576,6 +576,7 @@ body {
 @media only screen and (min-width: 45.999em) {
   .nav__list {
     display: flex;
+    align-items: center;
     gap: 3rem;
   }
 }
