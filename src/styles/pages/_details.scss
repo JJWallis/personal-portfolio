@@ -3,6 +3,7 @@
 .details {
    // body tag
    @include e(body) {
+      margin-bottom: 5rem;
       @include e(hero) {
          padding: 2rem 0 3.5rem;
          align-content: center;

@@ -2,6 +2,9 @@
 
 .cta {
    margin-block: 7rem;
+   @include m(details) {
+      margin-block: 5rem;
+   }
    @include e(body) {
       @include mq(max-width, tablet) {
          grid-template-columns: 1fr;
