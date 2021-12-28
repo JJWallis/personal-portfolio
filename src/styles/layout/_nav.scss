@@ -109,7 +109,7 @@
             border-left: var(--thin-line);
             @include p-el(after, $content: 'Next Project') {
                @include mq(min-width, tablet) {
-                  right: 30px;
+                  right: 32px;
                }
             }
          }
