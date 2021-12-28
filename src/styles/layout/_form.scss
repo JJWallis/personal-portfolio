@@ -2,7 +2,6 @@
 
 .form {
    @include e(fieldset) {
-      --flow-space: 2rem;
       margin-bottom: 1.3rem;
    }
 
