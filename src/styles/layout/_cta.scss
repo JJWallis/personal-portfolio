@@ -4,6 +4,9 @@
    margin-block: 7rem;
    @include m(details) {
       margin-block: 5rem;
+      @include mq(min-width, tablet) {
+         margin-block: 10rem;
+      }
    }
    @include e(body) {
       @include mq(max-width, tablet) {
