@@ -604,7 +604,7 @@ body {
 }
 @media only screen and (min-width: 45.999em) {
   .nav--tr__link {
-    padding-inline: 2rem;
+    padding: 2rem 2rem 3rem;
   }
 }
 .nav--tr__link::after {
@@ -649,6 +649,7 @@ body {
 .nav--tr__link:last-child {
   display: grid;
   justify-items: right;
+  align-items: center;
   border-left: var(--thin-line);
 }
 .nav--tr__link:last-child::after {
