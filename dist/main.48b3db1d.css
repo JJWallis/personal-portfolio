@@ -978,6 +978,15 @@ body {
   --gap: 3rem;
   margin-bottom: 6rem;
 }
+@media only screen and (min-width: 63.999em) {
+  .details__body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .details__body__background {
+    grid-column: 2/-1;
+  }
+}
 .details__body__hero {
   --gap: 2rem;
   padding: 1.5rem 0 2rem;
@@ -1003,6 +1012,11 @@ body {
 }
 .details__body__previews {
   --gap: 2.5rem;
+}
+@media only screen and (min-width: 63.999em) {
+  .details__body__previews {
+    grid-column: 2/-1;
+  }
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
