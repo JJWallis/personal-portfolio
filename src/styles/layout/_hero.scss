@@ -31,5 +31,9 @@
    }
 
    @include m(details) {
+      margin-bottom: 3rem;
+      @include mq(min-width, desktop) {
+         margin-bottom: 7rem;
+      }
    }
 }
