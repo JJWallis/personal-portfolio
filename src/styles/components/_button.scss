@@ -16,15 +16,17 @@
       background-color: hsl(var(--clr-pm-dark-blue));
       color: hsl(var(--clr-sd-ultra-light-grey));
       @include p-el(before, $height: 100%, $width: 40px) {
-         position: absolute;
+         @include position(absolute) {
+            inset: 0;
+         }
          display: block;
-         inset: 0;
          background-color: rgba(black, 0.15);
       }
 
       @include e(arrows) {
-         position: absolute;
-         inset: 50% 0 0 11.5px;
+         @include position(absolute) {
+            inset: 50% 0 0 11.5px;
+         }
          transform: translateY(-50%);
          @include m(arrow) {
             transition: stroke var(--btn-hover-transition);
@@ -32,8 +34,8 @@
       }
 
       @include m(disabled) {
-         background-color: hsl(var(--clr-sd-light-grey));
          pointer-events: none;
+         background-color: hsl(var(--clr-sd-light-grey));
          @include p-el(before) {
             opacity: 0.1;
          }

@@ -413,8 +413,8 @@ body {
   width: 40px;
   height: 100%;
   position: absolute;
-  display: block;
   inset: 0;
+  display: block;
   background-color: rgba(0, 0, 0, 0.15);
 }
 .btn--pm__arrows {
@@ -426,8 +426,8 @@ body {
   transition: stroke var(--btn-hover-transition);
 }
 .btn--pm--disabled {
-  background-color: hsl(var(--clr-sd-light-grey));
   pointer-events: none;
+  background-color: hsl(var(--clr-sd-light-grey));
 }
 .btn--pm--disabled::before {
   content: "";
