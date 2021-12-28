@@ -611,13 +611,8 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 .nav--tr__link {
-  padding-block: 3rem;
+  padding: var(--ct-nav-projects);
   transition: background-color var(--btn-hover-transition), color var(--btn-hover-transition);
-}
-@media only screen and (min-width: 45.999em) {
-  .nav--tr__link {
-    padding: 2rem 2rem 3rem;
-  }
 }
 .nav--tr__link::after {
   content: "Previous Project";

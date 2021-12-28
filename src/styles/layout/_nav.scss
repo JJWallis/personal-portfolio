@@ -61,12 +61,9 @@
       --gap: 0;
       grid-template-columns: repeat(2, 1fr);
       @include e(link) {
-         padding-block: 3rem;
+         padding: var(--ct-nav-projects);
          transition: background-color var(--btn-hover-transition),
             color var(--btn-hover-transition);
-         @include mq(min-width, tablet) {
-            padding: 2rem 2rem 3rem;
-         }
          @include p-el(after, $content: 'Previous Project') {
             @include position(absolute, $z-index: 99) {
                bottom: 15px;
