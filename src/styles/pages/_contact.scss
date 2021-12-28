@@ -13,10 +13,7 @@
 .get-in-touch {
    @include e(body) {
       & .desc {
-         margin-bottom: 1.5rem;
-         @include mq(min-width, tablet) {
-            margin-bottom: 3.5rem;
-         }
+         margin-bottom: var(--contact-get-in-touch);
       }
       @include mq(min-width, desktop) {
          grid-column: 2 / -1;
