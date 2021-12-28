@@ -3,19 +3,28 @@
 .details {
    // body tag
    @include e(body) {
+      --gap: 3rem;
       margin-bottom: 5rem;
       @include e(hero) {
-         padding: 2rem 0 3.5rem;
+         --gap: 2rem;
+         padding: 1.5rem 0 2rem;
          align-content: center;
          justify-items: left;
+         & .desc {
+            margin-bottom: 1.8rem;
+         }
          @include mqs(min-width, tablet, max-width, desktop) {
             grid-template-columns: repeat(2, 1fr);
-            --gap: 1.2rem 2rem;
+            --gap: 1.2rem 3rem;
+            padding: 2rem 0 3rem;
             & .desc {
                grid-column: 2 / -1;
                grid-row: 1 / 4;
             }
          }
+      }
+      @include e(previews) {
+         --gap: 2.5rem;
       }
    }
 }
