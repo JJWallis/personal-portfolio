@@ -3,10 +3,7 @@
 .cta {
    margin-block: 7rem;
    @include m(details) {
-      margin-block: 5rem;
-      @include mq(min-width, tablet) {
-         margin-block: 7rem;
-      }
+      margin-block: var(--cta-details);
    }
    @include e(body) {
       @include mq(max-width, tablet) {
