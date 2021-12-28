@@ -6,6 +6,7 @@ $layout: (
       // alignment
       gap: 2rem,
       gap-details: 3rem,
+      gap-contact: 0,
       flow-space: 6rem,
       details-hero-ct: 3rem,
       details-hero-desc: 1.8rem,
@@ -14,16 +15,19 @@ $layout: (
       ct-padding-footer: 3rem,
       ct-padding-details-hero: 1.5rem 0 2rem,
       ct-nav-projects: 3rem 0,
+      ct-contact: 1.5rem 0 1.7rem,
       // spacing
    ),
    tablet: (
       center-left-tablet: left,
       // alignment
       gap-offset: 4rem,
+      gap-contact: 0 2rem,
       cta-details: 7rem,
       ct-padding-header: 5rem,
       ct-padding-details-hero: 2rem 0 3rem,
       ct-nav-projects: 2rem 2rem 3rem,
+      ct-contact: 2rem 0 2.3rem,
       // spacing
    ),
    desktop: (
@@ -31,9 +35,11 @@ $layout: (
       // alignment
       gap-offset: 8rem,
       gap-details: 10rem 7rem,
+      gap-contact: 0 2rem,
       details-hero-ct: 7rem,
       details-hero-desc: 0,
       ct-padding-details-hero: 2rem 0 3rem,
+      ct-contact: 3.5rem 0 3.5rem,
       // spacing
    ),
 );
