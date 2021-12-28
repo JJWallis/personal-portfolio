@@ -369,6 +369,7 @@ body {
   fill: hsl(var(--clr-pm-cyan));
   transform: rotateX(180deg);
 }
+
 .hamburger__button {
   width: 35px;
   height: 35px;
@@ -390,6 +391,7 @@ body {
 .title {
   margin-bottom: 2rem;
 }
+
 .btn {
   display: inline-block;
   padding: 0.6rem 2.4rem;

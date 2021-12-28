@@ -1,12 +1,10 @@
 @use 'abstracts' as *;
 
 .title {
-   // @include mq(max-width, tablet) {
    margin-bottom: 2rem;
+   // @include m(pm) {
    // }
-   @include m(pm) {
-   }
 
-   @include m(sd) {
-   }
+   // @include m(sd) {
+   // }
 }
