@@ -64,6 +64,9 @@
          padding-block: 3rem;
          transition: background-color var(--btn-hover-transition),
             color var(--btn-hover-transition);
+         @include mq(min-width, tablet) {
+            padding-inline: 2rem;
+         }
          @include p-el(after, $content: 'Previous Project') {
             @include position(absolute, $z-index: 99) {
                bottom: 15px;
@@ -75,6 +78,15 @@
          @include e(arrow) {
             @include position(absolute) {
                top: 20px;
+               @include mq(min-width, tablet) {
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+                  @include m(right) {
+                     left: unset;
+                     right: 0px;
+                  }
+               }
             }
          }
          & .arrow {
@@ -94,7 +106,11 @@
             display: grid;
             justify-items: right;
             border-left: var(--thin-line);
-            @include p-el(after, $content: 'Next Project');
+            @include p-el(after, $content: 'Next Project') {
+               @include mq(min-width, tablet) {
+                  right: 30px;
+               }
+            }
          }
       }
    }
