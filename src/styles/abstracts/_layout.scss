@@ -3,18 +3,26 @@ $layout: (
       center-left-tablet: center,
       center-left-desktop: center,
       center: center,
+      // alignment
       gap: 2rem,
+      gap-details: 3rem,
       flow-space: 6rem,
+      details-hero-desc: 1.8rem,
       ct-padding-header: 1.8rem 0,
       ct-padding-footer: 3rem 0,
+      ct-padding-details-hero: 1.5rem 0 2rem,
+      // spacing
    ),
    tablet: (
       center-left-tablet: left,
       gap-offset: 4rem,
+      ct-padding-details-hero: 2rem 0 3rem,
    ),
    desktop: (
       center-left-desktop: left,
-      ct-padding-cta: 2rem 0,
       gap-offset: 8rem,
+      gap-details: 3rem 5rem,
+      details-hero-desc: 0,
+      ct-padding-details-hero: 2rem 0 3rem,
    ),
 );

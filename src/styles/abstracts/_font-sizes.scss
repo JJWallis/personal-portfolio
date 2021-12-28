@@ -33,7 +33,9 @@ $type-scale: (
    ),
    tablet: (
       size: (),
-      line-height: (),
+      line-height: (
+         lh-skills: 3,
+      ),
       weight: (),
    ),
    desktop: (

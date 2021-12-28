@@ -38,21 +38,32 @@
   --center-left-desktop: center;
   --center: center;
   --gap: 2rem;
+  --gap-details: 3rem;
   --flow-space: 6rem;
+  --details-hero-desc: 1.8rem;
   --ct-padding-header: 1.8rem 0;
   --ct-padding-footer: 3rem 0;
+  --ct-padding-details-hero: 1.5rem 0 2rem;
+}
+@media only screen and (min-width: 45.999em) {
+  :root {
+    --lh-skills: 3;
+  }
 }
 @media only screen and (min-width: 45.999em) {
   :root {
     --center-left-tablet: left;
     --gap-offset: 4rem;
+    --ct-padding-details-hero: 2rem 0 3rem;
   }
 }
 @media only screen and (min-width: 63.999em) {
   :root {
     --center-left-desktop: left;
-    --ct-padding-cta: 2rem 0;
     --gap-offset: 8rem;
+    --gap-details: 3rem 5rem;
+    --details-hero-desc: 0;
+    --ct-padding-details-hero: 2rem 0 3rem;
   }
 }
 
@@ -970,27 +981,31 @@ body {
 }
 
 .details__body {
-  --gap: 3rem;
+  gap: var(--gap-details);
   margin-bottom: 6rem;
 }
 @media only screen and (min-width: 63.999em) {
   .details__body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
-    --gap: 3rem 5rem;
   }
   .details__body__background {
     grid-column: 2/-1;
   }
 }
 .details__body__hero {
-  --gap: 2rem;
-  padding: 1.5rem 0 2rem;
   align-content: center;
   justify-items: left;
+  padding: var(--ct-padding-details-hero);
 }
 .details__body__hero .desc {
-  margin-bottom: 1.8rem;
+  margin-bottom: var(--details-hero-desc);
+}
+@media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
+  .details__body__hero .desc {
+    grid-column: 2/-1;
+    grid-row: 1/4;
+  }
 }
 .details__body__hero__skills {
   max-width: 350px;
@@ -999,20 +1014,11 @@ body {
   .details__body__hero {
     grid-template-columns: repeat(2, 1fr);
     --gap: 1.2rem 3rem;
-    padding: 2rem 0 3rem;
-  }
-  .details__body__hero .desc {
-    grid-column: 2/-1;
-    grid-row: 1/4;
   }
 }
 @media only screen and (min-width: 63.999em) {
   .details__body__hero {
-    padding: 2rem 0 3rem;
     grid-row: 1/3;
-  }
-  .details__body__hero .desc {
-    margin-bottom: 0;
   }
 }
 .details__body__background h2 {
