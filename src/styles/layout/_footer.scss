@@ -2,7 +2,7 @@
 
 .footer {
    @include m(pm) {
-      padding-block: 3rem;
+      padding-block: var(--ct-padding-footer);
       @include e(body) {
          @include mq(max-width, tablet) {
             display: grid;

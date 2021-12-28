@@ -42,8 +42,8 @@
   --flow-space: 6rem;
   --details-hero-desc: 1.8rem;
   --cta-details: 5rem;
-  --ct-padding-header: 1.8rem 0;
-  --ct-padding-footer: 3rem 0;
+  --ct-padding-header: 3rem;
+  --ct-padding-footer: 3rem;
   --ct-padding-details-hero: 1.5rem 0 2rem;
 }
 @media only screen and (min-width: 45.999em) {
@@ -56,6 +56,7 @@
     --center-left-tablet: left;
     --gap-offset: 4rem;
     --cta-details: 7rem;
+    --ct-padding-header: 5rem;
     --ct-padding-details-hero: 2rem 0 3rem;
   }
 }
@@ -535,25 +536,16 @@ body {
 }
 
 .header--pm {
-  padding-block: 3rem;
+  padding-block: var(--ct-padding-header);
   position: sticky;
   z-index: 999;
   top: 0;
-}
-@media only screen and (min-width: 45.999em) {
-  .header--pm {
-    padding-block: 5rem;
-  }
 }
 .header--pm__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media only screen and (max-width: 45.999em) {
-  .header--pm__body {
-    position: relative;
-  }
+  position: relative;
 }
 
 @media only screen and (max-width: 45.999em) {
@@ -714,7 +706,7 @@ body {
 }
 
 .footer--pm {
-  padding-block: 3rem;
+  padding-block: var(--ct-padding-footer);
 }
 @media only screen and (max-width: 45.999em) {
   .footer--pm__body {
