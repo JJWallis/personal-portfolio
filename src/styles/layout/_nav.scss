@@ -58,12 +58,14 @@
 
    @include m(tr) {
       position: relative;
-      --gap: 0;
       grid-template-columns: repeat(2, 1fr);
+      --gap: 0;
+
       @include e(link) {
          padding: var(--ct-nav-projects);
          transition: background-color var(--btn-hover-transition),
             color var(--btn-hover-transition);
+
          @include p-el(after, $content: 'Previous Project') {
             @include position(absolute, $z-index: 99) {
                bottom: 15px;
@@ -72,6 +74,7 @@
             color: hsl(var(--clr-pm-dark-grey));
             transition: color var(--btn-hover-transition);
          }
+
          @include e(arrow) {
             @include position(absolute) {
                top: 20px;
@@ -81,14 +84,16 @@
                   transform: translateY(-50%);
                   @include m(right) {
                      left: unset;
-                     right: 0px;
+                     right: 0;
                   }
                }
             }
          }
+
          & .arrow {
             transition: stroke var(--btn-hover-transition);
          }
+
          &:hover {
             background-color: hsl(var(--clr-pm-dark-grey));
             color: hsl(var(--clr-sd-ultra-light-grey));
@@ -99,6 +104,7 @@
          &:hover::after {
             color: hsl(var(--clr-sd-ultra-light-grey));
          }
+
          &:last-child {
             display: grid;
             justify-items: right;

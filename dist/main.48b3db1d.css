@@ -607,8 +607,8 @@ body {
 }
 .nav--tr {
   position: relative;
-  --gap: 0;
   grid-template-columns: repeat(2, 1fr);
+  --gap: 0;
 }
 .nav--tr__link {
   padding: var(--ct-nav-projects);
@@ -637,7 +637,7 @@ body {
   }
   .nav--tr__link__arrow--right {
     left: unset;
-    right: 0px;
+    right: 0;
   }
 }
 .nav--tr__link .arrow {
