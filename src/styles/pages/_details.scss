@@ -36,6 +36,9 @@
          @include mq(min-width, desktop) {
             padding: 2rem 0 3rem;
             grid-row: 1 / 3;
+            & .desc {
+               margin-bottom: 0;
+            }
          }
       }
       @include e(background) {
