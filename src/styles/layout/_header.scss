@@ -3,9 +3,9 @@
 .header {
    @include m(pm) {
       padding-block: var(--ct-padding-header);
-      @include position(sticky, $z-index: 999) {
-         top: 0;
-      }
+      // @include position(sticky, $z-index: 999) {
+      // top: 0;
+      // }
 
       @include e(body) {
          @include flexy($just: space-between, $align: center);
