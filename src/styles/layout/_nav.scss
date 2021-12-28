@@ -53,6 +53,27 @@
                padding-bottom: 2rem;
             }
          }
+
+         @include mq(min-width, tablet) {
+            position: relative;
+            @include p-el(after, $width: 100%, $height: 3px) {
+               display: block;
+               @include position(absolute) {
+                  bottom: -5px;
+                  left: 0;
+               }
+               background-color: hsl(var(--clr-pm-cyan));
+               transform-origin: center;
+               transform: scale(0);
+               transition: transform 0.2s linear;
+            }
+            &:hover {
+               color: hsl(var(--clr-pm-dark-grey));
+               @include p-el(after) {
+                  transform: scale(1);
+               }
+            }
+         }
       }
    }
 
