@@ -98,3 +98,5 @@ Data types - primitive (boolean, str, nums, BigInt for big nums, Symbol for uniq
 Rest + Spread operators
 
 Destructuring - readability for arrs (var names vs relying on order) + for objs if abbreviated original key names
+
+Git - what is it + why use it + common commands? | branch - piece of code separate from main repo | different stages | adding commit msgs | pulling + pushing
