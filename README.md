@@ -87,4 +87,4 @@ JS:
 
 ---
 
-Double vs triple equals =
+Double vs triple equals = double compares just the value + auto-type converts to do this - str converted to num | triple compares its type + value | all with conditional equality (boolean returned)
