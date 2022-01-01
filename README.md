@@ -91,4 +91,4 @@ Double vs triple equals = double compares just the value + auto-type converts to
 
 Arr methods - map() = returns back new arr + original untouched | filter() = returns back new arr + original untouched, returns a boolean value + based off that modifies pre-existing arr values | reduce() = more powerful + complex actions, instead of chaining methods can do all logic within this, 1st param - accumilator (empty arr, zero, whatever) + 2nd each val in arr being iterated over
 
-Undefined vs Null =
+Undefined vs Null = undefined means value doesn't exist | null - intentional setting of this has yet to have a value (empty placeholder value) - use for readability + highlighting intent
