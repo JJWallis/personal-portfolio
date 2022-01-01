@@ -89,4 +89,6 @@ JS:
 
 Double vs triple equals = double compares just the value + auto-type converts to do this - str converted to num | triple compares its type + value | all with conditional equality (boolean returned)
 
-Arr methods - map() = returns back new arr + original untouched | filter() = returns back new arr + original untouched, returns a boolean value + based off that modifies pre-existing arr values | reduce() = |
+Arr methods - map() = returns back new arr + original untouched | filter() = returns back new arr + original untouched, returns a boolean value + based off that modifies pre-existing arr values | reduce() = more powerful + complex actions, instead of chaining methods can do all logic within this, 1st param - accumilator (empty arr, zero, whatever) + 2nd each val in arr being iterated over
+
+Undefined vs Null =
