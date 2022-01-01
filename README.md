@@ -97,4 +97,4 @@ Data types - primitive (boolean, str, nums, BigInt for big nums, Symbol for uniq
 
 Rest + Spread operators
 
-Destructuring -
+Destructuring - readability for arrs (var names vs relying on order) + for objs if abbreviated original key names
