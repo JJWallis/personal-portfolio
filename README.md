@@ -103,6 +103,8 @@ Number problems - BigInt solves certain issues when dealing with big numbers | c
 
 Promises - Promises and why might you use them/integrate into app? | https://jsonplaceholder.typicode.com/ | typically API calls + async code (vs synchronous) | RESTFUL services
 
+Value vs Reference - pass by value (not a ref to original value) - when modified original isn't | Ref - passing ref to non-primitive type
+
 Git - what is it + why use it + common commands? | branch - piece of code separate from main repo | different stages | adding commit msgs | pulling + pushing
 
 Agile + Scrum = Scrum is a framework for developing and sustaining complex products, goal - actionable amount of work to learn form every sprit (two-week period of time) where we deliver some form of value, in sprit - standups at beginning of day (what's blocking us + help to un-block, what we're doing + did - keeping everyone aware + work flowing in right direction), team agreements about when something is 'ready' but can be opinionated (pulling things in + out when everyone agrees it makes sense), usually retrospective at end - reflect how team performed + what can be improved, plan at start - what tickets to take in + stay within same amount of work you've done in previous sprits | Agile - process for how software engineering teams are run, setting processes + procedures in there - Scrum common version of this
