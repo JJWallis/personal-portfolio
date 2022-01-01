@@ -95,4 +95,6 @@ Undefined vs Null = undefined means value doesn't exist | null - intentional set
 
 Data types - primitive (boolean, str, nums, BigInt for big nums, Symbol for unique values) + non-primitive (objs, arrs, maps, sets)
 
-Spread + Rest operators -
+Rest + Spread operators
+
+Destructuring -
