@@ -100,3 +100,5 @@ Rest + Spread operators
 Destructuring - readability for arrs (var names vs relying on order) + for objs if abbreviated original key names
 
 Git - what is it + why use it + common commands? | branch - piece of code separate from main repo | different stages | adding commit msgs | pulling + pushing
+
+Agile + Scrum = Scrum is a framework for developing and sustaining complex products, goal - actionable amount of work to learn form every sprit (two-week period of time) where we deliver some form of value, in sprit - standups at beginning of day (what's blocking us + help to un-block, what we're doing + did - keeping everyone aware) | Agile - process for how software engineering teams are run, setting processes + procedures in there - Scrum common version of this |
