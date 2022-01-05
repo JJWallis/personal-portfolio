@@ -2,12 +2,16 @@
 
 .about {
    @include e(body) {
+      @include e(img) {
+         & > img {
+            transform: rotateY(180deg);
+         }
+      }
+
       @include mq(min-width, tablet) {
          gap: var(--gap-offset);
          @include e(img) {
-            @include bg-img(
-               '../assets/images/homepage/tablet/image-homepage-profile.jpg'
-            );
+            @include bg-img('../assets/images/homepage/desktop/about.jpg');
             & > img {
                display: none;
             }
@@ -19,13 +23,13 @@
          grid-template-rows: minmax(630px, auto);
       }
 
-      @include mq(min-width, desktop) {
-         @include e(img) {
-            @include bg-img(
-               '../assets/images/homepage/desktop/image-homepage-profile.jpg'
-            );
-         }
-      }
+      // @include mq(min-width, desktop) {
+      //    @include e(img) {
+      //       @include bg-img(
+      //          '../assets/images/homepage/desktop/image-homepage-profile.jpg'
+      //       );
+      //    }
+      // }
 
       @include e(txt) {
          padding: 2rem 0 3.5rem;
