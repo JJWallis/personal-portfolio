@@ -3,18 +3,26 @@
 .about {
    @include e(body) {
       @include e(img) {
-         & > img {
-            transform: rotateY(180deg);
-         }
+         transform: rotateY(180deg);
       }
 
       @include mq(min-width, tablet) {
          gap: var(--gap-offset);
          @include e(img) {
-            @include bg-img('../assets/images/homepage/desktop/about.jpg');
+            @include bg-img(
+               '../assets/images/homepage/desktop/about.jpg',
+               $position: 75%,
+               $size: cover
+            );
             & > img {
                display: none;
             }
+         }
+      }
+
+      @include mq(min-width, desktop) {
+         @include e(img) {
+            background-position: 100%;
          }
       }
 
@@ -22,14 +30,6 @@
          grid-template-columns: 300px auto;
          grid-template-rows: minmax(630px, auto);
       }
-
-      // @include mq(min-width, desktop) {
-      //    @include e(img) {
-      //       @include bg-img(
-      //          '../assets/images/homepage/desktop/image-homepage-profile.jpg'
-      //       );
-      //    }
-      // }
 
       @include e(txt) {
          padding: 2rem 0 3.5rem;

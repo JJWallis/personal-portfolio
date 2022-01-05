@@ -881,7 +881,7 @@ body {
   border-bottom: var(--thin-line);
 }
 
-.about__body__img > img {
+.about__body__img {
   transform: rotateY(180deg);
 }
 @media only screen and (min-width: 45.999em) {
@@ -891,9 +891,16 @@ body {
   .about__body__img {
     background-image: url("/about.24fad22d.jpg");
     background-repeat: no-repeat;
+    background-position: 75%;
+    background-size: cover;
   }
   .about__body__img > img {
     display: none;
+  }
+}
+@media only screen and (min-width: 63.999em) {
+  .about__body__img {
+    background-position: 100%;
   }
 }
 @media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
