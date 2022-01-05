@@ -765,21 +765,26 @@ body {
 }
 @media only screen and (min-width: 45.999em) {
   .hero--home__body {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    background-image: url("/hero.864b8d44.jpg");
+    background-repeat: no-repeat;
+    background-position: -200px center;
+    background-size: 130%;
   }
   .hero--home__body__img {
     grid-column: 1/-1;
     grid-row: 1/-1;
+    opacity: 0;
   }
   .hero--home__body__txt {
-    grid-column: 1/4;
+    grid-column: 3/6;
     grid-row: 1/-1;
     align-self: flex-end;
-    padding: 3.5rem 2rem 0 0;
+    padding: 1rem 2rem 0 0;
   }
   .hero--home__body__txt .title {
     max-width: 500px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 45.999em) and (min-width: 63.999em) {
