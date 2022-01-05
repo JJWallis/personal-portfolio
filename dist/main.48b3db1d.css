@@ -974,6 +974,18 @@ body {
 .get-in-touch__body .desc {
   margin-bottom: var(--contact-get-in-touch);
 }
+.get-in-touch__body__info {
+  margin-bottom: 1.5rem;
+}
+.get-in-touch__body__info strong {
+  padding-right: 0.5rem;
+}
+.get-in-touch__body__info a {
+  color: inherit;
+}
+.get-in-touch__body__info a:hover {
+  text-decoration: underline;
+}
 @media only screen and (min-width: 63.999em) {
   .get-in-touch__body {
     grid-column: 2/-1;

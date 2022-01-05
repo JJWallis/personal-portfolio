@@ -15,6 +15,20 @@
       & .desc {
          margin-bottom: var(--contact-get-in-touch);
       }
+
+      @include e(info) {
+         margin-bottom: 1.5rem;
+         & strong {
+            padding-right: 0.5rem;
+         }
+         & a {
+            color: inherit;
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+
       @include mq(min-width, desktop) {
          grid-column: 2 / -1;
       }
