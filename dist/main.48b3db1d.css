@@ -906,6 +906,12 @@ body {
   }
 }
 
+.project__img > a {
+  transition: transform 0.3s ease-in-out;
+}
+.project__img > a:hover {
+  transform: translateY(-3%);
+}
 @media only screen and (min-width: 45.999em) {
   .project {
     gap: var(--gap-offset);

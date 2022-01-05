@@ -1,6 +1,15 @@
 @use 'abstracts' as *;
 
 .project {
+   @include e(img) {
+      & > a {
+         transition: transform 0.3s ease-in-out;
+         &:hover {
+            transform: translateY(-3%);
+         }
+      }
+   }
+
    @include mq(min-width, tablet) {
       gap: var(--gap-offset);
       @include e(img) {
