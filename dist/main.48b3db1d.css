@@ -906,29 +906,6 @@ body {
   }
 }
 
-.project__img {
-  position: relative;
-}
-.project__img:hover > div {
-  opacity: 1;
-  pointer-events: all;
-  transform: translateY(0%);
-  transition-delay: 0, 1s;
-}
-.project__img__links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: var(--gap);
-  position: absolute;
-  inset: 0;
-  background-color: white;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(50%);
-  transition: transform 0.4s ease-in, opacity 0.5s linear;
-}
 @media only screen and (min-width: 45.999em) {
   .project {
     gap: var(--gap-offset);
@@ -942,6 +919,12 @@ body {
   .project {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.project__txt__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 @media only screen and (max-width: 45.999em) {
   .project__txt {

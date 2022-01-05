@@ -1,29 +1,6 @@
 @use 'abstracts' as *;
 
 .project {
-   @include e(img) {
-      position: relative;
-      &:hover > div {
-         opacity: 1;
-         pointer-events: all;
-         transform: translateY(0%);
-         transition-delay: 0, 1s;
-      }
-
-      @include e(links) {
-         @include flexy($dir: column, $align: center, $just: center);
-         gap: var(--gap);
-         @include position(absolute) {
-            inset: 0;
-            background-color: white;
-            opacity: 0;
-            pointer-events: none;
-            transform: translateY(50%);
-            transition: transform 0.4s ease-in, opacity 0.5s linear;
-         }
-      }
-   }
-
    @include mq(min-width, tablet) {
       gap: var(--gap-offset);
       @include e(img) {
@@ -37,6 +14,12 @@
    }
 
    @include e(txt) {
+      @include e(links) {
+         @include flexy($align: center);
+         flex-wrap: wrap;
+         gap: 1rem;
+      }
+
       @include mq(max-width, tablet) {
          padding-block: 1.7rem;
          & .desc {
