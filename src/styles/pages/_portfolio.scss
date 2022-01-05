@@ -2,9 +2,25 @@
 
 .project {
    @include e(img) {
-      transition: transform 0.4s ease-in-out;
-      &:hover {
-         transform: translateY(-3%);
+      position: relative;
+      &:hover > div {
+         opacity: 1;
+         pointer-events: all;
+         transform: translateY(0%);
+         transition-delay: 0, 1s;
+      }
+
+      @include e(links) {
+         @include flexy($dir: column, $align: center, $just: center);
+         gap: var(--gap);
+         @include position(absolute) {
+            inset: 0;
+            background-color: white;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(50%);
+            transition: transform 0.4s ease-in, opacity 0.5s linear;
+         }
       }
    }
 
