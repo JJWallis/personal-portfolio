@@ -1,6 +1,6 @@
 # Joshua Jameson-Wallis - Personal Portfolio
 
-This is a solution to the [Minimalist portfolio website coding challenge](https://www.frontendmentor.io/challenges/pomodoro-app-KBFnycJ6G) on Frontend Mentor
+This is a solution to the [Minimalist portfolio website coding challenge](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE) on Frontend Mentor
 
 ## Table of contents
 
