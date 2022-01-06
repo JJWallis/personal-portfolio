@@ -145,7 +145,10 @@ form.addEventListener('submit', function (e) {
   if (errors.length) {
     e.preventDefault();
     inputs.forEach(function (input) {
-      return input.classList.remove('input--error');
+      var _a;
+
+      input.classList.remove('input--error');
+      (_a = input.nextElementSibling) === null || _a === void 0 ? void 0 : _a.remove();
     });
     errors.forEach(function (input) {
       return input.classList.add('input--error');

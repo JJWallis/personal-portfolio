@@ -26,7 +26,10 @@ form.addEventListener('submit', (e) => {
 
    if (errors.length) {
       e.preventDefault()
-      inputs.forEach((input) => input.classList.remove('input--error'))
+      inputs.forEach((input) => {
+         input.classList.remove('input--error')
+         input.nextElementSibling?.remove()
+      })
       errors.forEach((input) => input.classList.add('input--error'))
       createErrMsgs(errors, emailErrorMsg)
    }
