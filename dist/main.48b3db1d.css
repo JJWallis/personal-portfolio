@@ -898,15 +898,18 @@ body {
     display: none;
   }
 }
-@media only screen and (min-width: 63.999em) {
-  .about__body__img {
-    background-position: 100%;
-  }
-}
 @media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
   .about__body {
     grid-template-columns: 300px auto;
     grid-template-rows: minmax(630px, auto);
+  }
+  .about__body__img {
+    background-position: 72% 100%;
+  }
+}
+@media only screen and (min-width: 63.999em) {
+  .about__body__img {
+    background-position: 90%;
   }
 }
 .about__body__txt {

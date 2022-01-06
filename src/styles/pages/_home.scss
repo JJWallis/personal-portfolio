@@ -20,15 +20,18 @@
          }
       }
 
-      @include mq(min-width, desktop) {
-         @include e(img) {
-            background-position: 100%;
-         }
-      }
-
       @include mqs(min-width, tablet, max-width, desktop) {
          grid-template-columns: 300px auto;
          grid-template-rows: minmax(630px, auto);
+         @include e(img) {
+            background-position: 72% 100%;
+         }
+      }
+
+      @include mq(min-width, desktop) {
+         @include e(img) {
+            background-position: 90%;
+         }
       }
 
       @include e(txt) {
