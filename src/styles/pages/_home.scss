@@ -29,7 +29,6 @@
       }
 
       @include mq(min-width, desktop) {
-         // grid-template-columns: minmax(480px, auto) auto;
          @include e(img) {
             background-position: 90%;
          }
