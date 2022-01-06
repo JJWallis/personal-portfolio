@@ -12,5 +12,7 @@ form.addEventListener('submit', (e) => {
 
    if (errors.length || !email) {
       e.preventDefault()
+      inputs.forEach((input) => input.classList.remove('input--error'))
+      errors.forEach((input) => input.classList.add('input--error'))
    }
 })

@@ -130,6 +130,12 @@ form.addEventListener('submit', function (e) {
 
   if (errors.length || !email) {
     e.preventDefault();
+    inputs.forEach(function (input) {
+      return input.classList.remove('input--error');
+    });
+    errors.forEach(function (input) {
+      return input.classList.add('input--error');
+    });
   }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
