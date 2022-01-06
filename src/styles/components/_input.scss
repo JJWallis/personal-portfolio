@@ -19,6 +19,12 @@
       &:hover {
          border: 1.5px solid hsl(var(--clr-sd-bright-red));
       }
+
+      @include e(msg) {
+         @include position(absolute);
+         font-size: 1rem;
+         color: hsl(var(--clr-sd-bright-red));
+      }
    }
    @include m(text-area) {
       padding-bottom: 2.5rem;

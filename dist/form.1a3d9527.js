@@ -122,6 +122,19 @@ var form = document.querySelector('#submit-form');
 var inputs = Array.from(document.querySelectorAll('.input'));
 var emailInput = document.querySelector('#input-email');
 var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+function createErrMsg(errors) {
+  var errMsg = document.createElement('strong');
+  errMsg.classList.add('input--error__msg');
+  errMsg.innerHTML = "<p>Please correct the following errors:</p>";
+  errors.forEach(function (error) {
+    var errorMsg = document.createElement('p');
+    errorMsg.innerHTML = error.dataset.error;
+    errMsg.appendChild(errorMsg);
+  });
+  return errMsg;
+}
+
 form.addEventListener('submit', function (e) {
   var errors = inputs.filter(function (input) {
     return !input.value;

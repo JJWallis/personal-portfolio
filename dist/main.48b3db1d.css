@@ -514,6 +514,11 @@ body {
 .input--error:focus, .input--error:hover {
   border: 1.5px solid hsl(var(--clr-sd-bright-red));
 }
+.input--error__msg {
+  position: absolute;
+  font-size: 1rem;
+  color: hsl(var(--clr-sd-bright-red));
+}
 .input--text-area {
   padding-bottom: 2.5rem;
   resize: none;
