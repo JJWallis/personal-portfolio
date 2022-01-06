@@ -139,10 +139,10 @@ form.addEventListener('submit', function (e) {
   var email = emailRegex.test(emailInput.value);
   var emailErrorMsg = !email ? 'Please enter a valid email adddress' : null;
   if (!email && !errors.find(function (input) {
-    return input.id !== emailInput.id;
+    return input.id === emailInput.id;
   })) errors.push(emailInput);
 
-  if (errors.length || emailErrorMsg) {
+  if (errors.length) {
     e.preventDefault();
     inputs.forEach(function (input) {
       return input.classList.remove('input--error');

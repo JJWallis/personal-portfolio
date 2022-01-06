@@ -1,12 +1,12 @@
+type Input = HTMLInputElement
+
 const form = document.querySelector('#submit-form')
-const inputs: HTMLInputElement[] = Array.from(
-   document.querySelectorAll('.input')
-)
-const emailInput: HTMLInputElement = document.querySelector('#input-email')
+const inputs: Input[] = Array.from(document.querySelectorAll('.input'))
+const emailInput: Input = document.querySelector('#input-email')
 const emailRegex =
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-function createErrMsgs(errors: HTMLInputElement[], emailMsg: string | null) {
+function createErrMsgs(errors: Input[], emailMsg: string) {
    errors.forEach((input) => {
       const errMsg = document.createElement('strong')
       errMsg.classList.add('input--error__msg')
@@ -21,10 +21,10 @@ form.addEventListener('submit', (e) => {
    const email = emailRegex.test(emailInput.value)
    const emailErrorMsg = !email ? 'Please enter a valid email adddress' : null
 
-   if (!email && !errors.find((input) => input.id !== emailInput.id))
+   if (!email && !errors.find((input) => input.id === emailInput.id))
       errors.push(emailInput)
 
-   if (errors.length || emailErrorMsg) {
+   if (errors.length) {
       e.preventDefault()
       inputs.forEach((input) => input.classList.remove('input--error'))
       errors.forEach((input) => input.classList.add('input--error'))
