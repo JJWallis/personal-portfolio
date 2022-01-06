@@ -128,7 +128,7 @@ function createErrMsgs(errors, emailMsg) {
     var errMsg = document.createElement('strong');
     errMsg.classList.add('input--error__msg');
     errMsg.innerText = input.id === emailInput.id ? emailMsg : 'This field is required';
-    input.previousElementSibling.appendChild(errMsg);
+    input.parentElement.appendChild(errMsg);
   });
 }
 
@@ -138,6 +138,9 @@ form.addEventListener('submit', function (e) {
   });
   var email = emailRegex.test(emailInput.value);
   var emailErrorMsg = !email ? 'Please enter a valid email adddress' : null;
+  if (!email && !errors.find(function (input) {
+    return input.id !== emailInput.id;
+  })) errors.push(emailInput);
 
   if (errors.length || emailErrorMsg) {
     e.preventDefault();

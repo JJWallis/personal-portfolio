@@ -12,7 +12,7 @@ function createErrMsgs(errors: HTMLInputElement[], emailMsg: string | null) {
       errMsg.classList.add('input--error__msg')
       errMsg.innerText =
          input.id === emailInput.id ? emailMsg : 'This field is required'
-      input.previousElementSibling.appendChild(errMsg)
+      input.parentElement.appendChild(errMsg)
    })
 }
 
@@ -20,6 +20,9 @@ form.addEventListener('submit', (e) => {
    const errors = inputs.filter((input) => !input.value)
    const email = emailRegex.test(emailInput.value)
    const emailErrorMsg = !email ? 'Please enter a valid email adddress' : null
+
+   if (!email && !errors.find((input) => input.id !== emailInput.id))
+      errors.push(emailInput)
 
    if (errors.length || emailErrorMsg) {
       e.preventDefault()
