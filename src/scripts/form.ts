@@ -3,6 +3,7 @@ type Input = HTMLInputElement
 const form = document.querySelector('#submit-form')
 const inputs: Input[] = Array.from(document.querySelectorAll('.input'))
 const emailInput: Input = document.querySelector('#input-email')
+const message: Input = document.querySelector('#input-message')
 const emailRegex =
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 

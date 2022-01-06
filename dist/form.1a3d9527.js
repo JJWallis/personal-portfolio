@@ -121,6 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var form = document.querySelector('#submit-form');
 var inputs = Array.from(document.querySelectorAll('.input'));
 var emailInput = document.querySelector('#input-email');
+var message = document.querySelector('#input-message');
 var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 function createErrMsgs(errors, emailMsg) {

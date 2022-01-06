@@ -21,11 +21,7 @@
       }
 
       @include e(msg) {
-         @include position(absolute) {
-            left: 0;
-            bottom: 0;
-         }
-         font-size: 0.9rem;
+         font-size: 0.8rem;
          color: hsl(var(--clr-sd-bright-red));
       }
    }
