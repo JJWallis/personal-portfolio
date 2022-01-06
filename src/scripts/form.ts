@@ -6,16 +6,16 @@ const emailInput: HTMLInputElement = document.querySelector('#input-email')
 const emailRegex =
    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-function createErrMsg(errors: HTMLInputElement[]) {
-   const errMsg = document.createElement('strong')
-   errMsg.classList.add('input--error__msg')
-   errMsg.innerHTML = `<p>Please correct the following errors:</p>`
-   errors.forEach((error) => {
-      const errorMsg = document.createElement('p')
-      errorMsg.innerHTML = error.dataset.error
-      errMsg.appendChild(errorMsg)
+function createErrMsgs(errors: HTMLInputElement[]) {
+   errors.forEach((input) => {
+      const errMsg = document.createElement('strong')
+      errMsg.classList.add('input--error__msg')
+      errMsg.innerText =
+         input.id === emailInput.id
+            ? 'This field is required'
+            : 'This field is required'
+      input.previousElementSibling.appendChild(errMsg)
    })
-   return errMsg
 }
 
 form.addEventListener('submit', (e) => {

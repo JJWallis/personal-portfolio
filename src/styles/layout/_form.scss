@@ -3,6 +3,9 @@
 .form {
    @include e(fieldset) {
       margin-bottom: 1.3rem;
+      & div {
+         position: relative;
+      }
    }
 
    @include e(label) {

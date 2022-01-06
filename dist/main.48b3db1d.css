@@ -516,7 +516,9 @@ body {
 }
 .input--error__msg {
   position: absolute;
-  font-size: 1rem;
+  left: 0;
+  bottom: 0;
+  font-size: 0.9rem;
   color: hsl(var(--clr-sd-bright-red));
 }
 .input--text-area {
@@ -812,6 +814,9 @@ body {
 
 .form__fieldset {
   margin-bottom: 1.3rem;
+}
+.form__fieldset div {
+  position: relative;
 }
 .form__label {
   display: block;
