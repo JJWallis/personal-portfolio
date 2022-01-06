@@ -6,7 +6,7 @@
          transform: rotateY(180deg);
       }
 
-      @include mq(min-width, tablet) {
+      @include mq(min-width, tablet-home) {
          gap: var(--gap-offset);
          @include e(img) {
             @include bg-img(
@@ -20,8 +20,8 @@
          }
       }
 
-      @include mqs(min-width, tablet, max-width, desktop) {
-         grid-template-columns: 300px auto;
+      @include mqs(min-width, tablet-home, max-width, desktop) {
+         grid-template-columns: 320px auto;
          grid-template-rows: minmax(630px, auto);
          @include e(img) {
             background-position: 72% 100%;
@@ -29,6 +29,7 @@
       }
 
       @include mq(min-width, desktop) {
+         // grid-template-columns: minmax(480px, auto) auto;
          @include e(img) {
             background-position: 90%;
          }

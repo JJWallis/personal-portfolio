@@ -72,7 +72,7 @@
 @media only screen and (min-width: 63.999em) {
   :root {
     --center-left-desktop: left;
-    --gap-offset: 8rem;
+    --gap-offset: 5rem;
     --gap-details: 13rem 7rem;
     --gap-contact: 0 2rem;
     --details-hero-ct: 7rem;
@@ -888,7 +888,7 @@ body {
 .about__body__img {
   transform: rotateY(180deg);
 }
-@media only screen and (min-width: 45.999em) {
+@media only screen and (min-width: 49.999em) {
   .about__body {
     gap: var(--gap-offset);
   }
@@ -902,9 +902,9 @@ body {
     display: none;
   }
 }
-@media only screen and (min-width: 45.999em) and (max-width: 63.999em) {
+@media only screen and (min-width: 49.999em) and (max-width: 63.999em) {
   .about__body {
-    grid-template-columns: 300px auto;
+    grid-template-columns: 320px auto;
     grid-template-rows: minmax(630px, auto);
   }
   .about__body__img {
