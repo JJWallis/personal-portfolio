@@ -123,11 +123,11 @@ var inputs = Array.from(document.querySelectorAll('.input'));
 var emailInput = document.querySelector('#input-email');
 var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-function createErrMsgs(errors) {
+function createErrMsgs(errors, emailMsg) {
   errors.forEach(function (input) {
     var errMsg = document.createElement('strong');
     errMsg.classList.add('input--error__msg');
-    errMsg.innerText = input.id === emailInput.id ? 'This field is required' : 'This field is required';
+    errMsg.innerText = input.id === emailInput.id ? emailMsg : 'This field is required';
     input.previousElementSibling.appendChild(errMsg);
   });
 }
@@ -137,8 +137,9 @@ form.addEventListener('submit', function (e) {
     return !input.value;
   });
   var email = emailRegex.test(emailInput.value);
+  var emailErrorMsg = !email ? 'Please enter a valid email adddress' : null;
 
-  if (errors.length || !email) {
+  if (errors.length || emailErrorMsg) {
     e.preventDefault();
     inputs.forEach(function (input) {
       return input.classList.remove('input--error');
@@ -146,6 +147,7 @@ form.addEventListener('submit', function (e) {
     errors.forEach(function (input) {
       return input.classList.add('input--error');
     });
+    createErrMsgs(errors, emailErrorMsg);
   }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
