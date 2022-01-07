@@ -83,6 +83,14 @@ HTML:
 
 CSS:
 
+Offset design - simple max-width + grid to change side aligned to (key within utility container class - that was biggest problem)
+
+Keeping SVG's in DOM + styling directly (descendant classes vs static img changes) | descendant class used for touch targets + fixing hover issue over SVG directly (gaps in shape)
+
+CTA line - keeping in DOM flow (instead of pseudo element - with Grid becomes either 1st or last grid item - not with flex)
+
 JS:
+
+Formspree - form submisison + simple action replacement (connecting to their API + doing all the 'backend' validation for me) | no validate on form itself to maintain my own custom CSS styles/JS messages
 
 ---
