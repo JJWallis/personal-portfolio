@@ -89,8 +89,10 @@ Keeping SVG's in DOM + styling directly (descendant classes vs static img change
 
 CTA line - keeping in DOM flow (instead of pseudo element - with Grid becomes either 1st or last grid item - not with flex)
 
+Project details pages - more grid rows + columns to have more flexibility with where content starts + stops (with overlapping)
+
+Design - Creating our own images (Pixelmator + collage style taken from FEM themselves) | useful for img dimensions - keeping the same type of images exact same dimensions to avoid mis-alignment (+ max-width hitting before major breakpoint)
+
 JS:
 
 Formspree - form submisison + simple action replacement (connecting to their API + doing all the 'backend' validation for me) | no validate on form itself to maintain my own custom CSS styles/JS messages
-
----
