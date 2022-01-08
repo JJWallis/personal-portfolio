@@ -91,7 +91,7 @@ Finally, this was my first time connecting a form with a 3rd party service that 
 
 ### Continued development
 
-JS based validation libraries - can see how they simplify workload (create err msgs for you, custom styling, passing obj of options to arr which represents the 'settings' for each input field, no need for copying massive email regex)
+I look forward to integrating more 3rd party services that make our lives easier when dealing with forms, such as JS validation libraries. Based on the research I've already conducted, I can see how they simplify the process since they automatically create error messages for you, allow us to set custom styling options and remove the need to copy powerful regular expressions around from project to the next.
 
 ### Useful resources
 
