@@ -93,6 +93,8 @@ Formspree - form submisison + simple action replacement (connecting to their API
 
 Design fundamentals - experiment more freely with designs provided
 
+JS based validation libraries - can see how they simplify workload (create err msgs for you, custom styling, passing obj of options to arr which represents the 'settings' for each input field, no need for copying massive email regex)
+
 ### Useful resources
 
 ## Author
