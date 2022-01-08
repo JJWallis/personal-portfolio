@@ -73,9 +73,7 @@ I was able to further develop my CSS Grid skills by creating a larger number of 
 }
 ```
 
-Since I used this project as a template for my own portfolio, I had to create the project images myself and use my own profile images as well.
-
-Design - Creating our own images vs provided assets (Pixelmator + collage style taken from FEM themselves) | img dimensions - keeping the same type of images exact same dimensions to avoid mis-alignment (+ max-width hitting before major breakpoint) | rotate the parent div instead of bg-img itself (+ fluid img for mobile) | zooming in size wise since I was at an angle in the shot (created the effect that original src photos had manually with fixed column width)
+Since I used this project as a template for my own portfolio, I had to create the project images myself and use my own profile images too. I learnt the importance of matching their dimensions with the original assets provided to avoid mis-alignment with other content, as well as creating similar effects purely within CSS (rotating my profile image so I was facing the same direction).
 
 ```html
 <form
@@ -89,11 +87,9 @@ Design - Creating our own images vs provided assets (Pixelmator + collage style 
 </form>
 ```
 
-Formspree - form submisison + simple action replacement (connecting to their API + doing all the 'backend' validation for me) | no validate on form itself to maintain my own custom CSS styles/JS messages
+Finally, this was my first time connecting a form with a 3rd party service that would handle its submission and email me any data provided. I chose Formspree because of its simplicity to integrate into existing projects, where you only need to provide a specifc endpoint within the form's action for their API to then handle all the rest.
 
 ### Continued development
-
-Design fundamentals - experiment more freely with designs provided
 
 JS based validation libraries - can see how they simplify workload (create err msgs for you, custom styling, passing obj of options to arr which represents the 'settings' for each input field, no need for copying massive email regex)
 
