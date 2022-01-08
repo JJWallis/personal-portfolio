@@ -52,7 +52,7 @@ Your users should be able to:
 <div class="cta__body__line"></div>
 ```
 
-CTA line - keeping in DOM flow (instead of pseudo element - with Grid becomes either 1st or last grid item - not with flex)
+The fluid line between both the 'contact me' button and call to action title provided a nice challenge, since I had to keep the line within the DOM via an empty `div`. This is something that we usually want to avoid doing, however not in this case since applying a pseudo element to a grid container forces it to become either the first or last grid item, never in-between.
 
 ```scss
 .details {
@@ -61,7 +61,7 @@ CTA line - keeping in DOM flow (instead of pseudo element - with Grid becomes ei
 }
 ```
 
-Project details pages - more grid rows + columns to have more flexibility with where content starts + stops (with overlapping)
+I was able to further develop my CSS Grid skills by creating a larger number of rows and columns on the individual project pages, in order to have more control over the alignment and widths of content in accordance with the original design.
 
 ```scss
 @include mqs(min-width, tablet-home, max-width, desktop) {
@@ -72,6 +72,8 @@ Project details pages - more grid rows + columns to have more flexibility with w
    }
 }
 ```
+
+Since I used this project as a template for my own portfolio, I had to create the project images myself and use my own profile images as well.
 
 Design - Creating our own images vs provided assets (Pixelmator + collage style taken from FEM themselves) | img dimensions - keeping the same type of images exact same dimensions to avoid mis-alignment (+ max-width hitting before major breakpoint) | rotate the parent div instead of bg-img itself (+ fluid img for mobile) | zooming in size wise since I was at an angle in the shot (created the effect that original src photos had manually with fixed column width)
 
