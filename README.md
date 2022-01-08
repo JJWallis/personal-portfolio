@@ -49,22 +49,28 @@ Your users should be able to:
 ### What I learned
 
 ```scss
-$color-shades: (
-   pure-black: (
-      100: 0 0% 100%,
-      200: 0 0% 90%,
-      300: 0 0% 70%,
-      400: 0 0% 60%,
-      500: 0 0% 50%,
-      600: 0 0% 40%,
-      700: 0 0% 30%,
-      800: 0 0% 10%,
-      900: 0 0% 0%,
-   ),
-);
+
 ```
 
-Diff colour shades Sass map
+CTA line - keeping in DOM flow (instead of pseudo element - with Grid becomes either 1st or last grid item - not with flex)
+
+```scss
+
+```
+
+Project details pages - more grid rows + columns to have more flexibility with where content starts + stops (with overlapping)
+
+```scss
+
+```
+
+Design - Creating our own images (Pixelmator + collage style taken from FEM themselves) | useful for img dimensions - keeping the same type of images exact same dimensions to avoid mis-alignment (+ max-width hitting before major breakpoint)
+
+```ts
+
+```
+
+Formspree - form submisison + simple action replacement (connecting to their API + doing all the 'backend' validation for me) | no validate on form itself to maintain my own custom CSS styles/JS messages
 
 ### Continued development
 
@@ -76,23 +82,3 @@ Design fundamentals - experiment more freely with designs provided
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-###### TODO
-
-HTML:
-
-CSS:
-
-Offset design - simple max-width + grid to change side aligned to (key within utility container class - that was biggest problem)
-
-Keeping SVG's in DOM + styling directly (descendant classes vs static img changes) | descendant class used for touch targets + fixing hover issue over SVG directly (gaps in shape)
-
-CTA line - keeping in DOM flow (instead of pseudo element - with Grid becomes either 1st or last grid item - not with flex)
-
-Project details pages - more grid rows + columns to have more flexibility with where content starts + stops (with overlapping)
-
-Design - Creating our own images (Pixelmator + collage style taken from FEM themselves) | useful for img dimensions - keeping the same type of images exact same dimensions to avoid mis-alignment (+ max-width hitting before major breakpoint)
-
-JS:
-
-Formspree - form submisison + simple action replacement (connecting to their API + doing all the 'backend' validation for me) | no validate on form itself to maintain my own custom CSS styles/JS messages
