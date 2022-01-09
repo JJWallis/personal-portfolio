@@ -44,7 +44,7 @@ Your users should be able to:
 -  Flexbox
 -  CSS Grid
 -  Sass
--  Typescript
+-  TypeScript
 
 ### What I learned
 
