@@ -99,5 +99,5 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ## Author
 
--  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
+-  Website - [Joshua Jameson-Wallis](https://www.joshuajamesonwallis.com/)
 -  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
