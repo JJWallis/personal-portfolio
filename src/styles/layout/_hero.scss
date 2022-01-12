@@ -9,8 +9,8 @@
          @include mq(min-width, tablet) {
             grid-template-columns: repeat(5, 1fr);
             @include bg-img(
-               '../assets/images/homepage/desktop/hero.jpg',
-               $position: -210px center,
+               '../assets/images/homepage/desktop/hero-2.jpg',
+               $position: -220px center,
                $size: 130%
             );
 
