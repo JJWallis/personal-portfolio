@@ -101,3 +101,7 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 -  Website - [Joshua Jameson-Wallis](https://www.joshuajamesonwallis.com/)
 -  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
+
+######TODO
+
+Promises - fetch() is DOM API allowing us to fetch data (talk about catch() - why we use try/catch block with...) | handling synchronous asynchronously with async await | 3 states can be in
