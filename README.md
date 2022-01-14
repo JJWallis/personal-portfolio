@@ -128,4 +128,6 @@ pop() = removes the last element from an array and returns that element
 
 push() = adds one or more elements to the end of an array and returns the new length of the array
 
-slice() =
+slice() = returns a shallow copy of a portion of an array (new arr containing extracted els) into a new array object selected from start to end (end not included) where start and end represent the index of items in that array | doesn't mutate original | params - optional start + end indexes
+
+splice() =
