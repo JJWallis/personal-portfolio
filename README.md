@@ -114,4 +114,4 @@ forEach() = method that executes a provided callback func once for each array el
 
 map() = method that creates a new array populated with the results of calling a provided callback function once in ascending index order on every element in the calling array (returned value added to returned arr each execution) | same params | does not mutate array - callback func can
 
-reduce() =
+reduce() = method that executes a user-supplied “reducer” callback func on each element of the array, in order, passing in the return value from the calculation on the preceding element | final returned result is a single value | The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise array element 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0) | callback func params (4) - last 3 same, 1st - previousValue: the value resulting from the previous call to callbackFn. On first call, initialValue if specified, otherwise the value of array[0]. | 2nd parent param - optional initialValue | doesn't mutate - but callback func can
