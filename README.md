@@ -133,3 +133,5 @@ slice() = returns a shallow copy of a portion of an array (new arr containing ex
 splice() = method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place | if last param not provided - just removes els from arr | returns arr containing deleted els
 
 sort () = method sorts the elements of an array in place and returns the sorted array (not a copy) | ascending order + built upon converting the elements into strings + comparing their sequences of UTF-16 code units values | params - compareFunc defining sort order (logic to use), first el, second el (both for comparison purposes)
+
+Number conversion + checking - always floating point (even if int - 23 === 23.0) | base 10 system = 0-9 (what we're used to) + nums in JS use base 2 = 0-1 (binary), issue = certain nums hard to represent (0.1 - 0.1 + 0.2 = 0.300...4 but should be 0.3), sometimes rounding auto happens to hide this | 0.1 + 0.2 === 0.3 (false but should be true) |
