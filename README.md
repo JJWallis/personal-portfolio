@@ -118,4 +118,4 @@ reduce() = method that executes a user-supplied “reducer” callback func on e
 
 filter() = method that creates a new array with all elements that pass the test implemented by the provided function (keep/add or discard) in ascending index order | params - same | returned new array with the elements that pass the test (If none - empty array) | doesn't mutate arr
 
-find() =
+find() = method returns the value of the first element in the provided array that satisfies the provided testing function (undefined if none) in ascending index order + func executed once of each el | indexOf - to find index of that value (diff with findIndex() - checks each element for equality with the value instead of using a testing function (same func provided to fitler())) | params - same | doesn't mutate - callback func can
