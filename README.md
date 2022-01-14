@@ -104,6 +104,10 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ######TODO
 
+Runtime theory:
+
+s
+
 Async + Event Loop:
 
 Intro/Summary = JS runtime is container including all pieces necessary to run JS code | engine - at the heart, call stack + HEAP located here | WEB API's environment - provided to engine not part of language itself | callback queue - data structure (ordered list), holds all ready-to-be-executed callback funcs that have been attatched to some occured event | when callstack empty - Event loop takes callbacks from callback queue + put in callstack to be executed (Event loop - reason why async possible + handling multiple tasks at same time)
@@ -167,3 +171,5 @@ Prototypes - prop on every func (including constructors), every obj from constru
 `Object.create()` - easiest way of linking obj to prototype obj | not as common | different to constructors + classes | we manually set the prototype of 1 obj to any other desired | create obj to be prototype 1st - simple obj literal, include re-usable props + methods to inherit, `const steven = Object.create(prototypeObjName)` - brand new obj linked to prototype passed in (through `__proto__` prop) | `steven.__proto__` = new blank obj created from prototype (manually create your own constructor to fill in props - even though nothing to do with constructors in general - 2nd img below)
 
 Modules = re-usable piece of code encapsulating implementation details in a standalone file (doesn't have to be) | export - values into the `PUBLIC API` (Classes - expose other code to consume too), consumed via importing values into other modules (exporting modules now known as `dependencies` of importing module) | not specific to JS | small building blocks (isolated components - developer doesn't need to understand the whole codebase) put together to build complex apps | abstraction - easy to do this, implementing low-level code (doesn't need to know how it works - can just use it) | more organised code base + easier to understand | easily re-use same code (accross multiple projects too) | vs Scripts = top-level-variables scoped to module only (private vs global environment), always executed in strict mode, defer by default, 'this' keyword points to undefined (vs window obj), importing + exporting not possible in scripts (only happen at top level - outside any func/if block) + always hoisted (moved to top of file), modules loaded in async manner - both in HTML (defer by default) + import/export | process - code parsed (read, not executed) + hoisted before any other code executed (synchronously), index isn't executed until all other modules parsed, why we can't execute inside block - func would need to run first, makes deleting un-used code possible (when bundled together), then downloaded asynchronously, arrived - parsed + exports linked to imports in index (live connection between both - not copied but ref to it - unique to ES6 modules)
+
+Setting up prototype chain + allowing inheritance between two diff constructor funcs =
