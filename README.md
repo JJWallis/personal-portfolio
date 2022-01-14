@@ -119,3 +119,13 @@ reduce() = method that executes a user-supplied “reducer” callback func on e
 filter() = method that creates a new array with all elements that pass the test implemented by the provided function (keep/add or discard) in ascending index order | params - same | returned new array with the elements that pass the test (If none - empty array) | doesn't mutate arr
 
 find() = method returns the value of the first element in the provided array that satisfies the provided testing function (undefined if none) in ascending index order + func executed once of each el | indexOf - to find index of that value (diff with findIndex() - checks each element for equality with the value instead of using a testing function (same func provided to fitler())) | params - same | doesn't mutate - callback func can
+
+includes() = method that determines whether an array includes a certain value among its entries, returning true or false as appropriate | params - value to search for + optional starting index
+
+join() = method that creates and returns a new string by concatenating all of the elements in an array, separated by commas or a specified separator string (empty str if 0 length) | If array has only one item, then that item will be returned without using the separator | param - separator (optional) - string to separate each pair of adjacent elements of the array (comma if omitted)
+
+pop() = removes the last element from an array and returns that element
+
+push() = adds one or more elements to the end of an array and returns the new length of the array
+
+slice() =
