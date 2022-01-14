@@ -144,4 +144,4 @@ Number conversion + checking - always floating point (even if int - 23 === 23.0)
 
 Async + Event Loop =
 
-Modules =
+Modules = re-usable piece of code encapsulating implementation details in a standalone file (doesn't have to be) | export - values into the `PUBLIC API` (Classes - expose other code to consume too), consumed via importing values into other modules (exporting modules now known as `dependencies` of importing module) | not specific to JS | small building blocks (isolated components - developer doesn't need to understand the whole codebase) put together to build complex apps | abstraction - easy to do this, implementing low-level code (doesn't need to know how it works - can just use it) | more organised code base + easier to understand | easily re-use same code (accross multiple projects too) |
