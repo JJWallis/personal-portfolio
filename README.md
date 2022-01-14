@@ -130,4 +130,6 @@ push() = adds one or more elements to the end of an array and returns the new le
 
 slice() = returns a shallow copy of a portion of an array (new arr containing extracted els) into a new array object selected from start to end (end not included) where start and end represent the index of items in that array | doesn't mutate original | params - optional start + end indexes
 
-splice() =
+splice() = method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place | if last param not provided - just removes els from arr | returns arr containing deleted els
+
+sort () = method sorts the elements of an array in place and returns the sorted array (not a copy) | ascending order + built upon converting the elements into strings + comparing their sequences of UTF-16 code units values | params - compareFunc defining sort order (logic to use), first el, second el (both for comparison purposes)
