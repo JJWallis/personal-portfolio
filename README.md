@@ -158,7 +158,7 @@ OOP in JS - works slightly differently | prototypes - each obj linked to a proto
 
 `constructor functions + new operator` - creating objects using function + sets new obj prototype, how OOP is implemented in JS since beginning |
 
-`Object.create()` - easiest way of linking obj to prototype obj, not as common
+`Object.create()` - easiest way of linking obj to prototype obj | not as common | different to constructors + classes | we manually set the prototype of 1 obj to any other desired | create obj to be prototype 1st - simple obj literal, include re-usable props + methods to inherit, `const steven = Object.create(prototypeObjName)` - brand new obj linked to prototype passed in (through `__proto__` prop) | `steven.__proto__` = new blank obj created from prototype (manually create your own constructor to fill in props - even though nothing to do with constructors in general - 2nd img below) |
 
 `ES6 Classes` = modern way of doing OOP, syntatic sugar over constructor functions - work exactly same way (prototypal inheritance - ex)
 
