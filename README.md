@@ -104,4 +104,6 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ######TODO
 
-Value vs ref - how data types work with regards to functions (passing as args) | primitives - copy of its value (not original) | passing a non-primitive - reference to original data structure in memory HEAP (object wise - same when assigned new var to old one storing an obj - point to same obj!) |
+Value vs ref - how data types work with regards to functions (passing as args) | primitives - copy of its value (not original) | passing a non-primitive - reference to original data structure in memory HEAP (object wise - same when assigned new var to old one storing an obj - point to same obj!)
+
+First-class functions - first-class citizens | simply values (storing in vars, obj props as methods, args to other funcs as event handlers) | another 'type' of object - value itself, methods can call on it - bind() + call() | higher-order -
