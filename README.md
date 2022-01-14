@@ -106,8 +106,6 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 Runtime theory:
 
-s
-
 Async + Event Loop:
 
 Intro/Summary = JS runtime is container including all pieces necessary to run JS code | engine - at the heart, call stack + HEAP located here | WEB API's environment - provided to engine not part of language itself | callback queue - data structure (ordered list), holds all ready-to-be-executed callback funcs that have been attatched to some occured event | when callstack empty - Event loop takes callbacks from callback queue + put in callstack to be executed (Event loop - reason why async possible + handling multiple tasks at same time)
