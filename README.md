@@ -104,7 +104,7 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ######TODO
 
-Runtime theory:
+Primitives vs reference types in memory:
 
 Async + Event Loop:
 
