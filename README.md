@@ -104,7 +104,7 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ######TODO
 
-Scope Chain = `Lexical scoping` - scoping controlled by placement of funcs + blocks in code (func within another has access to vars in parent) | `scope` -
+Scope Chain = `Lexical scoping` - scoping controlled by placement of funcs + blocks in code (func within another has access to vars in parent) | `scope` - environment in which a var is declared (3 types - `global, func + block`) | scope of a var - entire `region` where a var can be accessed (differences with previous definition of scope generally) | `Global scope` - vars declared outside any func/block, accessible everywhere | `Function/local scope` - each func creates their own + vars decalred here only accessible within it,
 
 Async + Event Loop:
 
