@@ -104,7 +104,7 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ######TODO
 
-Primitives vs reference types in memory:
+Scope Chain = `Lexical scoping` - scoping controlled by placement of funcs + blocks in code (func within another has access to vars in parent) | `scope` -
 
 Async + Event Loop:
 
