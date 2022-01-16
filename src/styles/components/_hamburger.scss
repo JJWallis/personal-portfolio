@@ -18,3 +18,44 @@
       display: none;
    }
 }
+
+.btn-test {
+   // outline: 1px solid blue;
+}
+
+.test-ct {
+   // outline: 1px solid red;
+   position: relative;
+   height: 24px;
+   width: 33px;
+   & * {
+      position: absolute;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background-color: black;
+      transform-origin: center center 0px;
+      transition: all 0.3s ease;
+
+      &:nth-child(1) {
+         top: 0;
+         .active & {
+            transform: rotate(45deg) translate(7px, 7px);
+         }
+      }
+
+      &:nth-child(2) {
+         top: calc(50% - 2px);
+         .active & {
+            opacity: 0;
+         }
+      }
+
+      &:nth-child(3) {
+         bottom: 0;
+         .active & {
+            transform: rotate(-45deg) translate(7px, -7px);
+         }
+      }
+   }
+}
