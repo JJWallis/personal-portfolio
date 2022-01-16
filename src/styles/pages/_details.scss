@@ -27,6 +27,10 @@
             }
          }
 
+         & .btn {
+            align-self: flex-start;
+         }
+
          @include e(skills) {
             max-width: 350px;
          }
