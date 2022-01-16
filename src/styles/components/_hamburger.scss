@@ -2,17 +2,6 @@
 
 .hamburger {
    @include e(btn) {
-      // width: 35px;
-      // height: 35px;
-      // @include bg-img(
-      //    '../assets/icons/hamburger.svg',
-      //    $position: center,
-      //    $size: 90%
-      // );
-      // &[aria-selected='true'] {
-      //    // @include bg-img('../assets/icons/close.svg');
-      // }
-
       @include e(lines) {
          position: relative;
          height: 24px;
