@@ -1,61 +1,57 @@
 @use 'abstracts' as *;
 
 .hamburger {
-   @include e(button) {
-      width: 35px;
-      height: 35px;
-      @include bg-img(
-         '../assets/icons/hamburger.svg',
-         $position: center,
-         $size: 90%
-      );
-      &[aria-selected='true'] {
-         @include bg-img('../assets/icons/close.svg');
+   @include e(btn) {
+      // width: 35px;
+      // height: 35px;
+      // @include bg-img(
+      //    '../assets/icons/hamburger.svg',
+      //    $position: center,
+      //    $size: 90%
+      // );
+      // &[aria-selected='true'] {
+      //    // @include bg-img('../assets/icons/close.svg');
+      // }
+
+      @include e(lines) {
+         position: relative;
+         height: 24px;
+         width: 33px;
+
+         @include e(line) {
+            position: absolute;
+            left: 0;
+            height: 4px;
+            width: 100%;
+            background-color: black;
+            transform-origin: center center 0px;
+            transition: all 0.3s ease;
+
+            &:nth-child(1) {
+               top: 0;
+               .active & {
+                  transform: rotate(45deg) translate(7px, 7px);
+               }
+            }
+
+            &:nth-child(2) {
+               top: calc(50% - 2px);
+               .active & {
+                  opacity: 0;
+               }
+            }
+
+            &:nth-child(3) {
+               bottom: 0;
+               .active & {
+                  transform: rotate(-45deg) translate(7px, -7px);
+               }
+            }
+         }
       }
    }
 
    @include mq(min-width, tablet) {
       display: none;
-   }
-}
-
-.btn-test {
-   // outline: 1px solid blue;
-}
-
-.test-ct {
-   // outline: 1px solid red;
-   position: relative;
-   height: 24px;
-   width: 33px;
-   & * {
-      position: absolute;
-      left: 0;
-      height: 4px;
-      width: 100%;
-      background-color: black;
-      transform-origin: center center 0px;
-      transition: all 0.3s ease;
-
-      &:nth-child(1) {
-         top: 0;
-         .active & {
-            transform: rotate(45deg) translate(7px, 7px);
-         }
-      }
-
-      &:nth-child(2) {
-         top: calc(50% - 2px);
-         .active & {
-            opacity: 0;
-         }
-      }
-
-      &:nth-child(3) {
-         bottom: 0;
-         .active & {
-            transform: rotate(-45deg) translate(7px, -7px);
-         }
-      }
    }
 }
