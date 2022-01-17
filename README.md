@@ -95,7 +95,7 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 ### Useful resources
 
--  [Formspree](https://formspree.io/) - A service for dealing with form submissions and sending you data, whilst performing their own validation to protect you against spam.
+-  [Formspree](https://formspree.io/) - A service for dealing with form submissions and sending you data, whilst also performing their own validation to protect you against spam (for example).
 
 ## Author
 
