@@ -106,21 +106,21 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 `Manual testing` - playing around with App yourself to see if works | larger projects - new features/changes could affect other components | not feasible to check all components on each new addition - automated catches this immediately…
 
-`Automated testing` - test scripts we write saying this component should work a certain way | triggers an action + expects an outcome | run these on each implementation to catch errors | serves as documentation if written well - outlines how software should work
+    `Automated testing` - test scripts we write saying this component should work a certain way | triggers an action + expects an outcome | run these on each implementation to catch errors | serves as `documentation` if written well
 
-`Priority` list - `High value` features (main app purpose) | `edge cases` within these (error msgs) | things that can `easily break` (that maybe popup during development) | `basic component testing` - most important first (often used), within - `user interactions` (fireEvents), `conditional rendering` (state changes, props, context), `utils/hooks` - custom hooks or functions used throughout app | avoid `unnecessary` tests - useState() value changes post mutation (not reliable + doesn’t reflect how users will use your app)
+    `Terms` - `High value` features (main app purpose) | `edge cases` within these (`error msgs`), things that can `easily break` (that maybe popup during development)
 
-`Test Driven Development` - `methodology` for each feature | write tests to check `before` implementing feature (will fail at first because the feature isn’t there yet) | write `bare-minimum` amount of code needed for tests to pass, run tests again (should `pass`)
+    `Test Driven Development` - `methodology` for each feature | write tests to check `before` implementing feature (will fail at first because the feature isn’t there yet) | write `bare-minimum` amount of code needed for tests to pass, run tests again (should `pass`)
 
-`3 A’s pattern` - Arrange (arranging the state of the data + app - declaring vars within test()), act (when I act on whatever I’m testing - fireEvent) + assert (I’m going to assert it worked correctly - expect() - test will pass without)
+`3 A’s pattern` - `Arrange` (arranging the state of data + app - declaring vars within test()), `act` (when act on whatever testing - fireEvent) + `assert` (assert it worked correctly - expect())
 
-`Unit tests` - `local` tests written by yourself (testing logic behind the scenes - single functionality + small parts of code - testing a function) | forces you to think deeply about the possible `outcomes` of functions (discovering edge cases) | provides warnings to you if try to delete `edge cases` which other code relies on (+ has been tested) + `prevents` you from deleting it
+    `Basic component testing` - most important first (often used), within - `user interactions` (fireEvents), `conditional rendering` (state changes), `utils/hooks` - custom hooks or functions used throughout app | avoid `unnecessary` tests - useState() value changes post mutation (not reliable + doesn’t reflect how users will use your app) |  `Testing library package:` – simple utilities for testing DOM-based user interfaces
 
-`Integration` tests - `multiple units` in app working correctly together (combining units into one larger test) | tests Interactions between units - most will interact with each other during `runtime`
+    `Unit tests` - `local` tests written by yourself (single functionality + small parts of code - a function) | forces you to think deeply about the possible `outcomes` of functions (+ potential edge cases) | provides warnings if try to delete `edge cases` which other code relies on (+ has been tested) + `prevents` you from deleting it
 
-`End-end` test - `front-end to back-end` | longer to execute | tests user interactions in a `real-life browser + real DOM (vs virtual) + real data/API` (vs hard-coded mockup test strings) by providing it `instructions` (what to click/type/etc) for what to do and expected outcomes | cares about how `users` see app + interact with it (just like they would) | ex…
+    `Integration` tests - `multiple units` in app working correctly together (combining units into 1 larger test) | tests Interactions between units - most will interact with each other during `runtime`
 
-`Cypress` - `E2E testing library` | had to install `multiple` libraries before - can now just use one | setup, writing, running + recording tests easier + faster - testing and development can happen `simultaneously` | executes commands in `real-time` as write them | ex: waiting for dynamic content to load, mobile responsive views, control the responses from network requests - solve edge cases where server down/no result returned | `screenshots` taken during test - can time travel back to each state from when first ran | `cy.visit(‘http://localhost:3000’)` - navigate to a specific URL where our application lies, `cy.get(‘#greeting-nav-button’)’click()` - grabs nav btn + clicks, then ex below occurs:
+    `End-end` test - `front-end to back-end` | longer execution time | tests user interactions in a `real-life browser + real DOM (vs virtual) + real data/API` (vs hard-coded mockup test strings) by providing it `instructions` for what to do (click/type) and expected outcomes | cares about how `users` see + interact with app | `Cypress` - `E2E testing library` | had to install `multiple` libraries before - can now just use one | setup, writing, running + recording tests easier + faster - testing and development can happen `simultaneously` | executes commands in `real-time` as write them | ex: waiting for dynamic content to load, mobile responsive views, control the responses from network requests - solve edge cases where server down/no result returned | `screenshots` taken during test - can time travel back to each state from when first ran | `cy.visit(‘http://localhost:3000’)` - navigate to a specific URL where our application lies, `cy.get(‘#greeting-nav-button’)’click()` - grabs nav btn + clicks, then ex below occurs:
 
 ```
 cy.get('#greetings-input').type('Evgeny', { delay: 400 })
@@ -128,8 +128,8 @@ cy.get('#greetings-show-button').click()
 cy.get('#greeting-text').should('include.text', 'Hello Evgeny!')
 ```
 
-`Visual regression testing` - takes a `screenshot` of pages/ components + compares them with screenshots that were captured in `previous successful` tests | any discrepancies found - `notification` provided | some of these libraries work well with Cypress - adding onto test above visual test to make sure that change didn’t affect UI | `cy.percySnapshot()` - Percy as VRT library `Testing library package:` – simple utilities for testing DOM-based user interfaces
+    `Visual regression testing` - takes a `screenshot` of pages/components + compares them with screenshots that were captured in `previous successful` tests | any discrepancies found - `notification` provided | some of these libraries work well with Cypress - adding onto test above visual test to make sure that change didn’t affect UI | `cy.percySnapshot()` - `Percy` (VRT library)
 
-`Performance testing` - speed of app (SEO) | `performance budget` - runs a test to calculate `size` + if failed test will prevent a `deployment` from happening if the size exceeds a certain `threshold` | what it measures - `load time, size of initial bundle, speed of specific functions` - wider range than just this
+    `Performance testing` - speed of app (`SEO`) | `performance budget` - runs a test to calculate `size` + if failed test will prevent a `deployment` from happening if the size exceeds a certain `threshold` | what it measures - `load time, size of initial bundle, speed of specific functions` (ex)
 
-`Accessibility testing` - Google Lighthouse | axe-core (browser extension)
+    `Accessibility testing` - Google Lighthouse | axe-core (browser extension)
