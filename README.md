@@ -104,14 +104,6 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 #####TODO
 
-`Manual testing` - playing around with App yourself to see if works | larger projects - new features/changes could affect other components | not feasible to check all components on each new addition - automated catches this immediately…
-
-    `Automated testing` - test scripts we write saying this component should work a certain way | triggers an action + expects an outcome | run these on each implementation to catch errors | serves as `documentation` if written well
-
-    `Terms` - `High value` features (main app purpose) | `edge cases` within these (`error msgs`), things that can `easily break` (that maybe popup during development)
-
-    `Test Driven Development` - `methodology` for each feature | write tests to check `before` implementing feature (will fail at first because the feature isn’t there yet) | write `bare-minimum` amount of code needed for tests to pass, run tests again (should `pass`)
-
 `3 A’s pattern` - `Arrange` (arranging the state of data + app - declaring vars within test()), `act` (when act on whatever testing - fireEvent) + `assert` (assert it worked correctly - expect())
 
     `Basic component testing` - most important first (often used), within - `user interactions` (fireEvents), `conditional rendering` (state changes), `utils/hooks` - custom hooks or functions used throughout app | avoid `unnecessary` tests - useState() value changes post mutation (not reliable + doesn’t reflect how users will use your app) |  `Testing library package:` – simple utilities for testing DOM-based user interfaces
