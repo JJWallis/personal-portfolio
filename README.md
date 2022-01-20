@@ -104,4 +104,4 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 #TODO:
 
-1. Virtual DOM -
+1. Virtual DOM - what's the difference between virtual + real DOM? = variety of reasons, can't directly update HTML - real DOM directly updates/manipulate (obj based representation of the HTML document), if something updated - does a full repaint to showcase,
