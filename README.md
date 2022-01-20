@@ -108,4 +108,4 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 diff between React + React DOM - React creates + defines user-interfaces, ...DOM - dictates how these ui you design get added to DOM
 
-2. React Limitations - a library not a framework, libraries enhance existing code + therefore lets you roam free - some people prefer stricter rules to how can write JS code, `Gatsby or Next.js` - if framework desired for React (need to write certain components in specific folders but still uses React) |
+2. React Limitations - a library not a framework, libraries enhance existing code + therefore lets you roam free - some people prefer stricter rules to how can write JS code, `Gatsby or Next.js` - if framework desired for React (need to write certain components in specific folders but still uses React) | React is fairly large - not bad if those stricter rules in place (but they're not), other options like `preact` - framework + uses same modern API but a bit smaller (same features) | owned by Facebook - maintained by larger company to make sure doesn't die |
