@@ -104,4 +104,6 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 #TODO:
 
-1. Virtual DOM - what's the difference between virtual + real DOM? = variety of reasons, can't directly update HTML - real DOM directly updates/manipulate (obj based representation of the HTML document), if something updated - does a full repaint/refresh to showcase but the virtual DOM acts as a copy of real so can be updated/manipulated without refreshing at all, more of a pattern (used in multiple frameworks), synced with real with react-dom
+1. Virtual DOM - what's the difference between virtual + real DOM? = variety of reasons, can't directly update HTML - real DOM directly updates/manipulate (obj based representation of the HTML document), if something updated - does a full repaint/refresh to showcase but the virtual DOM acts as a copy of real so can be updated/manipulated without refreshing at all, more of a pattern (used in multiple frameworks), synced with real with react-dom | `diffing` - key difference, virtual DOM looks at difference between one vs the next state in the DOM + just updates that individual part (rather than entire page) | `is the virtual DOM different to the Shadow DOM?` -
+
+diff between React + React DOM - React creates + defines user-interfaces, ...DOM - dictates how these ui you design get added to DOM
