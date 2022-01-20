@@ -113,4 +113,4 @@ diff between React + React DOM - React creates + defines user-interfaces, ...DOM
 3. JSX - short for `Javascript XML` | allows you to write Javascript with an HTML like template syntax inside JS | not writing HTML | produces els that represent objs | `What is the difference between an element and a component` - an element is something which is created by JSX as a JS object (div) | a component - func which returns an element | `can you write React without JSX?` - you can, can use React.createElement() everywhere,
    `const Component = () => React.createElement('div', null, 'Hellllooooo!')` vs `const Component = () => <div>Hellloooo!</div>`
 
-4. Props -
+4. Props - `How do you pass a value from parent to child?` - via props, component takes a value + pass down via props | `What about child to parent?` - pass a func prop (callback) from parent to child via props, child calls with local value passed up to parent as an argument to that func |
