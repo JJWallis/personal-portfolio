@@ -101,5 +101,3 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 -  Website - [Joshua Jameson-Wallis](https://www.joshuajamesonwallis.com/)
 -  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
-
-#TODO:
