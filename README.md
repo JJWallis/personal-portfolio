@@ -112,8 +112,8 @@ I look forward to integrating more 3rd party services that make our lives easier
 
 `Autoprefixer` - PostCSS plugin to parse CSS and add vendor prefixes to CSS rules using values from Can I Use (without you having to write them manually) | uses data based on current browser popularity and property support to apply prefixes for you | vendor prefixes - browser specific prefixes (Chrome: -webkit-, Firefox: -moz-), browser vendors sometimes add prefixes to experimental or nonstandard CSS properties and JavaScript APIs (so developers can experiment with new ideas + not being relied upon and then breaking web developers' code)
 
-`Webpack` -
+`Prettier` - opinionated code formatter | Supports many languages (TS, JSX, CSS, HTMl - hints as doesn't format if invalid) | intergrates with modern editors | formatted on save | no need to discuss style in code review - rc config file
 
-`Prettier` -
+`eslint` - static code analysis tool for identifying problematic patterns in JS | rules are configurable + can be customized (project specific) | covers both code quality and coding style issues | built into most text editors | most problems automatically fixed | ex: var is assigned a value but never used
 
-`eslint` -
+`Webpack` - module bundler for modern JS apps | bundles JS files for usage in a browser - internally builds a dependency graph from one or more entry points + combines every module your project needs into one or more bundles (static assets to serve your content from) |
